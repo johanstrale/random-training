@@ -1,3 +1,7 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
-export default combineReducers({})
+import excersises from './excersises';
+
+export default combineReducers({
+  excersises
+});

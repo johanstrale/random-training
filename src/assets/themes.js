@@ -11,6 +11,9 @@ export const blueTheme = {
 };
 
 export const defaultTheme = {
-  color: 'black',
-  backgroundColor: 'rgb(228, 226, 224)'
+  textColor: 'white',
+  borderColor: '#a9a9a9',
+  overlayColor: '#393939',
+  accordionColor: '#626363',
+  backgroundColor: '#000000'
 };

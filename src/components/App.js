@@ -12,7 +12,7 @@ const AppWrapper = styled.div`
 const App = () => {
   return (
     <AppWrapper>
-      <Header headerTitle='Välkommen'/>
+      <Header />
       <Main />
       <Navigation />
     </AppWrapper>

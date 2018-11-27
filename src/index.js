@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import 'normalize.css';
+import 'reset-css';
 import Root from './components/Root';
 import * as serviceWorker from './components/serviceWorker';
 import configureStore from './store';

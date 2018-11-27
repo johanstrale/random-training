@@ -13,13 +13,13 @@ const GlobalStyle = createGlobalStyle`
   }
   html, body {
     height: 100%;
-    touch-action: manipulation;
     font-family: Chivo, sans-serif;
+    font-weight: 900;
   }
 `;
 
-const Root = () => (
-  <Provider>
+const Root = ({ store }) => (
+  <Provider store={store}>
     <ThemeProvider defaultTheme={defaultTheme}>
       <Fragment>
         <GlobalStyle />

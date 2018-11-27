@@ -1,23 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
+import { withRouter } from 'react-router-dom';
+
+import translations from '../../assets/translations';
 
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  color: white;
-  background: linear-gradient(rgb(0,172,238), rgb(0, 123, 167));
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${props => props.theme.textColor};
+  background-color: ${props => props.theme.overlayColor};
+  border-bottom: solid 1px ${props => props.theme.borderColor};
   z-index: 1;
-  text-align: center;
 
   & p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 `;
 
-const Header = ({ headerTitle }) => (
-  <HeaderWrapper>
-    <p>{headerTitle}</p>
-  </HeaderWrapper>
-);
-export default Header;
+const Header = ({ location }) => {
+  return (
+    <HeaderWrapper>
+      <p>{translations[location.pathname] || 'Välkommen'}</p>
+    </HeaderWrapper>
+  );
+};
+
+export default withRouter(Header);
