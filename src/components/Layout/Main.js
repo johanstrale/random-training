@@ -4,12 +4,11 @@ import styled from 'styled-components';
 
 import Home from '../Home';
 import Settings from '../Settings';
-import Workout from '../Workout';
+import Random from '../Random';
 import Excersises from '../Excersises';
 
 const MainWrapper = styled.main`
   display: flex;
-  align-items: center;
   justify-content: center;
   overflow-y: auto;
   padding-top: 35px;
@@ -23,7 +22,7 @@ const Main = props => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/settings" component={Settings} />
-        <Route path="/random" component={Workout} />
+        <Route path="/random" component={Random} />
         <Route path="/excersises" component={Excersises} />
       </Switch>
     </MainWrapper>

@@ -25,17 +25,17 @@ const AccordionLabelWrapper = styled.div`
   }
 
   .group {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 
   .type {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .title {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.4rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.3rem;
   }
 `;
 
@@ -44,8 +44,9 @@ const AccordionContentWrapper = styled.div`
   background-color: ${props => props.theme.accordionColor};
   display: ${props => (props.isOpen ? 'block' : 'none')};
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   padding: 13px;
+  line-height: 1.5;
   animation: fadein 0.35s ease-in
 
   @keyframes fadein {
@@ -93,7 +94,7 @@ class Excersise extends Component {
                 {muscleGroups.map((group, i, arr) => `${translations[group]}${arr.length - 1 === i ? '' : ' / '}`)}
               </p>
             </span>
-            <FontAwesomeIcon icon={isOpen ? faMinus : faPlus } />
+            <FontAwesomeIcon icon={isOpen ? faMinus : faPlus } size={'xs'}/>
           </AccordionLabelWrapper>
           <AccordionContentWrapper isOpen={isOpen}>
             <p>{variations[1] ? variations[1].description : variations[0].description}</p>

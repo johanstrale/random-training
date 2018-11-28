@@ -24,7 +24,7 @@ class Excersises extends Component {
             <Fragment key={i}>
               <Excersise excersise={excersise} />
             </Fragment>
-          );
+              );
         })}
       </ExcersisesWrapper>
     );

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Excersise from '../Excersise';
 import fetchExcersises from '../../actions/excersises';
 
-const WorkoutWrapper = styled.div`
+const RandomWrapper = styled.div`
   width: 100%;
 `;
 
@@ -14,7 +14,7 @@ const HeadlineWrapper = styled.div`
   text-align: center;
 `;
 
-class Workout extends Component {
+class Random extends Component {
   componentDidMount() {
     this.props.fetchExcersises();
   }
@@ -23,7 +23,7 @@ class Workout extends Component {
     const { excersises } = this.props;
 
     return (
-      <WorkoutWrapper>
+      <RandomWrapper>
         <HeadlineWrapper>1:a</HeadlineWrapper>
         {excersises.length > 0 ? <Excersise excersise={excersises[0]} /> : null}
         {excersises.length > 0 ? <Excersise excersise={excersises[0]} /> : null}
@@ -36,7 +36,7 @@ class Workout extends Component {
         <HeadlineWrapper>4:a</HeadlineWrapper>
         {excersises.length > 0 ? <Excersise excersise={excersises[0]} /> : null}
         {excersises.length > 0 ? <Excersise excersise={excersises[0]} /> : null}
-      </WorkoutWrapper>
+      </RandomWrapper>
     );
   }
 }
@@ -52,4 +52,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Workout);
+)(Random);
