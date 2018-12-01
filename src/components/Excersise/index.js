@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,7 +11,6 @@ const ExcersiseWrapper = styled.div`
 `;
 
 const AccordionLabelWrapper = styled.div`
-
   color: ${props => props.theme.textColor};
   padding: 10px;
   display: flex;
@@ -20,7 +19,7 @@ const AccordionLabelWrapper = styled.div`
 
   .type,
   .group {
-    color: #C5C9C9;
+    color: #c5c9c9;
     font-weight: 400;
   }
 
@@ -39,25 +38,25 @@ const AccordionLabelWrapper = styled.div`
   }
 `;
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
 const AccordionContentWrapper = styled.div`
-  color: white;
-  background-color: ${props => props.theme.accordionColor};
+  color: ${props => props.theme.textColor};
+  background-color: ${props => props.theme.overlayBrightColor};
   display: ${props => (props.isOpen ? 'block' : 'none')};
   font-weight: 400;
   font-size: 0.7rem;
   padding: 13px;
   line-height: 1.5;
-  animation: fadein 0.35s ease-in
-
-  @keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
+  animation: ${fadeIn} 0.35s ease-in;
 `;
 
 class Excersise extends Component {
@@ -94,7 +93,7 @@ class Excersise extends Component {
                 {muscleGroups.map((group, i, arr) => `${translations[group]}${arr.length - 1 === i ? '' : ' / '}`)}
               </p>
             </span>
-            <FontAwesomeIcon icon={isOpen ? faMinus : faPlus } size={'xs'}/>
+            <FontAwesomeIcon icon={isOpen ? faMinus : faPlus} size={'xs'} />
           </AccordionLabelWrapper>
           <AccordionContentWrapper isOpen={isOpen}>
             <p>{variations[1] ? variations[1].description : variations[0].description}</p>

@@ -6,7 +6,7 @@ import Main from './Layout/Main';
 import Navigation from './Layout/Navigation';
 
 const AppWrapper = styled.div`
-  background-color: ${props => props.theme.backgroundColor};
+  background-color: ${props => props.theme.baseColor};
 `;
 
 const App = () => {

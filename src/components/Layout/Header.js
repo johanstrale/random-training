@@ -13,9 +13,8 @@ const HeaderWrapper = styled.header`
   align-items: center;
   justify-content: center;
   color: ${props => props.theme.textColor};
-  background-color: ${props => props.theme.overlayColor};
+  background-color: ${props => props.theme.headerColor};
   border-bottom: solid 1px ${props => props.theme.borderColor};
-  z-index: 1;
 
   & p {
     font-size: 1.1rem;

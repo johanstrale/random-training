@@ -14,6 +14,8 @@ export const defaultTheme = {
   textColor: 'white',
   borderColor: '#a9a9a9',
   overlayColor: '#393939',
-  accordionColor: '#626363',
-  backgroundColor: '#000000'
+  overlayBrightColor: '#626363',
+  baseColor: '#000000',
+  headerColor: '#000000',
+  navigationColor: '#000000'
 };
