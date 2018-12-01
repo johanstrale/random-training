@@ -16515,26 +16515,6 @@ export default [
     ]
   },
   {
-    name: 'Vila',
-    muscleGroups: ['arms', 'back', 'abs', 'legs', 'glutes', 'chest', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Andas ut och återhämta dig.',
-        resourceUrl: null,
-        media: [
-          {
-            id: 2351,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Una9uLzrOxzlXGhv'
-          }
-        ],
-        id: 3954
-      }
-    ]
-  },
-  {
     name: 'Vindrutetorkaren',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength', 'agility'],
