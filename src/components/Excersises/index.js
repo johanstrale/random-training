@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
-import fetchExcersises from '../../actions/excersises';
 import Excersise from '../Excersise';
 
 const ExcersisesWrapper = styled.div`
@@ -10,10 +9,6 @@ const ExcersisesWrapper = styled.div`
 `;
 
 class Excersises extends Component {
-  componentDidMount() {
-    this.props.fetchExcersises();
-  }
-
   render() {
     const { excersises } = this.props;
 
@@ -22,24 +17,17 @@ class Excersises extends Component {
         {excersises.map((excersise, i) => {
           return (
             <Fragment key={i}>
-              <Excersise excersise={excersise} />
+              <Excersise excersise={excersise} border={i === excersises.length - 1 ? false : true} />
             </Fragment>
-              );
+          );
         })}
       </ExcersisesWrapper>
     );
   }
 }
 
-const mapDispatchToProps = {
-  fetchExcersises
-};
-
 const mapStateToProps = state => ({
   excersises: state.excersises
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Excersises);
+export default connect(mapStateToProps)(Excersises);

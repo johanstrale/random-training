@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
+import fetchExcersises from '../../actions/excersises';
 import Home from '../Home';
 import Settings from '../Settings';
 import Random from '../Random';
@@ -16,17 +19,32 @@ const MainWrapper = styled.main`
   min-height: 100vh;
 `;
 
-const Main = props => {
-  return (
-    <MainWrapper>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/settings" component={Settings} />
-        <Route path="/random" component={Random} />
-        <Route path="/excersises" component={Excersises} />
-      </Switch>
-    </MainWrapper>
-  );
+class Main extends Component {
+  componentDidMount() {
+    this.props.fetchExcersises();
+  }
+
+  render() {
+    return (
+      <MainWrapper>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/settings" component={Settings} />
+          <Route path="/random" component={Random} />
+          <Route path="/excersises" component={Excersises} />
+        </Switch>
+      </MainWrapper>
+    );
+  }
+}
+
+const mapDispatchToProps = {
+  fetchExcersises
 };
 
-export default Main;
+export default withRouter(
+  connect(
+    null,
+    mapDispatchToProps
+  )(Main)
+);

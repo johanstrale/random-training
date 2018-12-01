@@ -6,7 +6,8 @@ import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import translations from '../../assets/translations';
 
 const ExcersiseWrapper = styled.div`
-  border-bottom: solid 1px ${props => props.theme.borderColor};
+  ${({ border, theme }) => border && `border-bottom: solid 1px ${theme.borderColor}`};
+  ${({ border, theme }) => !border && `border-radius: 0 0 10px 10px`};
   background-color: ${props => props.theme.overlayColor};
 `;
 
@@ -75,14 +76,15 @@ class Excersise extends Component {
   render() {
     const {
       props: {
-        excersise: { name, trainingTypes, muscleGroups, variations }
+        excersise: { name, trainingTypes, muscleGroups, variations },
+        border = true
       },
       state: { isOpen }
     } = this;
 
     return (
       <Fragment>
-        <ExcersiseWrapper>
+        <ExcersiseWrapper border={border}>
           <AccordionLabelWrapper onClick={() => this.onClick()}>
             <span>
               <p className="type">
