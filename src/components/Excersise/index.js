@@ -7,7 +7,7 @@ import translations from '../../assets/translations';
 
 const ExcersiseWrapper = styled.div`
   ${({ border, theme }) => border && `border-bottom: solid 1px ${theme.borderColor}`};
-  ${({ border, theme }) => !border && `border-radius: 0 0 5px 5px`};
+  ${({ border, theme }) => !border && `border-radius: 0 0 3px 3px`};
   background-color: ${props => props.theme.overlayColor};
 `;
 

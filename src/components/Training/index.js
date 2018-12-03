@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause, faRandom } from '@fortawesome/free-solid-svg-icons';
 
 import Workout from '../Workout';
 
@@ -12,10 +14,9 @@ const ButtonWrapper = styled.button`
   text-decoration: none;
   background: #eac67a;
   color: ${props => props.theme.overlayColor};
-  font-weight: 400;
-  width: 80px;
-  height: 80px;
-  line-height: 75px;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
@@ -25,11 +26,9 @@ const ButtonWrapper = styled.button`
 
   :active {
     border: solid 2px ${props => props.theme.overlayBrightColor};
-    color: ${props => props.theme.overlayBrightColor};
+    opacity: 0.9;
   }
-`;
 
-const ExtendedButtonWrapper = styled(ButtonWrapper)`
   :disabled {
     background: grey;
     box-shadow: 0px 0px 0px 5px grey;
@@ -39,6 +38,8 @@ const ExtendedButtonWrapper = styled(ButtonWrapper)`
   }
 `;
 
+const ExtendedButtonWrapper = styled(ButtonWrapper)``;
+
 const ButtonsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,8 @@ const ButtonsWrapper = styled.div`
 
 class Training extends Component {
   state = {
-    isActive: false
+    isActive: false,
+    isStarted: false
   };
 
   render() {
@@ -59,8 +61,15 @@ class Training extends Component {
     return (
       <TrainingWrapper>
         <ButtonsWrapper>
-          <ButtonWrapper onClick={() => this.setState({ isActive: true })}>Slumpa</ButtonWrapper>
-          <ExtendedButtonWrapper disabled={!this.state.isActive}>Starta</ExtendedButtonWrapper>
+          <ButtonWrapper disabled={this.state.isStarted} onClick={() => this.setState({ isActive: true })}>
+            <FontAwesomeIcon icon={faRandom} size="lg" />
+          </ButtonWrapper>
+          <ExtendedButtonWrapper
+            onClick={() => this.setState({ isStarted: !this.state.isStarted })}
+            disabled={!this.state.isActive}
+          >
+            <FontAwesomeIcon icon={this.state.isStarted ? faPause : faPlay} size="lg" />
+          </ExtendedButtonWrapper>
         </ButtonsWrapper>
         {isActive && <Workout excersises={listExcersise} />}
       </TrainingWrapper>
