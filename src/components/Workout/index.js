@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Excersise from '../Excersise';
 
 const HeadlineWrapper = styled.div`
-  padding-left: 9px;
+  padding-left: 10px;
   margin-bottom: 8px;
   color: white;
   background-color: ${props => props.theme.overlayBrightColor};

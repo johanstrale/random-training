@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import fetchExcersises from '../../actions/excersises';
 import Home from '../Home';
 import Settings from '../Settings';
-import Train from '../Train';
+import Training from '../Training';
 import Excersises from '../Excersises';
 
 const MainWrapper = styled.main`
@@ -30,7 +30,7 @@ class Main extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/settings" component={Settings} />
-          <Route path="/train" component={Train} />
+          <Route path="/training" component={Training} />
           <Route path="/excersises" component={Excersises} />
         </Switch>
       </MainWrapper>

@@ -17,7 +17,7 @@ const Navigation = props => (
   <NavigationWrapper>
     <Menu>
       <Menu.MenuItem to="/excersises" icon={faClipboardList} value={translations['/excersises']} />
-      <Menu.MenuItem to="/train" icon={faDumbbell} value={translations['/train']} />
+      <Menu.MenuItem to="/training" icon={faDumbbell} value={translations['/training']} />
       <Menu.MenuItem to="/settings" icon={faCogs} value={translations['/settings']} />
     </Menu>
   </NavigationWrapper>
