@@ -15,7 +15,7 @@ const WorkoutWrapper = styled.div`
 `;
 
 const WorkoutSection = styled.div`
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: ${props => props.theme.overlayBrightColor};
   padding-top: 10px;
   margin-bottom: 15px;
