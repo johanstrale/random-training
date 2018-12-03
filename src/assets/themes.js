@@ -13,9 +13,9 @@ export const blueTheme = {
 export const defaultTheme = {
   textColor: 'white',
   borderColor: '#a9a9a9',
-  overlayColor: '#393939',
-  overlayBrightColor: '#626363',
-  baseColor: '#000000',
-  headerColor: '#000000',
-  navigationColor: '#000000'
+  overlayColor: '#233237',
+  overlayBrightColor: '#3E5760',
+  baseColor: '#18121E',
+  headerColor: '#18121E',
+  navigationColor: '#18121E'
 };

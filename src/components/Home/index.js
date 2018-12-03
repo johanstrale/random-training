@@ -4,9 +4,7 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 const HomeWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 `;
 
 const Home = props => (

@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { faCogs, faClipboardList, faRandom } from '@fortawesome/free-solid-svg-icons';
+import { faCogs, faClipboardList, faDumbbell } from '@fortawesome/free-solid-svg-icons';
 
+import translations from '../../assets/translations';
 import Menu from '../Menu';
 
 const NavigationWrapper = styled.nav`
@@ -15,9 +16,9 @@ const NavigationWrapper = styled.nav`
 const Navigation = props => (
   <NavigationWrapper>
     <Menu>
-      <Menu.MenuItem to="/excersises" icon={faClipboardList} value={1} />
-      <Menu.MenuItem to="/random" icon={faRandom} value={2} />
-      <Menu.MenuItem to="/settings" icon={faCogs} value={3} />
+      <Menu.MenuItem to="/excersises" icon={faClipboardList} value={translations['/excersises']} />
+      <Menu.MenuItem to="/train" icon={faDumbbell} value={translations['/train']} />
+      <Menu.MenuItem to="/settings" icon={faCogs} value={translations['/settings']} />
     </Menu>
   </NavigationWrapper>
 );

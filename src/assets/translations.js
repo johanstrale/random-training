@@ -1,6 +1,6 @@
 const data = {
   '/excersises': 'Övningar',
-  '/random': 'Slumpa',
+  '/train': 'Träna',
   '/settings': 'Inställningar',
   arms: 'Armar',
   back: 'Rygg',

@@ -10,21 +10,10 @@ const MenuWrapper = styled.div`
 `;
 
 class Menu extends Component {
-  state = {
-    value: false
-  };
-
   static MenuItem = MenuItem;
 
   render() {
-    const { value } = this.state;
-    const children = React.Children.map(this.props.children, child =>
-      React.cloneElement(child, {
-        isSelected: child.props.value === value
-      })
-    );
-
-    return <MenuWrapper>{children}</MenuWrapper>;
+    return <MenuWrapper>{this.props.children}</MenuWrapper>;
   }
 }
 
