@@ -13,7 +13,7 @@ const HeadlineWrapper = styled.div`
 `;
 
 const WorkoutWrapper = styled.div`
-  padding: 10px;
+  margin: 10px;
 `;
 
 const WorkoutSection = styled.div`
@@ -30,24 +30,24 @@ class Workout extends Component {
     return (
       <WorkoutWrapper>
         <WorkoutSection>
-          <HeadlineWrapper>Block 1</HeadlineWrapper>
+          <HeadlineWrapper>Block 1 - x3</HeadlineWrapper>
           {excersises.length > 0 ? <Excersise excersise={excersises[0]} /> : null}
-          {excersises.length > 0 ? <Excersise excersise={excersises[1]} border={false} /> : null}
+          {excersises.length > 0 ? <Excersise excersise={excersises[1]} /> : null}
         </WorkoutSection>
         <WorkoutSection>
-          <HeadlineWrapper>Block 2</HeadlineWrapper>
+          <HeadlineWrapper>Block 2 - x3</HeadlineWrapper>
           {excersises.length > 0 ? <Excersise excersise={excersises[2]} /> : null}
-          {excersises.length > 0 ? <Excersise excersise={excersises[3]} border={false} /> : null}
+          {excersises.length > 0 ? <Excersise excersise={excersises[3]} /> : null}
         </WorkoutSection>
         <WorkoutSection>
-          <HeadlineWrapper>Block 3</HeadlineWrapper>
+          <HeadlineWrapper>Block 3 - x3</HeadlineWrapper>
           {excersises.length > 0 ? <Excersise excersise={excersises[4]} /> : null}
-          {excersises.length > 0 ? <Excersise excersise={excersises[5]} border={false} /> : null}
+          {excersises.length > 0 ? <Excersise excersise={excersises[5]} /> : null}
         </WorkoutSection>
         <WorkoutSection>
-          <HeadlineWrapper>Block 4</HeadlineWrapper>
+          <HeadlineWrapper>Block 4 - x3</HeadlineWrapper>
           {excersises.length > 0 ? <Excersise excersise={excersises[6]} /> : null}
-          {excersises.length > 0 ? <Excersise excersise={excersises[7]} border={false} /> : null}
+          {excersises.length > 0 ? <Excersise excersise={excersises[7]} /> : null}
         </WorkoutSection>
       </WorkoutWrapper>
     );

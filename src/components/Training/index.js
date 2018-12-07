@@ -1,44 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faPause, faRandom } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faPause, faRandom, faRedo } from '@fortawesome/free-solid-svg-icons';
 
 import Workout from '../Workout';
+import RoundButton from '../Buttons/RoundButton';
+import Timer from '../Timer';
 
 const TrainingWrapper = styled.div`
   width: 100%;
 `;
-
-const ButtonWrapper = styled.button`
-  text-decoration: none;
-  background: #eac67a;
-  color: ${props => props.theme.overlayColor};
-  width: 60px;
-  height: 60px;
-  line-height: 55px;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  overflow: hidden;
-  box-shadow: 0px 0px 0px 5px #eac67a;
-  border: solid 2px ${props => props.theme.overlayColor};
-
-  :active {
-    border: solid 2px ${props => props.theme.overlayBrightColor};
-    opacity: 0.9;
-  }
-
-  :disabled {
-    background: grey;
-    box-shadow: 0px 0px 0px 5px grey;
-    color: lightGrey;
-    border: solid 2px lightGrey;
-    opacity: 0.5;
-  }
-`;
-
-const ExtendedButtonWrapper = styled(ButtonWrapper)``;
 
 const ButtonsWrapper = styled.div`
   display: flex;
@@ -48,30 +19,35 @@ const ButtonsWrapper = styled.div`
 
 class Training extends Component {
   state = {
-    isActive: false,
-    isStarted: false
+    isGenerated: false,
+    isStarted: false,
+    seconds: 10,
+    minutes: 13
   };
+
+  randomise() {
+    this.setState({});
+  }
 
   render() {
     const { excersises } = this.props;
-    const { isActive } = this.state;
+    const { isGenerated, isStarted, minutes, seconds } = this.state;
 
     const listExcersise = excersises.slice(0, 8);
 
     return (
       <TrainingWrapper>
         <ButtonsWrapper>
-          <ButtonWrapper disabled={this.state.isStarted} onClick={() => this.setState({ isActive: true })}>
-            <FontAwesomeIcon icon={faRandom} size="lg" />
-          </ButtonWrapper>
-          <ExtendedButtonWrapper
-            onClick={() => this.setState({ isStarted: !this.state.isStarted })}
-            disabled={!this.state.isActive}
-          >
-            <FontAwesomeIcon icon={this.state.isStarted ? faPause : faPlay} size="lg" />
-          </ExtendedButtonWrapper>
+          <RoundButton icon={faRedo} handleClick={() => {}} disabled={isStarted || !isGenerated} />
+          <RoundButton icon={faRandom} handleClick={() => this.setState({ isGenerated: true })} disabled={isStarted} />
+          <RoundButton
+            icon={isStarted ? faPause : faPlay}
+            handleClick={() => this.setState({ isStarted: !isStarted })}
+            disabled={!isGenerated}
+          />
         </ButtonsWrapper>
-        {isActive && <Workout excersises={listExcersise} />}
+        <Timer isRunning={isStarted} isShown={isGenerated} minutes={10} seconds={11} label={'Träna'} />
+        {isGenerated && <Workout excersises={listExcersise} step={0} />}
       </TrainingWrapper>
     );
   }
