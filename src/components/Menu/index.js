@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 
 const MenuWrapper = styled.div`
   display: flex;
-  color: white;
+  color: ${props => props.theme.textColor};
   height: 40px;
 `;
 

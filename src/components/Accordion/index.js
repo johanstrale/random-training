@@ -16,7 +16,7 @@ const AccordionWrapper = styled.div`
 
   .top,
   .bottom {
-    color: #c5c9c9;
+    color: ${props => props.theme.passiveTextColor};
     font-weight: 400;
   }
 
@@ -52,7 +52,7 @@ class Accordion extends Component {
 
   render() {
     const {
-      props: { label, top, bottom },
+      props: { label, top, bottom, children },
       state: { isOpen }
     } = this;
 
@@ -66,7 +66,7 @@ class Accordion extends Component {
           </span>
           <FontAwesomeIcon icon={isOpen ? faMinus : faPlus} size={'xs'} />
         </AccordionWrapper>
-        {isOpen && this.props.children}
+        {isOpen && children}
       </Fragment>
     );
   }

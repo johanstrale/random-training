@@ -4,29 +4,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ButtonWrapper = styled.button`
   text-decoration: none;
-  background: #eac67a;
+  background: ${props => props.theme.buttonColor};
   color: ${props => props.theme.overlayColor};
-  width: 40px;
-  height: 40px;
-  line-height: 35px;
+  width: 45px;
+  height: 45px;
+  line-height: 40px;
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
   overflow: hidden;
-  box-shadow: 0px 0px 0px 5px #eac67a;
+  box-shadow: 0px 0px 0px 2px ${props => props.theme.buttonColor};
   border: solid 2px ${props => props.theme.overlayColor};
 
   :active {
-    border: solid 2px ${props => props.theme.overlayBrightColor};
-    opacity: 0.9;
+    opacity: 0.5;
   }
 
   :disabled {
-    background: grey;
-    box-shadow: 0px 0px 0px 5px grey;
-    color: lightGrey;
-    border: solid 2px lightGrey;
-    opacity: 0.5;
+    background: ${props => props.theme.buttonDisabledColor};
+    box-shadow: 0px 0px 0px 2px ${props => props.theme.buttonDisabledColor};
+    color: ${props => props.theme.buttonDisabledBorderColor};
+    border: solid 2px ${props => props.theme.buttonDisabledBorderColor};
+    opacity: 0.4;
   }
 `;
 

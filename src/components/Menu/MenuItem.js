@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 
 const MenuItemWrapper = styled.div`
   margin: auto;
-  & a {
-    color: white;
+  a {
+    color: ${props => props.theme.textColor};
     text-decoration: none;
     text-align: center;
   }
@@ -21,15 +21,15 @@ const MenuTextWrapper = styled(MenuIconWrapper)`
   font-weigth: 400;
 `;
 
-const MenuItem = ({ to, icon, value }) => (
+const MenuItem = ({ to, icon, value, theme }) => (
   <MenuItemWrapper>
     <Link to={to}>
       <MenuIconWrapper>
-        <FontAwesomeIcon icon={icon} color="white" size="sm" />
+        <FontAwesomeIcon icon={icon} color={theme.textColor} size="sm" />
       </MenuIconWrapper>
       <MenuTextWrapper>{value}</MenuTextWrapper>
     </Link>
   </MenuItemWrapper>
 );
 
-export default MenuItem;
+export default withTheme(MenuItem);

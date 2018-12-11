@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import fetchExcersises from '../../actions/excersises';
 import Home from '../Home';
 import Settings from '../Settings';
-import Training from '../Training';
+import Random from '../Random';
 import Excersises from '../Excersises';
 
 const MainWrapper = styled.main`
@@ -17,6 +17,7 @@ const MainWrapper = styled.main`
   padding-top: 35px;
   padding-bottom: 39px;
   min-height: 100vh;
+  width: 100%;
 `;
 
 class Main extends Component {
@@ -30,7 +31,7 @@ class Main extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/settings" component={Settings} />
-          <Route path="/training" component={Training} />
+          <Route path="/random" component={Random} />
           <Route path="/excersises" component={Excersises} />
         </Switch>
       </MainWrapper>

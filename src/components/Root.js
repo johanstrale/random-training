@@ -6,6 +6,7 @@ import { createGlobalStyle } from 'styled-components';
 import ThemeProvider from './Theme';
 import { defaultTheme } from '../assets/themes';
 import App from './App';
+import Workout from './Workout';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -25,6 +26,7 @@ const Root = ({ store }) => (
         <GlobalStyle />
         <Router>
           <Switch>
+            <Route exact path="/workout" component={Workout} />
             <Route path="/" component={App} />
           </Switch>
         </Router>
