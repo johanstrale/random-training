@@ -28,14 +28,25 @@ class Random extends Component {
     history.push('/workout');
   }
 
-  generateTraining() {
+  getRandomExcersises() {
     const { excersises } = this.props;
-    const workoutObject = [];
-    workoutObject.push({ block: 1, excersises: excersises.slice(0, 2) });
-    workoutObject.push({ block: 2, excersises: excersises.slice(2, 4) });
-    workoutObject.push({ block: 3, excersises: excersises.slice(4, 6) });
-    workoutObject.push({ block: 4, excersises: excersises.slice(6, 8) });
-    this.props.setCurrentWorkout(workoutObject);
+    const excersiseList = [];
+    while (excersiseList.length < 2) {
+      excersiseList.push(excersises[Math.floor(Math.random() * excersises.length)]);
+    }
+    return excersiseList;
+  }
+
+  generateTraining() {
+    const workout = [];
+
+    while (workout.length < 4) {
+      workout.push({
+        block: workout.length + 1,
+        excersises: this.getRandomExcersises()
+      });
+    }
+    this.props.setCurrentWorkout(workout);
   }
 
   render() {

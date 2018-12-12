@@ -31,7 +31,7 @@ const AccordionWrapper = styled.div`
   .label {
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 `;
 

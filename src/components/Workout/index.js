@@ -1,5 +1,21 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const Workout = () => <div>Hello</div>;
+const Workout = props => (
+  <div>
+    {props.training.currentWorkout.map(item => (
+      <p>{item.block}</p>
+    ))}
+  </div>
+);
 
-export default Workout;
+const mapDispatchToProps = {};
+
+const mapStateToProps = state => ({
+  training: state.training
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Workout);

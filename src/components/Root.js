@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     height: 100%;
     font-family: Chivo, sans-serif;
-    font-weight: 900;
+    font-weight: 700;
   }
 `;
 
