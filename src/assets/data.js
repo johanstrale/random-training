@@ -1,6 +1,7 @@
 export default [
   {
     name: 'Alien',
+    mainMuscleGroup: 'body',
     muscleGroups: ['arms', 'back', 'abs', 'legs', 'chest', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -42,6 +43,7 @@ export default [
   },
   {
     name: 'Anatomiska utfall',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['arms', 'back', 'legs', 'glutes', 'shoulders'],
     trainingTypes: ['agility', 'strength'],
     variations: [
@@ -88,6 +90,7 @@ export default [
   },
   {
     name: 'Armhävning',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -182,6 +185,7 @@ export default [
   },
   {
     name: 'Armhävning med benlyft',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -291,6 +295,7 @@ export default [
   },
   {
     name: 'Armhävningsklättraren',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -415,6 +420,7 @@ export default [
   },
   {
     name: 'Axelpress',
+    mainMuscleGroup: 'shoulders',
     muscleGroups: ['arms', 'back', 'abs', 'chest', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -509,6 +515,7 @@ export default [
   },
   {
     name: 'Bergsklättraren',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -603,6 +610,7 @@ export default [
   },
   {
     name: 'Bred armhävning',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -697,6 +705,7 @@ export default [
   },
   {
     name: 'Brygglyft',
+    mainMuscleGroup: 'body',
     muscleGroups: ['glutes', 'legs', 'abs', 'back', 'arms', 'shoulders', 'chest'],
     trainingTypes: ['strength'],
     variations: [
@@ -795,43 +804,8 @@ export default [
     ]
   },
   {
-    name: 'Brygglyft',
-    muscleGroups: ['glutes', 'legs', 'abs', 'back', 'arms', 'shoulders', 'chest'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Börja i sittande position med händer i marken bakom rygg, böjda ben och fötter i underlaget. Pressa händer mot underlaget och lyft upp bröst och höft tills bål och lår är i linje. Tänk att du lyfter upp svanskotan och håll rumpa och mage spända genom hela övningen. \n',
-        resourceUrl: 'https://www.youtube.com/watch?v=q-EqEMUrbtM',
-        media: [
-          {
-            id: 2564,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/yh8XOXPvWo0sakKQ'
-          },
-          {
-            id: 2565,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CzTieoDlcXQFc6y2'
-          },
-          {
-            id: 2566,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FUsbnP7B5SZg1gRY'
-          },
-          {
-            id: 2586,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/445_brygglyft_level1 608x1080NY.mp4'
-          }
-        ],
-        id: 4121
-      }
-    ]
-  },
-  {
     name: 'Brygglyft med armpress',
+    mainMuscleGroup: 'body',
     muscleGroups: ['glutes', 'legs', 'abs', 'back', 'arms', 'shoulders', 'chest'],
     trainingTypes: ['strength'],
     variations: [
@@ -925,167 +899,8 @@ export default [
     ]
   },
   {
-    name: 'Bröstmuskeltöj liggande höger',
-    muscleGroups: ['chest', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på mage med armen du stretchar böjd 90 grader, armbågen strax ovan axelhöjd mot underlaget. Använd andra handens handflata som stöd och tryck upp din sida lätt, samtidigt som du lyfter motsvarande fot som strävar mot underlaget på sidan du stretchar. Tänk att du skapar en vridning där stretchsidans bröst- och axelparti trycks ner mot underlaget.',
-        resourceUrl: 'https://youtu.be/JHmTZLoAsUs',
-        media: [
-          {
-            id: 841,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/S7dLAVTAvtEnFSJv'
-          },
-          {
-            id: 840,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/DbMgHD9z83YIoRgy'
-          },
-          {
-            id: 839,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vCT0VsoFjdGh1KSh'
-          },
-          {
-            id: 838,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/077_brostmuskeltoj_liggande_150521.mp4'
-          }
-        ],
-        id: 3727
-      }
-    ]
-  },
-  {
-    name: 'Bröstmuskeltöj liggande vänster',
-    muscleGroups: ['arms', 'chest', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på mage med armen du stretchar böjd 90 grader, armbågen strax ovan axelhöjd mot underlaget. Använd andra handens handflata som stöd och tryck upp din sida lätt, samtidigt som du lyfter motsvarande fot som strävar mot underlaget på sidan du stretchar. Tänk att du skapar en vridning där stretchsidans bröst- och axelparti trycks ner mot underlaget.',
-        resourceUrl: 'https://youtu.be/JHmTZLoAsUs',
-        media: [
-          {
-            id: 2083,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/BDMWUkHRMMNslrds'
-          },
-          {
-            id: 2082,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/NAJXqwcqGM6L5VJ7'
-          },
-          {
-            id: 2081,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vyIlJxWlhN7qljok'
-          },
-          {
-            id: 2080,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/077_brostmuskeltoj_liggande_150521.mp4'
-          }
-        ],
-        id: 3728
-      }
-    ]
-  },
-  {
-    name: 'Bröstmuskeltöj stående höger',
-    muscleGroups: ['chest', 'arms'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå upp i gångstående med sidan du ska stretcha vänd mot t ex ett träd eller en kompis. Stretchsidans fot framför den motsatta foten. Placera armbåge och underarm mot trädet etc, strax ovan axelhöjd. Tryck fram axel och bröst med stark mage. Du kan gärna förstärka sträckningen genom att också vrida dig lite utåt, bort från armen.',
-        resourceUrl: 'https://youtu.be/eSONlggxUEI',
-        media: [
-          {
-            id: 2128,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/flsPRMPUJ6eDM8Jg'
-          },
-          {
-            id: 2127,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/d1tOCQ8mJg36os0S'
-          },
-          {
-            id: 2126,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/090_brostmuskeltoj_staende_150521.mp4'
-          }
-        ],
-        id: 3729
-      }
-    ]
-  },
-  {
-    name: 'Bröstmuskeltöj stående vänster',
-    muscleGroups: ['arms', 'chest'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå upp i gångstående intill ett träd/en vägg/mot en vän där stretchsidan är vänd mot. Den sidans fot står framför. Placera armbåge och underarm mot, strax ovan axelhöjd. Tryck fram axel och bröst med stark mage. Du kan gärna förstärka sträckningen genom att också vrida dig lite utåt, bort från armen.',
-        resourceUrl: 'https://youtu.be/eSONlggxUEI',
-        media: [
-          {
-            id: 2126,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/090_brostmuskeltoj_staende_150521.mp4'
-          },
-          {
-            id: 2127,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/d1tOCQ8mJg36os0S'
-          },
-          {
-            id: 2128,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/flsPRMPUJ6eDM8Jg'
-          }
-        ],
-        id: 3735
-      }
-    ]
-  },
-  {
-    name: 'Buddastretch',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength', 'agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå upp på ett ben, ta stöd mot något om du vill. Placera ena foten mot motsatt lår eller knä. Fäll knä i sidled och sitt ner så djupt du kan med ryggen rak och magen stark. Känn att det sträcker i sätet. Stödjebenets knä pekar i riktning över foten. Statisk styrka för stödjeben.',
-        resourceUrl: 'https://youtu.be/yfQPwJSVXrg',
-        media: [
-          {
-            id: 189,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/072_buddastretch_150521.mp4'
-          },
-          {
-            id: 188,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/oz9rlWirQARSXaLN'
-          }
-        ],
-        id: 3736
-      }
-    ]
-  },
-  {
     name: 'Buddhaknäböj',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -1179,137 +994,8 @@ export default [
     ]
   },
   {
-    name: 'Buga/sträck',
-    muscleGroups: ['arms', 'back', 'abs', 'legs', 'chest', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ta ett stort steg fram och sträck höften framåt genom att lätta på bakre fotens häl och sträcka upp armarna rakt uppåt med tummarna riktade bakåt. Öppna upp i höft och axlar. Gör sedan utfallssteg och sitt bak med rumpan med framåtfälld rygg där främre benet är sträckt och hälen är i underlaget. Sträck armar bak och upp med tummar upp.',
-        resourceUrl: 'https://youtu.be/gxAzZWy0I0I',
-        media: [
-          {
-            id: 207,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/262_buga_strack_150521.mp4'
-          },
-          {
-            id: 206,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/pNM2BbZUz2mzVbJG'
-          },
-          {
-            id: 205,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/inkwSbse0Sv8jLlN'
-          },
-          {
-            id: 204,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FwS5GyBfJ17U9UXA'
-          }
-        ],
-        id: 3740
-      }
-    ]
-  },
-  {
-    name: 'Buksvinet',
-    muscleGroups: ['abs', 'back', 'shoulders'],
-    trainingTypes: ['strength', 'agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Plankaposition på raka armar och knän mot underlag. Händerna rakt under axlar. För fram höften och bilda en rak linje genom bål och lår. Sänk ner höften i en väl kontrollerad rörelse och dra sedan upp igen till utgångsläget. Stark mage. ',
-        resourceUrl: 'https://youtu.be/6LJmmDkDNYM',
-        media: [
-          {
-            id: 213,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CPJV6tTC0iPS0J78'
-          },
-          {
-            id: 212,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ZyAfpqX8eO1dzRdb'
-          },
-          {
-            id: 211,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fYEzmMrQloP7OEAC'
-          },
-          {
-            id: 208,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/304_buksvinet_level1_150521.mp4'
-          }
-        ],
-        id: 3741
-      },
-      {
-        difficulty: 1,
-        description:
-          'Plankaposition på raka armar och fötter. Händerna rakt under axlar och tryck händerna aktivt mot underlaget. Höften i rak linje genom bål och ben. Sänk ner höften i en väl kontrollerad rörelse och dra sedan upp igen till utgångsläget. ',
-        resourceUrl: 'https://youtu.be/hs3J3eAN55o',
-        media: [
-          {
-            id: 216,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/hkSNfL1HdO83Plf1'
-          },
-          {
-            id: 215,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/f3qipPCR2Wv5vup3'
-          },
-          {
-            id: 214,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fr8s09MzEKJypXkS'
-          },
-          {
-            id: 209,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/305_buksvinet_level2_150521.mp4'
-          }
-        ],
-        id: 3742
-      },
-      {
-        difficulty: 2,
-        description:
-          'Plankaposition på raka armar och fötter på förhöjning. För fram höften och bilda en rak linje genom bål och lår. Sänk höften och dra upp igen till utgångsläget.',
-        resourceUrl: 'https://youtu.be/XaDhP8gqwf0',
-        media: [
-          {
-            id: 210,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/306_buksvinet_level3_150521.mp4'
-          },
-          {
-            id: 217,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/dDDO9bWSNejPFiKs'
-          },
-          {
-            id: 218,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/jcio4lXrA4ABaNDs'
-          },
-          {
-            id: 219,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7CS4TknApuppIP0L'
-          }
-        ],
-        id: 3743
-      }
-    ]
-  },
-  {
     name: 'Burpees',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'back', 'abs', 'arms', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -1346,6 +1032,7 @@ export default [
   },
   {
     name: 'Burpees med armhävning',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'abs', 'back', 'chest', 'arms', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -1387,6 +1074,7 @@ export default [
   },
   {
     name: 'Båten',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -1481,6 +1169,7 @@ export default [
   },
   {
     name: 'Båt-twist',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -1574,53 +1263,8 @@ export default [
     ]
   },
   {
-    name: 'Bänklöpning upp/ner',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Snabba fötter upp/ner på förhöjning med armpendling. Växla gärna vilken fot som går upp först. Eftersträva upprätt bål och höga knän och att du har tyngdpunkten på främre delen av fötterna. ',
-        resourceUrl: 'https://youtu.be/a1-ongRsA6U',
-        media: [
-          {
-            id: 113,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/6ipgyMYgIiSFSI92'
-          },
-          {
-            id: 112,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/33pR6RPZlbHkaH3R'
-          },
-          {
-            id: 111,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rE8rpCejMr6iBPc6'
-          },
-          {
-            id: 110,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/m4MWVrChxv2jFwWT'
-          },
-          {
-            id: 109,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/5Q6pHnpBZBsuD4wU'
-          },
-          {
-            id: 108,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/031_banklopning_upp_ner_150521.mp4'
-          }
-        ],
-        id: 3751
-      }
-    ]
-  },
-  {
     name: 'Crunch',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -1715,6 +1359,7 @@ export default [
   },
   {
     name: 'Crunch i sidled',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -1819,6 +1464,7 @@ export default [
   },
   {
     name: 'Crunch till häldopp',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -1913,6 +1559,7 @@ export default [
   },
   {
     name: 'Cykelcrunch',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -2027,6 +1674,7 @@ export default [
   },
   {
     name: 'Diagonallyft',
+    mainMuscleGroup: 'body',
     muscleGroups: ['arms', 'shoulders', 'abs', 'back', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -2130,94 +1778,8 @@ export default [
     ]
   },
   {
-    name: 'Diagonallyft',
-    muscleGroups: ['arms', 'shoulders', 'abs', 'back', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Fyrfota knästående med händer mot underlaget precis under axlar och knän precis under höfterna. Tryck händerna lätt mot underlaget för ett lyft i skuldra och spänn magen för att stabilisera bålen. Lyft motsatt arm och ben diagonalt till linje med bålen. Tänk längd framför höjd då du lyfter. Känn att du förlänger och sträcker ut kroppen genom den sträckta armen, benet och kroppen. Blicken ned. Växelvis. \n\nHöger, vänster= 1 repetition. ',
-        resourceUrl: 'https://www.youtube.com/watch?v=yn7sae7swMA',
-        media: [
-          {
-            id: 2502,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Rlzcv8s8yplnbQzL'
-          },
-          {
-            id: 2503,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fVHo3stTAH1QbUVD'
-          },
-          {
-            id: 2504,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/xhNVQnziribyA1gY'
-          },
-          {
-            id: 2505,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ROHRzLe5CRNaxBNq'
-          },
-          {
-            id: 2506,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/xPyIxHeCixAfM2Gj'
-          },
-          {
-            id: 2507,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/qXYJFiil6ZLXb1Ud'
-          },
-          {
-            id: 2587,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/213_Diagonallyft level 1 608x1080NY.mp4'
-          }
-        ],
-        id: 4122
-      }
-    ]
-  },
-  {
     name: 'Dips',
-    muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Händer på förhöjning med fingrar pekandes fram och tyngd på handloven. Raka armar där axlarna är rakt ovan handlederna. Fötterna i underlaget, strax under knähöjd, och rumpan så nära förhöjningen som möjligt. Sänk ner genom att böja armbågarna så de riktas rakt bakåt och med rumpan så nära förhöjning som möjligt. Stark mage och stolt i bröstet. Vänd vid ca 90 grader och tryck upp genom trycket i händerna. ',
-        resourceUrl: 'https://www.youtube.com/watch?v=4-JzDvMwpeM',
-        media: [
-          {
-            id: 2583,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/TjzkCa783clpbbc2'
-          },
-          {
-            id: 2584,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fKoJGMtDN8KzzdFB'
-          },
-          {
-            id: 2585,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vC906wxedHqPYQh4'
-          },
-          {
-            id: 2582,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/430 Dips Level 1  608x1080NY.mp4'
-          }
-        ],
-        id: 4123
-      }
-    ]
-  },
-  {
-    name: 'Dips',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -2317,6 +1879,7 @@ export default [
   },
   {
     name: 'Dips med armlyft',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -2421,6 +1984,7 @@ export default [
   },
   {
     name: 'Draken',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -2525,6 +2089,7 @@ export default [
   },
   {
     name: 'Draken med vingar',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'glutes', 'abs', 'back', 'arms', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -2629,6 +2194,7 @@ export default [
   },
   {
     name: 'Enbensburpees',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'glutes', 'back', 'abs', 'arms', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -2670,6 +2236,7 @@ export default [
   },
   {
     name: 'Enbensburpees med armhävning',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'glutes', 'back', 'chest', 'abs', 'arms', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -2716,6 +2283,7 @@ export default [
   },
   {
     name: 'Enbensknäböj',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -2810,6 +2378,7 @@ export default [
   },
   {
     name: 'Enbensknäböj med diagonal vridning',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -2914,6 +2483,7 @@ export default [
   },
   {
     name: 'Enbensknäböj med fot bakom',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -2992,74 +2562,8 @@ export default [
     ]
   },
   {
-    name: 'Enbenssving framåt/bakåt höger/vänster',
-    muscleGroups: ['back', 'legs', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå på ett ben och för det andra benet fram och tillbaka. Låt armarna pendla diagonalt och kroppen rotera med i rörelsen. Starta försiktigt och gör rörelsen större eftersom, utmana balansen. Känn att du roterar runt en lodlinje med ryggraden. Ett ben i taget. ',
-        resourceUrl: 'https://youtu.be/MxCz__SJH14',
-        media: [
-          {
-            id: 438,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/oewabEfC1se8OpQy'
-          },
-          {
-            id: 437,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/5f6lRs5z7msNV242'
-          },
-          {
-            id: 436,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vf8HrwFx6ZbIvha7'
-          },
-          {
-            id: 435,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/003_enbenssving_framat_bakat_ho_va_150521.mp4'
-          }
-        ],
-        id: 3777
-      }
-    ]
-  },
-  {
-    name: 'Enbenssving inåt/utåt',
-    muscleGroups: ['back', 'legs', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå på ett ben och för det andra benet inåt, sedan utåt, i en pendelrörelse. Låt armarna pendla med diagonalt och kroppen rotera med i rörelsen. Starta försiktigt och gör rörelsen större eftersom, utmana balansen. Känn att du roterar runt en lodlinje med ryggraden.',
-        resourceUrl: 'https://youtu.be/F8TdgZi94Jw',
-        media: [
-          {
-            id: 441,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/62g6019GfXwvnPDE'
-          },
-          {
-            id: 440,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vGrIkwXHu6jboGhX'
-          },
-          {
-            id: 439,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/016_enbenssving_inat_utat_150521.mp4'
-          }
-        ],
-        id: 3778
-      }
-    ]
-  },
-  {
     name: 'Fallskärmshopparen',
+    mainMuscleGroup: 'back',
     muscleGroups: ['back', 'abs', 'shoulders', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -3163,198 +2667,8 @@ export default [
     ]
   },
   {
-    name: 'Framsida lår höger',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå på ett ben, använd stöd om du vill. Dra fot mot rumpa, knän nära varandra och för fram höften genom att spänna rumpan och hålla emot med stark mage. Känn sträckning på framsida lår. En sida i taget. ',
-        resourceUrl: 'https://youtu.be/VXRCGOzs2GE',
-        media: [
-          {
-            id: 475,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/060_framsida_lar_och_hoft_150521.mp4'
-          },
-          {
-            id: 474,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mwIY77uCaQn4mDfr'
-          },
-          {
-            id: 473,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/9MTDs0WXw95FgO8d'
-          }
-        ],
-        id: 3782
-      }
-    ]
-  },
-  {
-    name: 'Framsida lår vänster',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå på ett ben, använd stöd om du vill. Dra fot mot rumpa, knän nära varandra och för fram höften genom att spänna rumpan och hålla emot med stark mage. Känn sträckning på framsida lår. En sida i taget. ',
-        resourceUrl: 'https://youtu.be/VXRCGOzs2GE',
-        media: [
-          {
-            id: 2079,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/XbDUBi9oYNN6NhiX'
-          },
-          {
-            id: 2078,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/55hDrg5qKGcS30BU'
-          },
-          {
-            id: 2077,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/060_framsida_lar_och_hoft_150521.mp4'
-          }
-        ],
-        id: 3783
-      }
-    ]
-  },
-  {
-    name: 'Framsida underben höger',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå upp med ena fotens ovansida mot underlaget. Sträck i vrist, knä och höft. Sträva efter sträckning på framsida fotled och/eller underben.',
-        resourceUrl: 'https://youtu.be/wYz1BxH_BIA',
-        media: [
-          {
-            id: 477,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/087_framsida_underben_150521.mp4'
-          },
-          {
-            id: 476,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/S9IOIJyzKLkFmNMx'
-          }
-        ],
-        id: 3784
-      }
-    ]
-  },
-  {
-    name: 'Framsida underben vänster',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå upp med ena fotens ovansida mot underlaget. Sträck i vrist, knä och höft. Sträva efter sträckning på framsida fotled och/eller underben. Ett ben i taget. ',
-        resourceUrl: 'https://youtu.be/wYz1BxH_BIA',
-        media: [
-          {
-            id: 2076,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vxTkDP1B703sFEkj'
-          },
-          {
-            id: 2075,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/087_framsida_underben_150521.mp4'
-          }
-        ],
-        id: 3785
-      }
-    ]
-  },
-  {
-    name: 'Framåtfälld rotation',
-    muscleGroups: ['back', 'abs', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Sätt fingertopparna vid tinningarna och armbågarna rakt ut åt sidorna. Sätt dig ner i en knäböjsposition med böjd höft, böjda knän och rak rygg. Vrid bålen från sida till sida med rotation i bröstryggen.',
-        resourceUrl: 'https://youtu.be/8S-aZj651rg',
-        media: [
-          {
-            id: 472,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/n1shIH6IhIs4PJpc'
-          },
-          {
-            id: 471,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/xbZDgmXa4ki74BeO'
-          },
-          {
-            id: 470,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/naHxjxJRb8SayM86'
-          },
-          {
-            id: 469,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/456_framatfalld_rotation_150521.mp4'
-          }
-        ],
-        id: 3786
-      }
-    ]
-  },
-  {
     name: 'Fyrfotaplanka',
-    muscleGroups: ['arms', 'shoulders', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Fyrfota med raka armar, knän placerade strax under höfterna med tårna i golvet. Gör ett litet lyft av knän, ca 1 cm från underlaget, genom att pressa ner händerna mot underlaget och spänna magen. Håll detta lyftet och lyft i sin tur en fot i taget, ett par centimeter från underlaget. Resten av kroppen stilla och stabil.',
-        resourceUrl: 'https://www.youtube.com/watch?v=t19Y_OB62nM',
-        media: [
-          {
-            id: 2497,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/TeL3A7VLkl55jaAx'
-          },
-          {
-            id: 2498,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/RaREKxc4UiuKLw6U'
-          },
-          {
-            id: 2499,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1zE2d1fV5qU6gBpP'
-          },
-          {
-            id: 2500,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/v9d2luwSexzBAJsI'
-          },
-          {
-            id: 2496,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/210_Fyrfotaplanka_level1 608x1080.mp4'
-          }
-        ],
-        id: 4087
-      }
-    ]
-  },
-  {
-    name: 'Fyrfotaplanka',
+    mainMuscleGroup: 'core',
     muscleGroups: ['arms', 'shoulders', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -3449,6 +2763,7 @@ export default [
   },
   {
     name: 'Fällkniven',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -3547,125 +2862,8 @@ export default [
     ]
   },
   {
-    name: 'Gluteusstretch höger',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från plankaposition med raka armar. Placera ena knäet böjt mellan dina händer mot underlaget och sänk ner höften så djupt du kan. Håll ryggen upprätt med stolt bröst, för extra sträckning kan du fälla överkroppen ytterligare framåt. Behåll jämn tyngdpunkt mellan höger och vänster sida. ',
-        resourceUrl: 'https://youtu.be/TZDALUKGTpQ',
-        media: [
-          {
-            id: 516,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OQNSVakcIHz4b5rv'
-          },
-          {
-            id: 515,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Kzp8bGHHD7QPbwR3'
-          },
-          {
-            id: 514,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ABL4qaQmb9R7M8h9'
-          },
-          {
-            id: 513,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/059_gluteusstretch_150521.mp4'
-          }
-        ],
-        id: 3793
-      }
-    ]
-  },
-  {
-    name: 'Gluteusstretch vänster',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från plankaposition med raka armar. Placera ena knäet böjt mellan dina händer mot underlaget och sänk ner höften så djupt du kan. Håll ryggen upprätt med stolt bröst, för extra sträckning kan du fälla överkroppen ytterligare framåt. Behåll jämn tyngdpunkt mellan höger och vänster sida. En sida i taget.',
-        resourceUrl: 'https://youtu.be/TZDALUKGTpQ',
-        media: [
-          {
-            id: 2074,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0YEGK7k50VRKHXJo'
-          },
-          {
-            id: 2073,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/8SFVOBFe1Emo36PS'
-          },
-          {
-            id: 2072,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/SpVIClEVczJMlESx'
-          },
-          {
-            id: 2071,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/059_gluteusstretch_150521.mp4'
-          }
-        ],
-        id: 3794
-      }
-    ]
-  },
-  {
-    name: 'Grodhopp',
-    muscleGroups: ['back', 'abs', 'legs', 'glutes'],
-    trainingTypes: ['strength', 'cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Jämfotahopp fram med armpendling där armarna sträcks fram. Landa så djupt du kan med knäet i fotens riktning.',
-        resourceUrl: 'https://youtu.be/f0a0kJa7esY',
-        media: [
-          {
-            id: 523,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/265_grodhopp_150521.mp4'
-          },
-          {
-            id: 522,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/NBP5dybWVhNanuf3'
-          },
-          {
-            id: 521,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/qVGAGTvHOTXHLFTk'
-          },
-          {
-            id: 519,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/gyDmNC98UVma0IOn'
-          },
-          {
-            id: 518,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/JVw7rVNGwdC2QLHs'
-          },
-          {
-            id: 517,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/pA6E4dunIxVeUvZP'
-          }
-        ],
-        id: 3795
-      }
-    ]
-  },
-  {
     name: 'Grodplanka',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'abs', 'back', 'arms', 'shoulders'],
     trainingTypes: ['cardio', 'strength', 'agility'],
     variations: [
@@ -3712,6 +2910,7 @@ export default [
   },
   {
     name: 'Gående armhävning',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -3855,62 +3054,8 @@ export default [
     ]
   },
   {
-    name: 'Gång',
-    muscleGroups: ['legs'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Gång, förflyttning i promenadtempo, som en aktiv återhämtning i exempelvis intervallträning.',
-        resourceUrl: 'https://youtu.be/U4o1n_ijrPk',
-        media: [
-          {
-            id: 2260,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/XQFhhDijBeg2FZFi'
-          },
-          {
-            id: 2261,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/x3Ysw5gYN4vVUDqT'
-          },
-          {
-            id: 2262,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/4tzqSDKHrl8IwDvI'
-          },
-          {
-            id: 2263,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/6IQouPeO5dxQiCjW'
-          },
-          {
-            id: 2264,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/s6W3rmgAhOC7pFCE'
-          },
-          {
-            id: 2265,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/jZTEDB2TKjtBS7pu'
-          },
-          {
-            id: 2266,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/oVhWLRi2PpLqD5IU'
-          },
-          {
-            id: 2259,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/B08_gang.mp4'
-          }
-        ],
-        id: 3797
-      }
-    ]
-  },
-  {
     name: 'Hindu-armhävning',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -4024,43 +3169,8 @@ export default [
     ]
   },
   {
-    name: 'Hoppa hopprep',
-    muscleGroups: ['legs', 'arms', 'shoulders'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Imitera jämfota hopprepshopp. Låt armarna följa med som om de snurrade repet. Utmana höjd och frekvens i hoppen!',
-        resourceUrl: 'https://youtu.be/rE3dyeNNBz0',
-        media: [
-          {
-            id: 646,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/XGQEsatGmQNim0tX'
-          },
-          {
-            id: 645,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mAkWcUutlwKzFX4b'
-          },
-          {
-            id: 644,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/g39XjtKPM8zQYRaz'
-          },
-          {
-            id: 643,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/011_hoppa_hopprep__150521.mp4'
-          }
-        ],
-        id: 3798
-      }
-    ]
-  },
-  {
     name: 'Hugga ved',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['arms', 'back', 'abs', 'legs', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -4101,79 +3211,8 @@ export default [
     ]
   },
   {
-    name: 'Hunden',
-    muscleGroups: ['legs', 'abs', 'back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Handflator och tår i underlaget med raka ben och rumpa rakt upp i luften. Hitta det avstånd som krävs för att det ska sträcka i säte och baksida lår. Sträva efter att hålla ryggen så rak som möjligt genom att tänka att du svankar. Tryck växelvis höger- och vänster häl mot golvet medan andra knäet böjs lätt.',
-        resourceUrl: 'https://youtu.be/DBTObJ-IT8Y',
-        media: [
-          {
-            id: 655,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/qQeG4li53C3mh8YS'
-          },
-          {
-            id: 654,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/hYMGX9kBf20w7hGn'
-          },
-          {
-            id: 653,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/B9PnWYc6CePvEiCX'
-          },
-          {
-            id: 652,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/058_hunden_150521.mp4'
-          }
-        ],
-        id: 3800
-      }
-    ]
-  },
-  {
-    name: 'Hunden',
-    muscleGroups: ['legs', 'abs', 'back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Handflator och tår i underlaget med raka ben och rumpa rakt upp i luften. Hitta det avstånd som krävs för att det ska sträcka i säte och baksida lår. Sträva efter att hålla ryggen så rak som möjligt genom att tänka att du svankar. Tryck växelvis höger- och vänster häl mot golvet medan andra knäet böjs lätt.',
-        resourceUrl: 'https://www.youtube.com/watch?v=MwCwf959OQM',
-        media: [
-          {
-            id: 2522,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/hLTujvrIbHqFp9cO'
-          },
-          {
-            id: 2523,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/bDhmfkV43TwrF5rL'
-          },
-          {
-            id: 2524,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/qVvxyICS5xwC5Tpa'
-          },
-          {
-            id: 2521,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/58_hunden 608x1080.mp4'
-          }
-        ],
-        id: 4088
-      }
-    ]
-  },
-  {
     name: 'Häldopp 90 grader',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -4282,84 +3321,8 @@ export default [
     ]
   },
   {
-    name: 'Häldopp 90 grader',
-    muscleGroups: ['abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med knän och höfter 90 grader, armar längs kroppens sidor mot underlaget. Håll en magspänning som håller ryggen i neutralt läge. Sänk växelvis häl ner mot underlaget, med fortsatt böjt knä och neutral rygg med magstöd. \n\nHöger, vänster= 1 repetition.',
-        resourceUrl: 'https://www.youtube.com/watch?v=NYjiC43oF1w',
-        media: [
-          {
-            id: 2534,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Rm4Hw7epN8Ddoq4a'
-          },
-          {
-            id: 2535,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/cszDN937u0NYrkxv'
-          },
-          {
-            id: 2536,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/uatg1hGq6qIXY8nG'
-          },
-          {
-            id: 2533,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/412_Haldopp 90 grader level 1 608x1080.mp4'
-          }
-        ],
-        id: 4089
-      }
-    ]
-  },
-  {
     name: 'Häldopp med armsträckning',
-    muscleGroups: ['back', 'abs'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med böjda knän, fötter i underlaget och armar vilandes längs sidorna. Grundspänning i magen med ryggen neutral. Sträck ut ett ben strax ovan underlaget samtidigt som du sträcker båda armarna ovan huvudet. Stark mage. Låt tårna peka uppåt och spänn låret lätt. Eftersträva en lång och stark känsla genom armar, bål och ben. ',
-        resourceUrl: 'https://www.youtube.com/watch?v=gh6xkvFD7kk',
-        media: [
-          {
-            id: 2538,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/P2SFNJRJtkv1novx'
-          },
-          {
-            id: 2540,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/bKl10U9CP6wSc2DY'
-          },
-          {
-            id: 2541,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/eC2xB5UzxmtkwM2R'
-          },
-          {
-            id: 2542,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/SYNyhpSLa4chDBOw'
-          },
-          {
-            id: 2537,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/418_haldopp_med_armstrackning_level1 608x1080.mp4'
-          }
-        ],
-        id: 4090
-      }
-    ]
-  },
-  {
-    name: 'Häldopp med armsträckning',
+    mainMuscleGroup: 'core',
     muscleGroups: ['back', 'abs'],
     trainingTypes: ['strength'],
     variations: [
@@ -4464,6 +3427,7 @@ export default [
   },
   {
     name: 'Häldopp med diagonal sträckning',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -4557,43 +3521,8 @@ export default [
     ]
   },
   {
-    name: 'Häldrag',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Dra ena hälen mot rumpan, eller så långt du kan med hjälp av händerna, samtidigt som du sträcker i höften och spänner rumpa och mage. Gå upp på tå om du kan.',
-        resourceUrl: 'https://youtu.be/En88NohR8kI',
-        media: [
-          {
-            id: 577,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Ete6xTYgUeQ9L2bg'
-          },
-          {
-            id: 576,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/jdEwinSp4IvwWSLj'
-          },
-          {
-            id: 575,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ypRmRXIKjTShaifP'
-          },
-          {
-            id: 574,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/002_haldrag_150521.mp4'
-          }
-        ],
-        id: 3810
-      }
-    ]
-  },
-  {
     name: 'Höftlyft',
+    mainMuscleGroup: 'glutes',
     muscleGroups: ['glutes', 'legs', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -4697,43 +3626,8 @@ export default [
     ]
   },
   {
-    name: 'Höftlyft',
-    muscleGroups: ['glutes', 'legs', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med böjda ben och fötter i underlaget, armar längs sidorna. Tryck fötter mot underlaget och gör ett litet höftlyft med spänning i rumpan. Sänk kontrollerat ner.',
-        resourceUrl: 'https://www.youtube.com/watch?v=yhMg1ESlkKo',
-        media: [
-          {
-            id: 2552,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/6trslzlb6rcF0h9k'
-          },
-          {
-            id: 2553,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/uOfRJceYajigceDO'
-          },
-          {
-            id: 2554,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/IOTAmkzmv38LzDqZ'
-          },
-          {
-            id: 2551,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/436 hoftlyft_level1 608x1080.mp4'
-          }
-        ],
-        id: 4091
-      }
-    ]
-  },
-  {
     name: 'Höftlyft med fot mot knä',
+    mainMuscleGroup: 'glutes',
     muscleGroups: ['glutes', 'legs', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -4832,147 +3726,8 @@ export default [
     ]
   },
   {
-    name: 'Höftlyft på höjden',
-    muscleGroups: ['glutes', 'legs', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med böjda ben och fötter på förhöjning, armar längs sidorna. Tryck fötter mot underlaget och gör ett litet höftlyft med spänning i rumpan. Sänk kontrollerat ner. \n',
-        resourceUrl: 'https://youtu.be/NUezqyQbliY',
-        media: [
-          {
-            id: 635,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/PNtKYf6M7HQYckWR'
-          },
-          {
-            id: 634,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/l38yuWxtjpXtwDAJ'
-          },
-          {
-            id: 633,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/TqcY1imzpQNkFRuH'
-          },
-          {
-            id: 622,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/439_hoftlyft_pa_hojden_level1_150521.mp4'
-          }
-        ],
-        id: 3814
-      },
-      {
-        difficulty: 1,
-        description:
-          'Ligg på rygg med böjda ben och fötter på förhöjning, armar sträckta rakt upp. Tryck fötter mot underlaget och gör ett litet höftlyft med spänning i rumpan. Håll höften parallell och sträck ut ena benet i linje med kroppen. Växelvis. \n\nHöger/vänster= 1 repetition. ',
-        resourceUrl: 'https://youtu.be/XQ_qYDTa8AQ',
-        media: [
-          {
-            id: 632,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/wEAYG3z8Nz41bMhW'
-          },
-          {
-            id: 631,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/AlkWFt8TVLVEYe2H'
-          },
-          {
-            id: 630,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/eOqPoZ787h7Ok3hj'
-          },
-          {
-            id: 629,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/jipRUOhLtxr5YMm0'
-          },
-          {
-            id: 628,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/P5LPEfouKXUj0vJf'
-          },
-          {
-            id: 623,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/440_hoftlyft_pa_hojden_level2_150521.mp4'
-          }
-        ],
-        id: 3815
-      },
-      {
-        difficulty: 2,
-        description:
-          'Ligg på rygg med ena benet böjt och fot på förhöjning, andra benet sträckt och armar rakt upp. Tryck dig upp i ett litet höftlyft där det sträckta benet lyfts med tills höften är parallell och ben i linje med kroppen.\n\nJobba med ett ben i taget, i antalet repetitioner som anges i övningsbeskrivningen. Byt sedan ben.',
-        resourceUrl: 'https://youtu.be/lBE-vr2yWKw',
-        media: [
-          {
-            id: 627,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/O0vOCca9WQFNoTjs'
-          },
-          {
-            id: 626,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/voMYntHQeTrsYvNk'
-          },
-          {
-            id: 625,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/bguuk8lr3jTfgHAF'
-          },
-          {
-            id: 624,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/441_hoftlyft_pa_hojden_level3_150521.mp4'
-          }
-        ],
-        id: 3816
-      }
-    ]
-  },
-  {
-    name: 'Höftlyft på höjden',
-    muscleGroups: ['glutes', 'legs', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med böjda ben och fötter på förhöjning, armar längs sidorna. Tryck fötter mot underlaget och gör ett litet höftlyft med spänning i rumpan. Sänk kontrollerat ner. \n',
-        resourceUrl: 'https://www.youtube.com/watch?v=O_7i11h1Dng',
-        media: [
-          {
-            id: 2556,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/esEDuG1C4ijechKc'
-          },
-          {
-            id: 2557,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/R9d46kIQdZlpVErm'
-          },
-          {
-            id: 2558,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/3GsRQgz87lA23n0J'
-          },
-          {
-            id: 2555,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/439_hoftlyft_pa_hojden_level1 608x1080.mp4'
-          }
-        ],
-        id: 4092
-      }
-    ]
-  },
-  {
     name: 'Höga jämfotahopp',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['back', 'abs', 'legs', 'glutes'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -5009,6 +3764,7 @@ export default [
   },
   {
     name: 'Höga knän',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['arms', 'back', 'abs', 'legs', 'glutes', 'shoulders'],
     trainingTypes: ['cardio'],
     variations: [
@@ -5039,99 +3795,8 @@ export default [
     ]
   },
   {
-    name: 'Högintensiv löpning',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Högintensiv löpning upplevs mycket ansträngande. Motsvarar ca 80-100% av din maximala puls. I det lägre spannet orkar du inte prata och du kan jämföra ansträngningen med det det tempo du håller i längre intervaller alternativt tävlingsfart under max 60 minuter. I det övre spannet ligger du nära din maximala förmåga på gränsen till mjölksyra och motsvarar tempot du håller i korta intensiva intervaller. Denna ansträngningsgrad kräver längre återhämtning. ',
-        resourceUrl: 'https://youtu.be/BAhbwSXBoYc',
-        media: [
-          {
-            id: 2258,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Ape3dRUkzwDdx4zN'
-          },
-          {
-            id: 2257,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/x67tMbwmhqnTUj6R'
-          },
-          {
-            id: 2256,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/cCNqhKc6s5bxEENM'
-          },
-          {
-            id: 2255,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/m8g71GHKNij8psQf'
-          },
-          {
-            id: 2254,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/xN7kTMSjEsd1A0sX'
-          },
-          {
-            id: 2253,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/5X3f0Jn5pQq3LwOG'
-          },
-          {
-            id: 2252,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/B04_hogintensiv_lopning.mp4'
-          }
-        ],
-        id: 3819
-      }
-    ]
-  },
-  {
-    name: 'Indianhopp',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör ett enbenshopp där du drar andra knät uppåt och pendlar kraftfullt med armarna. Landa på hoppbenet och jobba växelvis. Sträck ut i höften och håll ryggen upprätt. Landa med knä i samma riktning som foten pekar. ',
-        resourceUrl: 'https://youtu.be/LTyjnhSZyjM',
-        media: [
-          {
-            id: 660,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/263_indianhopp_150521.mp4'
-          },
-          {
-            id: 659,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/X3ImMKxBaMHGQosI'
-          },
-          {
-            id: 658,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/22jVrttt2jlczv6R'
-          },
-          {
-            id: 657,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/DfWlt4eEjb9EqZCi'
-          },
-          {
-            id: 656,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/VphuuTkq6w7WZ0Hf'
-          }
-        ],
-        id: 3820
-      }
-    ]
-  },
-  {
     name: 'Inlineshopp',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['cardio'],
     variations: [
@@ -5168,6 +3833,7 @@ export default [
   },
   {
     name: 'Jorden runt',
+    mainMuscleGroup: 'back',
     muscleGroups: ['back', 'abs', 'shoulders'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -5271,43 +3937,8 @@ export default [
     ]
   },
   {
-    name: 'Jumping Jacks',
-    muscleGroups: ['legs', 'arms'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från höftbrett stående. Hoppa ut i kryss med sträckta armar och ben, hoppa sedan tillbaka. Styrka och längd i armar och ben genom hela rörelsen. \n\nAlternativ till hopp: Stå på ett ben och sträck ut båda armar och ena benet till ett ""kryss"". Byt ben och repetera. ',
-        resourceUrl: 'https://youtu.be/SFOWF1TczFY',
-        media: [
-          {
-            id: 689,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/q1srLs0Ml2kFHkzl'
-          },
-          {
-            id: 688,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/chUhhrFCiuTLSn9O'
-          },
-          {
-            id: 687,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/jlPplUwDr67QduMj'
-          },
-          {
-            id: 686,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/024_jumping_jacks_150521.mp4'
-          }
-        ],
-        id: 3825
-      }
-    ]
-  },
-  {
     name: 'Jägarvila',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -5333,120 +3964,8 @@ export default [
     ]
   },
   {
-    name: 'Jämfotahopp fram',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Jämfota hopp fram där du i landning sänker rumpan ner i knäböjsposition. Svinga med armarna i rörelsen. Upprätt och stark i bålen. Landa med knän i samma riktning som fötterna pekar. ',
-        resourceUrl: 'https://youtu.be/Jq5iG71-qnk',
-        media: [
-          {
-            id: 671,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/n6tFMHcMUMm04PnV'
-          },
-          {
-            id: 670,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lKb5KJhcGQGSwJQV'
-          },
-          {
-            id: 669,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mOGq8NEtAlNOXZu1'
-          },
-          {
-            id: 668,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mgCZM1hS3DMAh9AS'
-          },
-          {
-            id: 667,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/272_jamfotahopp_fram_150521.mp4'
-          }
-        ],
-        id: 3827
-      }
-    ]
-  },
-  {
-    name: 'Katt-/ko-stretch',
-    muscleGroups: ['back', 'abs', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Fyrfota stående med händerna under axlar, knän under höfter. Utgå från neutral rygg med lätt magspänning. Sänk ryggen i svank med blicken uppåt och framåt, svanskotan lyfts upp. Lyft därefter upp ryggen i en rundning där du drar in hakan lätt, svanskotan dras neråt så ryggen kutar. Eftersträva rörelse i hela ryggraden.',
-        resourceUrl: 'https://youtu.be/DSZDTT2PTM0',
-        media: [
-          {
-            id: 693,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/061_katt-_ko-stretch_150521.mp4'
-          },
-          {
-            id: 692,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/yjQt3vAT5vRDlzg8'
-          },
-          {
-            id: 691,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/drgT5S1kiDSiE1sY'
-          },
-          {
-            id: 690,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/DZOhDyJD3PtI5q0T'
-          }
-        ],
-        id: 3828
-      }
-    ]
-  },
-  {
-    name: 'Katt-/ko-stretch',
-    muscleGroups: ['back', 'abs', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Fyrfota stående med händerna under axlar, knän under höfter. Utgå från neutral rygg med lätt magspänning. Sänk ryggen i svank med blicken uppåt och framåt, svanskotan lyfts upp. Lyft därefter upp ryggen i en rundning där du drar in hakan lätt, svanskotan dras neråt så ryggen kutar. Eftersträva rörelse i hela ryggraden.',
-        resourceUrl: 'https://www.youtube.com/watch?v=Oy4Jd8WBDPk',
-        media: [
-          {
-            id: 2568,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FdxBUTxEUEnJrEEo'
-          },
-          {
-            id: 2569,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ERKff4gWLTZLXRyw'
-          },
-          {
-            id: 2570,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/H4YpxL8YMMaKzlej'
-          },
-          {
-            id: 2567,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/61_katt-_ko-stretch 608x1080.mp4'
-          }
-        ],
-        id: 4093
-      }
-    ]
-  },
-  {
     name: 'Kissande hunden',
+    mainMuscleGroup: 'body',
     muscleGroups: ['abs', 'back', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -5541,42 +4060,7 @@ export default [
   },
   {
     name: 'Knäböj',
-    muscleGroups: ['legs'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från något bredare än höftbredd mellan fötterna. Ner i djup knäböj tills rumpan är under knähöjd. Sträck ut armarna framåt när du går ner. Känn dig lång och stark i bål och armar, hitta djupet i benen. Knäna pekar i samma riktning som fötterna. Aktivera sätesmusklerna genom trycket av fötterna mot underlaget när du går upp.',
-        resourceUrl: 'https://www.youtube.com/watch?v=lm0Tv22KZgQ',
-        media: [
-          {
-            id: 2457,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/uURL5MbLSea1N9eD'
-          },
-          {
-            id: 2458,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/y7L9PgEQDXFn1iPr'
-          },
-          {
-            id: 2459,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2BH9TB7nEjLUf08S'
-          },
-          {
-            id: 2456,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/39 Knaboj level1 608x1080.mp4'
-          }
-        ],
-        id: 4094
-      }
-    ]
-  },
-  {
-    name: 'Knäböj',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -5613,6 +4097,7 @@ export default [
   },
   {
     name: 'Knäböj 180',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -5732,6 +4217,7 @@ export default [
   },
   {
     name: 'Knäböj 90',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -5856,6 +4342,7 @@ export default [
   },
   {
     name: 'Knäböj med armsträckning',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'abs', 'back'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -5950,52 +4437,7 @@ export default [
   },
   {
     name: 'Knäböj med benlyft i sidled',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör ytlig knäböj med armsträckning fram. Vid uppresning lyft växelvis höger och vänster ben i sidled och sträck armarna längs kroppens sidor. Sträck i knäet som du lyfter och låt tårna peka framåt för ett starkt och stabilt ben. Känn att du aktiverar utsida säte i lyftet och behåll längden i bålen. \n\nEn knäböj = 1 repetition.',
-        resourceUrl: 'https://www.youtube.com/watch?v=rVgWni_sWZs',
-        media: [
-          {
-            id: 2478,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/zfZZLi1BYBTb43uu'
-          },
-          {
-            id: 2479,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Ro1EZMCO1pyJDDOk'
-          },
-          {
-            id: 2480,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/x1ZbJaowKkMfbbVv'
-          },
-          {
-            id: 2481,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/MMjr9jYvf2v575Bu'
-          },
-          {
-            id: 2482,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/WDgGLudYWj5b1pYD'
-          },
-          {
-            id: 2477,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/93_Knaboj med benlyft i sidled level1 608x1080.mp4'
-          }
-        ],
-        id: 4095
-      }
-    ]
-  },
-  {
-    name: 'Knäböj med benlyft i sidled',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -6120,6 +4562,7 @@ export default [
   },
   {
     name: 'Knäböj med crunch',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -6244,6 +4687,7 @@ export default [
   },
   {
     name: 'Knäböj med tåhävning',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -6280,6 +4724,7 @@ export default [
   },
   {
     name: 'Knäböjshopp',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -6316,6 +4761,7 @@ export default [
   },
   {
     name: 'Knäböj upp på tå',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -6356,43 +4802,8 @@ export default [
     ]
   },
   {
-    name: 'Knädrag',
-    muscleGroups: ['back', 'legs', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Dra ett knä mot magen med hjälp av händerna så högt du kan samtidigt som du sträcker i höften och spänner rumpan med ryggen lång och stark. Kom eventuellt upp på tå i övre läget. Växelvis höger och vänster. ',
-        resourceUrl: 'https://youtu.be/W5dXqtc8dyA',
-        media: [
-          {
-            id: 811,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/yinPyupqDoJWWIia'
-          },
-          {
-            id: 810,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/uL1rKphFbDubPv7A'
-          },
-          {
-            id: 809,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lmYlXsp25BCg1Mc3'
-          },
-          {
-            id: 808,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/001_knadrag_150521.mp4'
-          }
-        ],
-        id: 3851
-      }
-    ]
-  },
-  {
     name: 'Kombinerat rygg- och benlyft',
+    mainMuscleGroup: 'back',
     muscleGroups: ['back', 'abs', 'shoulders', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -6492,6 +4903,7 @@ export default [
   },
   {
     name: 'Krabban',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['cardio'],
     variations: [
@@ -6537,399 +4949,8 @@ export default [
     ]
   },
   {
-    name: 'Latsstretch höger',
-    muscleGroups: ['back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från knästående med ena handen snett framför dig mot underlaget. Sträva med rumpan snett bak mot fötter, bort från handen som är kvar i golv. Runda ryggen i en båge där den sträckta armens axel utgör toppen på rundningen.',
-        resourceUrl: 'https://youtu.be/LPaX2xV7zpw',
-        media: [
-          {
-            id: 833,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/yuUSMSnRjuTg2GFi'
-          },
-          {
-            id: 832,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/iCnG4WnOcVIyXjXV'
-          },
-          {
-            id: 831,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/076_latsstretch_150521.mp4'
-          }
-        ],
-        id: 3857
-      }
-    ]
-  },
-  {
-    name: 'Latsstretch vänster',
-    muscleGroups: ['arms', 'back', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från knästående med ena handen snett framför dig mot underlaget. Sträva med rumpan snett bak mot fötter, bort från handen som är kvar i marken. Runda ryggen i en båge där den sträckta armens axel utgör toppen på rundningen.',
-        resourceUrl: 'https://youtu.be/LPaX2xV7zpw',
-        media: [
-          {
-            id: 2070,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/bRa0KD6ninibP4em'
-          },
-          {
-            id: 2069,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/WrNBkCXVrGtZuBxW'
-          },
-          {
-            id: 2068,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/076_latsstretch_150521.mp4'
-          }
-        ],
-        id: 3858
-      }
-    ]
-  },
-  {
-    name: 'Liggande baksida lår höger',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med ena benet sträckt mot underlaget, pressa ner knäveck. Andra benet böjt med händer fattade runt baksidan, strax under knäveck. Rygg och nacke i marken. Sträck det böjda benet så långt du kan och dra samtidigt benet mot dig. \n\nAlternativ: Utöka sträckningen genom att böja i vristen så tårna pekar bakåt, fotsula upp.',
-        resourceUrl: 'https://youtu.be/HoOwJw1pUUM',
-        media: [
-          {
-            id: 834,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/dHcs9cbJL5EBn48c'
-          },
-          {
-            id: 835,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2AwYR7tWb6ln9Gyi'
-          },
-          {
-            id: 836,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/EkOQOupxdfgqyAP9'
-          },
-          {
-            id: 837,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/074_liggande_baksida_lar_150521.mp4'
-          }
-        ],
-        id: 3859
-      }
-    ]
-  },
-  {
-    name: 'Liggande baksida lår vänster',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med ena benet sträckt mot underlaget, pressa ner knäveck. Andra benet böjt med händer fattade runt baksidan, strax under knäveck. Rygg och nacke i marken. Sträck det böjda benet så långt du kan och dra samtidigt benet mot dig. \n\nAlternativ: Utöka sträckningen genom att böja i vristen så tårna pekar bakåt, fotsula upp.',
-        resourceUrl: 'https://youtu.be/HoOwJw1pUUM',
-        media: [
-          {
-            id: 2067,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/L3XdxNwKLdxlsSkU'
-          },
-          {
-            id: 2066,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/5FGSCUjtMgkKOOyB'
-          },
-          {
-            id: 2065,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OvAxul4qOGJl4IU9'
-          },
-          {
-            id: 2064,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/074_liggande_baksida_lar_150521.mp4'
-          }
-        ],
-        id: 3863
-      }
-    ]
-  },
-  {
-    name: 'Liggande korkskruv höger',
-    muscleGroups: ['back', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg. För det ena benet böjt över motsatt ben och sträva efter att dra det så långt mot underlaget du kan med andra handen. Försök hålla axlarna kvar i underlaget. Variera gärna vinkeln på böjningen i höften för att känna var det "tar". ',
-        resourceUrl: 'https://www.youtube.com/watch?v=sLZ0Gazp0-M',
-        media: [
-          {
-            id: 2560,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/pBSkii6iRLXakIH4'
-          },
-          {
-            id: 2561,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2rr3pIFbs6mzD3ms'
-          },
-          {
-            id: 2562,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OFYfwGsxRXjFE54P'
-          },
-          {
-            id: 2559,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/455_liggande_korkskruv 608x1080.mp4'
-          }
-        ],
-        id: 4096
-      }
-    ]
-  },
-  {
-    name: 'Liggande korkskruv höger',
-    muscleGroups: ['back', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg. För det ena benet böjt över motsatt ben och sträva efter att dra det så långt mot underlaget du kan med andra handen. Försök hålla axlarna kvar i underlaget. Variera gärna vinkeln på böjningen i höften för att känna var det "tar". ',
-        resourceUrl: 'https://youtu.be/yC5v5e4TeWc',
-        media: [
-          {
-            id: 1088,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/G9VNJGZHsZelTbue'
-          },
-          {
-            id: 1087,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/YAMEKNby45j6Ek2v'
-          },
-          {
-            id: 1086,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/455_liggande_korkskruv_150521.mp4'
-          }
-        ],
-        id: 3864
-      }
-    ]
-  },
-  {
-    name: 'Liggande korkskruv vänster',
-    muscleGroups: ['back', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg. För det ena benet böjt över motsatt ben och sträva efter att dra det så långt mot underlaget du kan med andra handen. Försök hålla axlarna kvar i underlaget. Variera gärna vinkeln på böjningen i höften för att känna var det "tar". ',
-        resourceUrl: 'https://youtu.be/yC5v5e4TeWc',
-        media: [
-          {
-            id: 2062,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/hOaroIxnAcuZpwm2'
-          },
-          {
-            id: 2061,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/qiUdhfjDgvZ2zV1n'
-          },
-          {
-            id: 2060,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/455_liggande_korkskruv_150521.mp4'
-          }
-        ],
-        id: 3704
-      }
-    ]
-  },
-  {
-    name: 'Liggande korkskruv vänster',
-    muscleGroups: ['back', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg. För det ena benet böjt över motsatt ben och sträva efter att dra det så långt mot underlaget du kan med andra handen. Försök hålla axlarna kvar i underlaget. Variera gärna vinkeln på böjningen i höften för att känna var det "tar". ',
-        resourceUrl: 'https://www.youtube.com/watch?v=sLZ0Gazp0-M',
-        media: [
-          {
-            id: 2560,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/pBSkii6iRLXakIH4'
-          },
-          {
-            id: 2561,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2rr3pIFbs6mzD3ms'
-          },
-          {
-            id: 2562,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OFYfwGsxRXjFE54P'
-          },
-          {
-            id: 2559,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/455_liggande_korkskruv 608x1080.mp4'
-          }
-        ],
-        id: 4097
-      }
-    ]
-  },
-  {
-    name: 'Liggande sätestöjning höger',
-    muscleGroups: ['glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med benen böjda och fötter mot underlaget. Lägg ena foten mot motsatt knä och fatta händerna runt låret på det ben vars fot är i marken. Dra benen mot magen så långt du kan. Sträva efter att ligga med tyngdpunkten i mitten. Känn sträckning i sätet.',
-        resourceUrl: 'https://www.youtube.com/watch?v=YljFELspza4',
-        media: [
-          {
-            id: 2474,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ysiDOCpECpREQ8AD'
-          },
-          {
-            id: 2475,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Lvb2JNXb5oN82jvk'
-          },
-          {
-            id: 2476,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/s9VhDAOIHZ8GFpmU'
-          },
-          {
-            id: 2473,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/70 Liggande_satestojning 608x1080.mp4'
-          }
-        ],
-        id: 4098
-      }
-    ]
-  },
-  {
-    name: 'Liggande sätestöjning höger',
-    muscleGroups: ['glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med benen böjda och fötter mot underlaget. Lägg ena foten mot motsatt knä och fatta händerna runt låret på det ben vars fot är i marken. Dra benen mot magen så långt du kan. Sträva efter att ligga med tyngdpunkten i mitten. Känn sträckning i sätet.',
-        resourceUrl: 'https://youtu.be/VCnY6wvncoc',
-        media: [
-          {
-            id: 843,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/070_liggande_satestojning_150521.mp4'
-          },
-          {
-            id: 842,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/QaHtMauRI4UG1SpF'
-          }
-        ],
-        id: 3703
-      }
-    ]
-  },
-  {
-    name: 'Liggande sätestöjning vänster',
-    muscleGroups: ['glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med benen böjda och fötter mot underlaget. Lägg ena foten mot motsatt knä och fatta händerna runt låret på det ben vars fot är i marken. Dra benen mot magen så långt du kan. Sträva efter att ligga med tyngdpunkten i mitten. Känn sträckning i sätet.',
-        resourceUrl: 'https://www.youtube.com/watch?v=YljFELspza4',
-        media: [
-          {
-            id: 2474,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ysiDOCpECpREQ8AD'
-          },
-          {
-            id: 2475,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Lvb2JNXb5oN82jvk'
-          },
-          {
-            id: 2476,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/s9VhDAOIHZ8GFpmU'
-          },
-          {
-            id: 2473,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/70 Liggande_satestojning 608x1080.mp4'
-          }
-        ],
-        id: 4099
-      }
-    ]
-  },
-  {
-    name: 'Liggande sätestöjning vänster',
-    muscleGroups: ['glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med benen böjda och fötter mot underlaget. Lägg ena foten mot motsatt knä och fatta händerna runt låret på det ben vars fot är i marken. Dra benen mot magen så långt du kan. Sträva efter att ligga med tyngdpunkten i mitten. Känn sträckning i sätet.',
-        resourceUrl: 'https://youtu.be/VCnY6wvncoc',
-        media: [
-          {
-            id: 2059,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/wOahX1OXPLHUhMi8'
-          },
-          {
-            id: 2058,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/070_liggande_satestojning_150521.mp4'
-          }
-        ],
-        id: 3702
-      }
-    ]
-  },
-  {
     name: 'Ljumsklyft',
+    mainMuscleGroup: 'back',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -7033,523 +5054,8 @@ export default [
     ]
   },
   {
-    name: 'Lågintensiv löpning',
-    muscleGroups: ['back', 'legs', 'glutes'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Lågintensiv löpning. Här blir du andfådd, men kan fortfarande hålla korta konversationer. Använder du pulsmätare motsvarar det ca 60-70% av maxpuls. Denna nivå är lämplig vid långdistanslöpning och återhämtningspass. Gynnar fettförbränningen.',
-        resourceUrl: 'https://youtu.be/xwitL4iZtZk',
-        media: [
-          {
-            id: 2240,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/D5U1RaABgmX4hPR4'
-          },
-          {
-            id: 2241,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OkhIQxvAr78k5m9Y'
-          },
-          {
-            id: 2242,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/RNL7XMtMpVBePRve'
-          },
-          {
-            id: 2243,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7FCpqZ2nqXZIMWwj'
-          },
-          {
-            id: 2244,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ItXM74KkpTmsGjfN'
-          },
-          {
-            id: 2239,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/B02_lagintensiv_lopning.mp4'
-          }
-        ],
-        id: 3698
-      }
-    ]
-  },
-  {
-    name: 'Lätt jogg',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Lätt jogging motsvarar prattempo, och om du använder pulsmätare motsvarar det ca 50-60% av maxpuls. Kan också motsvara snabb promenad. Denna löpning är lämplig i lätt uppvärmning, återhämtning eller för nybörjaren. Stärker hjärta och lungor.',
-        resourceUrl: 'https://youtu.be/2LA5u4Jd26U',
-        media: [
-          {
-            id: 2233,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/iOi5xsoinmwc0yWL'
-          },
-          {
-            id: 2234,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Ik730VpKDZ0Fj85S'
-          },
-          {
-            id: 2235,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CGG0dGji3peo9pGq'
-          },
-          {
-            id: 2236,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FAvVhI9AmiqWhp31'
-          },
-          {
-            id: 2237,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/36XnMM2U8tcwPwdn'
-          },
-          {
-            id: 2238,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/s67KcrThK1FLE6OR'
-          },
-          {
-            id: 2232,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/B01_latt_jogg.mp4'
-          }
-        ],
-        id: 3694
-      }
-    ]
-  },
-  {
-    name: 'Löpning på stället',
-    muscleGroups: ['legs'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Snabba lätta steg med höga knän och landning mitt på foten. Låt armarna pendla och bröstrygg roteras med i rörelsen där axlar är sänkta och armbågarna böjda.',
-        resourceUrl: 'https://youtu.be/BOrEncqB6-M',
-        media: [
-          {
-            id: 861,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/009_lopning_pa_stallet_150521.mp4'
-          },
-          {
-            id: 860,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7out5xpRKQjj6wFl'
-          },
-          {
-            id: 859,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/BUl7raUvXO2wGBiF'
-          },
-          {
-            id: 858,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/96oQqbYBWefdA1gm'
-          }
-        ],
-        id: 3865
-      }
-    ]
-  },
-  {
-    name: 'Magliggande albatross',
-    muscleGroups: ['back'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på mage med armar sträckta rakt ut åt sidorna på marken. Lyft ena benet från golvet och sträva efter att nå motsatt hand med foten, genom en diagonal rörelse bakom kroppen. Återgå till magliggande och växla till andra benet. Känn sträckning och vridning genom ländrygg och höft.',
-        resourceUrl: 'https://youtu.be/qU2tLMQ1TQE',
-        media: [
-          {
-            id: 868,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/31X9yIKbDzKfqtB6'
-          },
-          {
-            id: 867,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/3nWyaUbl3rMcwRWM'
-          },
-          {
-            id: 865,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/psMU50xdSJpIkt2J'
-          },
-          {
-            id: 864,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/QIBb9CmBlR5LOYIM'
-          },
-          {
-            id: 863,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/EVwDDfoBMDlQfaP7'
-          },
-          {
-            id: 862,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/064_magliggande_albatross_150521.mp4'
-          }
-        ],
-        id: 3692
-      }
-    ]
-  },
-  {
-    name: 'Magliggande bakåtböjning',
-    muscleGroups: ['abs', 'back'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från magliggande med händerna i golvet utanför axlarna. Tryck dig upp så högt du kan med höften kvar mot underlaget. Sträva efter sträckta armarna. Är du stel i ryggen kan du placera händerna längre fram. Andas ut när du är högst upp och slappna av i magen och höften. Blicken framåt. Återgå försiktigt till utgångsläget.',
-        resourceUrl: 'https://youtu.be/yltLK5bYVcE',
-        media: [
-          {
-            id: 873,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/062_magliggande_bakatbojning_150521.mp4'
-          },
-          {
-            id: 872,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/kFtL2Wiw2tGjD6gN'
-          },
-          {
-            id: 871,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/q0rVyWwNcQwNTJeb'
-          },
-          {
-            id: 870,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/swNH1FfdfutpVe2j'
-          },
-          {
-            id: 869,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/HFptyPKywPhzkjEG'
-          }
-        ],
-        id: 3680
-      }
-    ]
-  },
-  {
-    name: 'Magliggande framåt-/bakåtböjning',
-    muscleGroups: ['abs', 'back'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från magliggande med händerna i underlaget utanför axlarna. Tryck dig upp så högt du kan med höften kvar mot underlaget. Sträva efter sträckta armar. Är du stel i ryggen kan du placera händerna längre fram. Andas ut när du är högst upp och slappna av i mage och höft. Blicken framåt. Kom sedan upp till fyrfota stående, bredda lite mellan knäna och för rumpan bakåt mot fötterna så långt du kan, gärna sittandes mellan fötterna. Händerna kvar i underlaget och armarna sträckta. Sträva efter en rundning av ryggen.',
-        resourceUrl: 'https://youtu.be/ZXiIYdL9YLg',
-        media: [
-          {
-            id: 2108,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/taEq3vxwlLOZX2bv'
-          },
-          {
-            id: 2107,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/WS8EU1V638bHWjHS'
-          },
-          {
-            id: 2106,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/qyxDIJLejm6LuUOc'
-          },
-          {
-            id: 2105,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/UUfp3zEG9t5932GD'
-          },
-          {
-            id: 2104,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/063_vaxelvis_framat_bakatbojnning_i_magliggande_150521.mp4'
-          }
-        ],
-        id: 3691
-      }
-    ]
-  },
-  {
-    name: 'Magliggande töj av framsida lår höger',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på mage. Fatta tag runt ena vristen och för fot mot rumpa. Håll låren parallella/nära varandra. Spänn rumpan och pressa fram höften mot underlaget för sträckning i framsida lår.',
-        resourceUrl: 'https://youtu.be/LliAwNl80NI',
-        media: [
-          {
-            id: 876,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/SuMD2bvIZi2094U0'
-          },
-          {
-            id: 875,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/uKKunS5TPelzG60G'
-          },
-          {
-            id: 874,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/075_magliggande_toj_av_framsida_lar_150521.mp4'
-          }
-        ],
-        id: 3666
-      }
-    ]
-  },
-  {
-    name: 'Magliggande töj av framsida lår vänster',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på mage. Fatta tag runt ena vristen och för fot mot rumpa. Håll låren parallella/nära varandra. Spänn rumpan och pressa fram höften mot underlaget för sträckning i framsida lår.',
-        resourceUrl: 'https://youtu.be/LliAwNl80NI',
-        media: [
-          {
-            id: 2057,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0AX5eCalY90Sju6Z'
-          },
-          {
-            id: 2056,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CvICAi8bB5mD4V8t'
-          },
-          {
-            id: 2055,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/075_magliggande_toj_av_framsida_lar_150521.mp4'
-          }
-        ],
-        id: 3662
-      }
-    ]
-  },
-  {
-    name: 'Marsch med 10kg ryggsäck',
-    muscleGroups: ['back', 'abs', 'legs', 'glutes', 'shoulders'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Marsch med ryggsäck som väger ca 10 kg, gärna i kängor eller stabila vandringsskor. Variera underlag och terräng. ',
-        resourceUrl: 'https://youtu.be/Y49aU10pN84',
-        media: [
-          {
-            id: 2275,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/l50z6FrXTFCT0658'
-          },
-          {
-            id: 2276,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fN23EWcsC2pLnDwL'
-          },
-          {
-            id: 2277,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Sagp5jq8AcOybR94'
-          },
-          {
-            id: 2278,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Z7QLGtOBTltj0rAl'
-          },
-          {
-            id: 2279,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/JvkeC39b9ABItjBI'
-          },
-          {
-            id: 2268,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/B06_marsch_med_10_kg_ryggsack.mp4'
-          }
-        ],
-        id: 3570
-      }
-    ]
-  },
-  {
-    name: 'Marsch med 15kg ryggsäck',
-    muscleGroups: ['back', 'abs', 'legs', 'glutes', 'shoulders'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Marsch med ryggsäck som väger ca 15 kg. Använd kängor eller stabila vandringsskor. Variera underlag och terräng. ',
-        resourceUrl: 'https://youtu.be/UxBsq2fUvfE',
-        media: [
-          {
-            id: 2280,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/DWVjSSgLQQhS0xQh'
-          },
-          {
-            id: 2281,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/hma2CjesefecMki6'
-          },
-          {
-            id: 2282,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/3iGYksqMleGmARbl'
-          },
-          {
-            id: 2283,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/nQQBvsJcRb27aP8g'
-          },
-          {
-            id: 2284,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/PPqsF1el7WXbk5v9'
-          },
-          {
-            id: 2285,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/jx87p2WuZw9SnPW8'
-          },
-          {
-            id: 2269,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/B07_marsch_med_15_kg_ryggsack.mp4'
-          }
-        ],
-        id: 3571
-      }
-    ]
-  },
-  {
-    name: 'Marsch utan ryggsäck',
-    muscleGroups: ['back', 'abs', 'legs', 'glutes', 'shoulders'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Marsch eller gång, gärna i kängor. Variera underlag och terräng. ',
-        resourceUrl: 'https://youtu.be/YlhkJ2K6bKM',
-        media: [
-          {
-            id: 2270,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/kGXzyN3U5muhTNbw'
-          },
-          {
-            id: 2271,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/YIzTw0NKEXpyerc7'
-          },
-          {
-            id: 2272,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/EUEfbLkhbkwZ1xW8'
-          },
-          {
-            id: 2273,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/sVA4F5fPQ8By4MwP'
-          },
-          {
-            id: 2274,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/gJRBeVVhqUL1LfUY'
-          },
-          {
-            id: 2267,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/B05_marsch_utan_ryggsack.mp4'
-          }
-        ],
-        id: 4028
-      }
-    ]
-  },
-  {
-    name: 'Medelintensiv löpning',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Medelintensiv löpning. Ansträngande löpning med tydlig andfåddhet där du inte orkar konversera mer än några enstaka ord/korta meningar. Använder du pulsmätare motsvarar nivån ca 70-80% av din maxpuls. Lämplig vid snabb distansträning. ',
-        resourceUrl: 'https://youtu.be/23HCZ5KZNW8',
-        media: [
-          {
-            id: 2246,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2i6pa2b5LVDXCavz'
-          },
-          {
-            id: 2247,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/zIrsK7vB7bemMIev'
-          },
-          {
-            id: 2248,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lETvsD1cWENe74dk'
-          },
-          {
-            id: 2249,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rtCscHjR2YN8UOLp'
-          },
-          {
-            id: 2250,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/xTuZzH8U9837iKqN'
-          },
-          {
-            id: 2251,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0HtFiNEVLKsHpOXX'
-          },
-          {
-            id: 2245,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/B03_medelintensiv_lopning.mp4'
-          }
-        ],
-        id: 3557
-      }
-    ]
-  },
-  {
     name: 'Omvänd crunch',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -7654,6 +5160,7 @@ export default [
   },
   {
     name: 'Omvänd crunch till upphopp',
+    mainMuscleGroup: 'core',
     muscleGroups: ['legs', 'abs'],
     trainingTypes: ['cardio', 'strength', 'agility'],
     variations: [
@@ -7700,6 +5207,7 @@ export default [
   },
   {
     name: 'Omvänd planka',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -7731,6 +5239,7 @@ export default [
   },
   {
     name: 'Omvänd situp',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -7835,6 +5344,7 @@ export default [
   },
   {
     name: 'Pik-planka',
+    mainMuscleGroup: 'core',
     muscleGroups: ['back', 'abs', 'chest', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -7929,6 +5439,7 @@ export default [
   },
   {
     name: 'Planka',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -7976,6 +5487,7 @@ export default [
   },
   {
     name: 'Planka med armlyft fram',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'arms'],
     trainingTypes: ['strength'],
     variations: [
@@ -8070,6 +5582,7 @@ export default [
   },
   {
     name: 'Planka med benlyft',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -8164,6 +5677,7 @@ export default [
   },
   {
     name: 'Planka med diagonallyft',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'arms', 'legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -8273,6 +5787,7 @@ export default [
   },
   {
     name: 'Planka med hand ut till armhävningsavstånd',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -8367,6 +5882,7 @@ export default [
   },
   {
     name: 'Planka med rotation',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -8461,6 +5977,7 @@ export default [
   },
   {
     name: 'Planka på raka armar med armlyft fram och sidled',
+    mainMuscleGroup: 'core',
     muscleGroups: ['back', 'abs', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -8578,6 +6095,7 @@ export default [
   },
   {
     name: 'Planka på raka armar med axeltouch',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -8672,6 +6190,7 @@ export default [
   },
   {
     name: 'Planka på raka armar med axeltouch',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -8723,6 +6242,7 @@ export default [
   },
   {
     name: 'Planka på raka armar med benlyft',
+    mainMuscleGroup: 'core',
     muscleGroups: ['back', 'abs', 'shoulders', 'legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -8817,6 +6337,7 @@ export default [
   },
   {
     name: 'Planka på raka armar med diagonallyft',
+    mainMuscleGroup: 'core',
     muscleGroups: ['back', 'abs', 'shoulders', 'glutes', 'legs', 'arms'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -8921,6 +6442,7 @@ export default [
   },
   {
     name: 'Plankhopp raka',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'abs', 'back', 'arms', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -8962,6 +6484,7 @@ export default [
   },
   {
     name: 'Plankhopp sneda',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'abs', 'back', 'arms', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -9013,57 +6536,7 @@ export default [
   },
   {
     name: 'Plank-rodd',
-    muscleGroups: ['abs', 'back', 'shoulders'],
-    trainingTypes: ['strength', 'agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Plankaposition på knän och raka armar. För fram höften till en rak linje genom kroppen. Dra upp en arm i taget nära kroppen med armbågen riktad rakt upp. ',
-        resourceUrl: 'https://www.youtube.com/watch?v=ei0Z3xAC5P4',
-        media: [
-          {
-            id: 2515,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/B7bAZMA7ijMzRvF2'
-          },
-          {
-            id: 2516,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/f6UgQSEYnMbmutUv'
-          },
-          {
-            id: 2517,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/xYuLfaprIP1rMFg1'
-          },
-          {
-            id: 2518,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/tZ6ZkskRuhFD90pW'
-          },
-          {
-            id: 2519,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ZcLulhdFovlv8Ltb'
-          },
-          {
-            id: 2520,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/38UQkCB9Cs3pZ60Q'
-          },
-          {
-            id: 2514,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/316 Plank - Rodd Level 1 608x1080.mp4'
-          }
-        ],
-        id: 4101
-      }
-    ]
-  },
-  {
-    name: 'Plank-rodd',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -9158,51 +6631,7 @@ export default [
   },
   {
     name: 'Reaplanet',
-    muscleGroups: ['arms', 'shoulders', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Fäll överkroppen fram och lyft armarna ut åt sidorna.',
-        resourceUrl: 'https://www.youtube.com/watch?v=M_C9uJpp1RM',
-        media: [
-          {
-            id: 2509,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OiZxfRxl8Cyp6LXj'
-          },
-          {
-            id: 2510,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/bJ3SqxxI8YhfiClu'
-          },
-          {
-            id: 2511,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/dKtKz2f1RC2OwoAw'
-          },
-          {
-            id: 2512,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vHeFCvRDRUC1I21Z'
-          },
-          {
-            id: 2513,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Hb0pto9IiFlm68SG'
-          },
-          {
-            id: 2508,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/246_Reaplanet_level1 608x1080.mp4'
-          }
-        ],
-        id: 4102
-      }
-    ]
-  },
-  {
-    name: 'Reaplanet',
+    mainMuscleGroup: 'body',
     muscleGroups: ['arms', 'shoulders', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -9309,94 +6738,8 @@ export default [
     ]
   },
   {
-    name: 'Rumpsparkar',
-    muscleGroups: ['legs'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Spring på stället alternativt i rörelse framåt med höga lyft av fot bak mot rumpan i varje steg. Snabba steg. Stark i mage, upprätt bål. Låt armar pendla med.',
-        resourceUrl: 'https://youtu.be/51CBrkXxKLs',
-        media: [
-          {
-            id: 1078,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/uIiAVztaEHIBdvEu'
-          },
-          {
-            id: 1077,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/q0ubvpgMPeFubCxV'
-          },
-          {
-            id: 1076,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/e9zMLRtbWssT9S88'
-          },
-          {
-            id: 1075,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/018_rumpsparkar_150521.mp4'
-          }
-        ],
-        id: 3552
-      }
-    ]
-  },
-  {
-    name: 'Ryggliggande albatross',
-    muscleGroups: ['back', 'legs', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med armarna sträckta rakt ut åt sidorna på marken. Sträck upp ena benet rakt upp och fäll till motsatt sida, så det korsar kroppen. Sträva så långt du kan mot motsatt hand utan att axlarna lättar från underlaget. Växla mellan höger och vänster sida. Känn sträckning och vridning genom ländrygg.',
-        resourceUrl: 'https://youtu.be/rmT8Cf00mLg',
-        media: [
-          {
-            id: 1085,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/065_ryggliggande_albatross_150521.mp4'
-          },
-          {
-            id: 1084,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/e5YScCZfBFxFrVHZ'
-          },
-          {
-            id: 1083,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/I4I07DwJazGE29uq'
-          },
-          {
-            id: 1082,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/5OXSbh3W55YF0Iaw'
-          },
-          {
-            id: 1081,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FtqGvT1Uj4aKjAKp'
-          },
-          {
-            id: 1080,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1ZxHc8j8iZy0E6e8'
-          },
-          {
-            id: 1079,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/HKuefhPwpVtTiRPv'
-          }
-        ],
-        id: 3554
-      }
-    ]
-  },
-  {
     name: 'Rygglyft',
+    mainMuscleGroup: 'back',
     muscleGroups: ['back', 'abs'],
     trainingTypes: ['strength'],
     variations: [
@@ -9489,6 +6832,7 @@ export default [
   },
   {
     name: 'Rygglyft med crawl',
+    mainMuscleGroup: 'back',
     muscleGroups: ['back', 'abs', 'shoulders'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -9598,6 +6942,7 @@ export default [
   },
   {
     name: 'Rygglyft med rotation',
+    mainMuscleGroup: 'back',
     muscleGroups: ['back', 'abs'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -9697,6 +7042,7 @@ export default [
   },
   {
     name: 'Rygglyft med sidoböjning',
+    mainMuscleGroup: 'back',
     muscleGroups: ['back', 'abs'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -9789,6 +7135,7 @@ export default [
   },
   {
     name: 'Ryska knäböj',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -9897,335 +7244,8 @@ export default [
     ]
   },
   {
-    name: 'Sidledshopp med stakning',
-    muscleGroups: ['legs', 'glutes', 'abs', 'back', 'arms', 'shoulders'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ett hoppsasteg i sidled med kombinerad knäböjning och stakrörelse med armarna vid varje steg. Växelvis höger och vänster.',
-        resourceUrl: 'https://youtu.be/EXX9J_v6vGk',
-        media: [
-          {
-            id: 1163,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/AalpHTtoOi2LmJiY'
-          },
-          {
-            id: 1162,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ySlJaMU0iPVqteBc'
-          },
-          {
-            id: 1161,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/odLu58KYFcz0FJq3'
-          },
-          {
-            id: 1160,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/k92y06Cl4pOMhLdP'
-          },
-          {
-            id: 1159,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1jnt6ZoFwjsvShLJ'
-          },
-          {
-            id: 1158,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/cnvADex3pMO2Gbup'
-          },
-          {
-            id: 1157,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/267_sidledshopp_med_stakning_150521.mp4'
-          }
-        ],
-        id: 3521
-      }
-    ]
-  },
-  {
-    name: 'Sidledsspark',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'En hög spark mot växelvis vänster och höger. Få in en snabb och kraftfull rörelse i benet med stabilitet i bålen.',
-        resourceUrl: 'https://youtu.be/DTJvvdM00CY',
-        media: [
-          {
-            id: 1182,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/amSZiH6trFWSIbnZ'
-          },
-          {
-            id: 1181,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/VEy76yL54QQQXBdK'
-          },
-          {
-            id: 1180,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Pv2b9rDD0gW6g3fD'
-          },
-          {
-            id: 1179,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ubeHUFJQ5vKansbv'
-          },
-          {
-            id: 1178,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/3SR09Jsadt9kDgzc'
-          },
-          {
-            id: 1177,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/037_sidledsspark_150521.mp4'
-          }
-        ],
-        id: 3664
-      }
-    ]
-  },
-  {
-    name: 'Sidliggande rotation höger',
-    muscleGroups: ['back', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på sidan med böjda ben 90 grader. Övre arm böjd med handen i nacken. Håll gärna undre armens hand mot knäna, som ska vara kvar mot underlaget genom hela rörelsen. Sträva med övre armbågen i riktning bakåt, mot underlaget, så långt du kan. Följ med blicken. Jobba dynamiskt mot ytterläget. Känn vridningen genom bröstryggen. För extra effekt, sträck det undre benet, men låt det övre vara böjt med kontakt mot underlaget.',
-        resourceUrl: 'https://www.youtube.com/watch?v=JBxELRdiWmM',
-        media: [
-          {
-            id: 2572,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rmfDrSDnNO9hBbDl'
-          },
-          {
-            id: 2573,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CLvboc3ONfSE5M0s'
-          },
-          {
-            id: 2574,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/GrAJjDK9RiK03Ayz'
-          },
-          {
-            id: 2575,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/R2JOfkt1ixRKJ50t'
-          },
-          {
-            id: 2571,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/66_sidliggande_rotation 608x1080.mp4'
-          }
-        ],
-        id: 4103
-      }
-    ]
-  },
-  {
-    name: 'Sidliggande rotation höger',
-    muscleGroups: ['back', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på sidan med böjda ben 90 grader. Övre arm böjd med handen i nacken. Håll gärna undre armens hand mot knäna, som ska vara kvar mot underlaget genom hela rörelsen. Sträva med övre armbågen i riktning bakåt, mot underlaget, så långt du kan. Följ med blicken. Jobba dynamiskt mot ytterläget. Känn vridningen genom bröstryggen. För extra effekt, sträck det undre benet, men låt det övre vara böjt med kontakt mot underlaget.',
-        resourceUrl: 'https://youtu.be/zOAnLhVi-r8',
-        media: [
-          {
-            id: 2098,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Z3b6R6HtJjnMl4A7'
-          },
-          {
-            id: 2097,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7YF5U6C3wXuzT61H'
-          },
-          {
-            id: 2096,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/i4RfvifrrF60UVO4'
-          },
-          {
-            id: 2095,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/066_sidliggande_rotation_150521.mp4'
-          }
-        ],
-        id: 3518
-      }
-    ]
-  },
-  {
-    name: 'Sidliggande rotation vänster',
-    muscleGroups: ['back', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på sidan med böjda ben 90 grader. Övre arm böjd med handen i nacken. Håll gärna undre armens hand mot knäna, som ska vara kvar mot underlaget genom hela rörelsen. Sträva med övre armbågen i riktning bakåt, mot underlaget, så långt du kan. Följ med blicken. Jobba dynamiskt mot ytterläget. Känn vridningen genom bröstryggen. För extra vridning, sträck det undre benet, men låt det övre vara böjt med kontakt mot underlaget. ',
-        resourceUrl: 'https://youtu.be/zOAnLhVi-r8',
-        media: [
-          {
-            id: 2098,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Z3b6R6HtJjnMl4A7'
-          },
-          {
-            id: 2097,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7YF5U6C3wXuzT61H'
-          },
-          {
-            id: 2096,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/i4RfvifrrF60UVO4'
-          },
-          {
-            id: 2095,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/066_sidliggande_rotation_150521.mp4'
-          }
-        ],
-        id: 3512
-      }
-    ]
-  },
-  {
-    name: 'Sidliggande rotation vänster',
-    muscleGroups: ['back', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på sidan med böjda ben 90 grader. Övre arm böjd med handen i nacken. Håll gärna undre armens hand mot knäna, som ska vara kvar mot underlaget genom hela rörelsen. Sträva med övre armbågen i riktning bakåt, mot underlaget, så långt du kan. Följ med blicken. Jobba dynamiskt mot ytterläget. Känn vridningen genom bröstryggen. För extra effekt, sträck det undre benet, men låt det övre vara böjt med kontakt mot underlaget.',
-        resourceUrl: 'https://www.youtube.com/watch?v=JBxELRdiWmM',
-        media: [
-          {
-            id: 2572,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rmfDrSDnNO9hBbDl'
-          },
-          {
-            id: 2573,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CLvboc3ONfSE5M0s'
-          },
-          {
-            id: 2574,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/GrAJjDK9RiK03Ayz'
-          },
-          {
-            id: 2575,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/R2JOfkt1ixRKJ50t'
-          },
-          {
-            id: 2571,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/66_sidliggande_rotation 608x1080.mp4'
-          }
-        ],
-        id: 4104
-      }
-    ]
-  },
-  {
-    name: 'Sidoböjning',
-    muscleGroups: ['arms', 'back', 'abs', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Fläta ihop fingrarna, vänd handflatorna utåt och pressa dem upp med raka armar och sänkta axlar. Stå brett mellan fötter. Sträva efter att böja ryggen rakt i sidled, växelvis höger och vänster. Tänk att du har en vägg precis framför och bakom dig, så att du bara kan röra dig rakt i sidled.',
-        resourceUrl: 'https://youtu.be/7Rogqs287-E',
-        media: [
-          {
-            id: 1186,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FnT8fteZBJOK9k57'
-          },
-          {
-            id: 1185,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/A1oF1HjSnMcqrdGa'
-          },
-          {
-            id: 1184,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/82usQequCWO2IhXI'
-          },
-          {
-            id: 1183,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/005_sidobojning_hoger_vanster_150521.mp4'
-          }
-        ],
-        id: 3659
-      }
-    ]
-  },
-  {
-    name: 'Sidoböjning',
-    muscleGroups: ['arms', 'back', 'abs', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Fläta ihop fingrarna, vänd handflatorna utåt och pressa dem upp med raka armar och sänkta axlar. Stå brett mellan fötter. Sträva efter att böja ryggen rakt i sidled, växelvis höger och vänster. Tänk att du har en vägg precis framför och bakom dig, så att du bara kan röra dig rakt i sidled.',
-        resourceUrl: 'https://www.youtube.com/watch?v=0KfH7BjviIQ',
-        media: [
-          {
-            id: 2447,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/aSU9LH42mP0YGXfm'
-          },
-          {
-            id: 2448,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rNkQJ7dYC6TUX5Cy'
-          },
-          {
-            id: 2449,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2y74iWTIGcYGX9HF'
-          },
-          {
-            id: 2450,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/x4gaY50chg5yjSDE'
-          },
-          {
-            id: 2446,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/5 Sidobojning hoger vanster 608x1080.mp4'
-          }
-        ],
-        id: 4105
-      }
-    ]
-  },
-  {
     name: 'Sidoplanka',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -10257,6 +7277,7 @@ export default [
   },
   {
     name: 'Sidoplanka med benlyft',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes', 'legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -10351,6 +7372,7 @@ export default [
   },
   {
     name: 'Sidoplanka med hand mot fot',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes', 'legs'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -10430,6 +7452,7 @@ export default [
   },
   {
     name: 'Sidoplanka med höftsänkning',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -10509,6 +7532,7 @@ export default [
   },
   {
     name: 'Sidoplanka med rotation',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -10603,6 +7627,7 @@ export default [
   },
   {
     name: 'Sidoplanka på armbåge arm med benlyft framför/bakom',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes', 'legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -10700,6 +7725,7 @@ export default [
   },
   {
     name: 'Sidoplanka på rak arm med crunch',
+    mainMuscleGroup: 'core',
     muscleGroups: ['shoulders', 'arms', 'abs', 'back', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -10794,6 +7820,7 @@ export default [
   },
   {
     name: 'Sidoplanka till armhävning',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['abs', 'back', 'shoulders', 'arms', 'chest', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -10892,239 +7919,8 @@ export default [
     ]
   },
   {
-    name: 'Sittande drake, steg i sidled',
-    muscleGroups: ['legs', 'glutes', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör ett litet kliv ut i sidled med ena foten tills den nuddar marken och tillbaka. Håll böjt läge i knä och framåtfälld bål genom hela rörelsen.',
-        resourceUrl: 'https://youtu.be/oIm7qG15Aco',
-        media: [
-          {
-            id: 1272,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0XJsCKOLWTITjbcT'
-          },
-          {
-            id: 1271,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1VgnQnoLKuhFSA1y'
-          },
-          {
-            id: 1270,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rYasHzjKj8dzgaSl'
-          },
-          {
-            id: 1267,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/237_sittande_drake_steg_i_sidled_level1_150521.mp4'
-          }
-        ],
-        id: 3468
-      },
-      {
-        difficulty: 1,
-        description:
-          'Gör ett litet kliv ut i sidled med ena foten ovan mark och tillbaka. Håll böjt läge i knä och framåtfälld bål genom hela rörelsen.',
-        resourceUrl: 'https://youtu.be/-tTZwA8gUcU',
-        media: [
-          {
-            id: 1276,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fV87R4unpsIsVl42'
-          },
-          {
-            id: 1275,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/cOdr7jYc5X2ME7TJ'
-          },
-          {
-            id: 1274,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/J3xmttCsVrO9gkmO'
-          },
-          {
-            id: 1268,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/238_sittande_drake_steg_i_sidled_level2_150521.mp4'
-          }
-        ],
-        id: 3469
-      },
-      {
-        difficulty: 2,
-        description:
-          'Gör ett litet kliv ut i sidled med ena foten ovan mark och tillbaka. Håll böjt läge i knä och framåtfälld bål genom hela rörelsen. Sträck motsatt arm diagonalt.',
-        resourceUrl: 'https://youtu.be/96NpSwUhpg0',
-        media: [
-          {
-            id: 1279,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/I7rTGPTrdw99tXSW'
-          },
-          {
-            id: 1278,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2DT3UxF6r4dwyWcs'
-          },
-          {
-            id: 1277,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lDpxOJaNDf4hfKVK'
-          },
-          {
-            id: 1269,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/239_sittande_drake_steg_i_sidled_level3_150521.mp4'
-          }
-        ],
-        id: 3470
-      }
-    ]
-  },
-  {
-    name: 'Sittande gaspedal',
-    muscleGroups: ['back', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Sitt på sittbensknölarna  med ena benet sträckt och andra benet lätt böjt med hälen i marken. Fatta tag med motsatt hand runt utsidan av det böjda benets fot. Tryck dig bakåt med ryggen i en krummande rörelse samtidigt som du "gasar" med foten tills det sträcker runt skuldran.',
-        resourceUrl: 'https://youtu.be/_MbxK7JxU5g',
-        media: [
-          {
-            id: 1282,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/EfIfsBGHWmelXoEv'
-          },
-          {
-            id: 1281,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OmJa12dvZZCPkWAP'
-          },
-          {
-            id: 1280,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/068_sittande_gaspedal_150521.mp4'
-          }
-        ],
-        id: 3467
-      }
-    ]
-  },
-  {
-    name: 'Sittande korkskruv',
-    muscleGroups: ['back', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Sitt upprätt på sittbensknölarna med ena benet sträckt mot marken och andra benet böjt med foten på utsidan av det sträckta benet. Sätt motsatt armbåge på utsidan av det böjda knäet och andra handen som stöd i underlaget, bakom kroppen. Håll kroppen upprätt och vrid dig aktivt mot böjda benets sida med trycket av armbågen mot knäet. Jobba dynamiskt mot ytterläget. Känn sträckning genom bröstryggen.',
-        resourceUrl: 'https://youtu.be/Z380364sdro',
-        media: [
-          {
-            id: 1285,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/067_sittande_korkskruv_150521.mp4'
-          },
-          {
-            id: 1284,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/nLUMeozQKGdy5Pjn'
-          },
-          {
-            id: 1283,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/KAbBvNkQPsImZJ47'
-          }
-        ],
-        id: 3466
-      }
-    ]
-  },
-  {
-    name: 'Sittande "L" till "V"',
-    muscleGroups: ['legs', 'back'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Sitt ner med benen sträckta framför dig. Händerna placerade bakom dig i marken som stöd. Håll kroppen upprätt. Sträva efter att komma 90 grader i höft, eller mer. Dra sedan benen ut i ett "V" och fortsätt sträva fram med upprätt rygg och lätt svank. Ta stöd med händer. Växla mellan rörelserna. För extra sträckning eftersträva en svankrörelse genom att tippa bäckenet framåt i respektive läge.',
-        resourceUrl: 'https://youtu.be/4xjEGh7pGKE',
-        media: [
-          {
-            id: 1290,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/abc1FgqHeQTghvhB'
-          },
-          {
-            id: 1289,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/6iT8LfKMBVQKfD7w'
-          },
-          {
-            id: 1288,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/yqz0hCJJ1h1pllny'
-          },
-          {
-            id: 1287,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/080_sittande_l_till_v__150521.mp4'
-          }
-        ],
-        id: 3464
-      }
-    ]
-  },
-  {
     name: 'Sittande stolen',
-    muscleGroups: ['legs'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Gör ytlig knäböj med fötter och knän tätt ihop. Armar sträcks framåt. Längd och styrka i bålen.',
-        resourceUrl: 'https://www.youtube.com/watch?v=Lq2F1txNtZI',
-        media: [
-          {
-            id: 2484,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/9lMDrsVgTJm9pAmc'
-          },
-          {
-            id: 2485,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/xNjl5gIPWrM3SqQC'
-          },
-          {
-            id: 2486,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/J0tDqVPaBIfw6ghP'
-          },
-          {
-            id: 2487,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/im7bncC9kmkQ6mQX'
-          },
-          {
-            id: 2483,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/99 sittande stolen level 1 608x1080.mp4'
-          }
-        ],
-        id: 4106
-      }
-    ]
-  },
-  {
-    name: 'Sittande stolen',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -11231,69 +8027,8 @@ export default [
     ]
   },
   {
-    name: 'Sittande sätesstöj höger',
-    muscleGroups: ['glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Sitt på sittbensknölarna med händerna i marken bakom dig som stöd. Ena benet böjt med fot i underlaget och andra foten placeras mot böjda benets knä. Fäll knä i sidled. Sträva efter att komma med rumpan så nära benen du kan med upprätt rygg. Känn att det sträcker i sätet. Brösta upp och svanka lätt för extra sträckning.',
-        resourceUrl: 'https://youtu.be/2QOEk2FB3sw',
-        media: [
-          {
-            id: 2111,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/LSsiU5k9aXUVp7LD'
-          },
-          {
-            id: 2110,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/VK93y9RcUejFFbRN'
-          },
-          {
-            id: 2109,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/073_sittande_satesstoj_fot_pa_kna_150521.mp4'
-          }
-        ],
-        id: 3937
-      }
-    ]
-  },
-  {
-    name: 'Sittande sätesstöj vänster',
-    muscleGroups: ['glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Sitt på sittbensknölarna med händerna i marken bakom dig som stöd. Ena benet böjt med fot i underlaget och andra foten placeras mot böjda benets knä. Fäll knä i sidled. Sträva efter att komma med rumpan så nära benen du kan med upprätt rygg. Känn att det sträcker i sätet. Brösta upp och svanka lätt för extra sträckning.',
-        resourceUrl: 'https://youtu.be/2QOEk2FB3sw',
-        media: [
-          {
-            id: 2111,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/LSsiU5k9aXUVp7LD'
-          },
-          {
-            id: 2110,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/VK93y9RcUejFFbRN'
-          },
-          {
-            id: 2109,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/073_sittande_satesstoj_fot_pa_kna_150521.mp4'
-          }
-        ],
-        id: 3938
-      }
-    ]
-  },
-  {
     name: 'Situps',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -11388,6 +8123,7 @@ export default [
   },
   {
     name: 'Skidhopp',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -11428,48 +8164,8 @@ export default [
     ]
   },
   {
-    name: 'Skridskohopp',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Sidledshopp med landning på yttre foten. Motsatt ben sträcks ut bakom. Armar pendlar med i sidled. Knä landar i fotens riktning.',
-        resourceUrl: 'https://youtu.be/DDx1I2vtTYk',
-        media: [
-          {
-            id: 1332,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/269_skridskohopp_150521.mp4'
-          },
-          {
-            id: 1331,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Sc3gu6nnVwENBIRB'
-          },
-          {
-            id: 1330,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/YQMpgjqYUP0GBz7i'
-          },
-          {
-            id: 1329,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FYw2Epg2gpdZ9vOP'
-          },
-          {
-            id: 1328,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Ym5GsgSOSnnaHvoE'
-          }
-        ],
-        id: 3943
-      }
-    ]
-  },
-  {
     name: 'Skridskoutfall',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -11588,33 +8284,8 @@ export default [
     ]
   },
   {
-    name: 'Skräddaren',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Sitt i skräddarställning, fotsulorna mot varandra och fäll ut knäna i sidled så långt du kan. Behåll bålen upprätt. Känn sträckning i ljumskar och insida lår.',
-        resourceUrl: 'https://youtu.be/F3jbmNMzeUk',
-        media: [
-          {
-            id: 1327,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mEnjLaYJ75zmxEnM'
-          },
-          {
-            id: 1326,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/069_skraddaren_150521.mp4'
-          }
-        ],
-        id: 3947
-      }
-    ]
-  },
-  {
     name: 'Släggcrunch',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -11724,6 +8395,7 @@ export default [
   },
   {
     name: 'Släggutfall',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes', 'abs', 'back', 'shoulders'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -11774,6 +8446,7 @@ export default [
   },
   {
     name: 'Snabba bergsklättraren',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs', 'abs', 'back', 'arms', 'shoulders'],
     trainingTypes: ['cardio'],
     variations: [
@@ -11814,42 +8487,8 @@ export default [
     ]
   },
   {
-    name: 'Snabblöpning på stället',
-    muscleGroups: ['legs'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Snabba fötter med armpendling. Landa på framfot.',
-        resourceUrl: 'https://youtu.be/yKDjRXUmsLg',
-        media: [
-          {
-            id: 1430,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/gTT3eNcD2jnN9oYF'
-          },
-          {
-            id: 1429,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fDGwupDuVhUS64m9'
-          },
-          {
-            id: 1428,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/zBHOATcs0W9Q1KTt'
-          },
-          {
-            id: 1427,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/023_snabblopning_pa_stallet_150521.mp4'
-          }
-        ],
-        id: 3953
-      }
-    ]
-  },
-  {
     name: 'Sned crunch',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -11958,53 +8597,8 @@ export default [
     ]
   },
   {
-    name: 'Snurr runt dig själv',
-    muscleGroups: ['legs', 'abs', 'back', 'arms', 'shoulders'],
-    trainingTypes: ['cardio', 'strength', 'agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från armhävningsposition. Förflytta dig ett varv runt kroppen genom att så snabbt som möjligt förflytta fötterna i en cirkel runt armarna,  lyft en hand i taget. Växla gärna mellan med- och motsols.',
-        resourceUrl: 'https://youtu.be/bri7ugLLDro',
-        media: [
-          {
-            id: 1459,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/051_snurr_runt_dig_sjalv_150521.mp4'
-          },
-          {
-            id: 1458,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/EbD25xHBuXfnlBwg'
-          },
-          {
-            id: 1457,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/np2deyoYm8z5yuRU'
-          },
-          {
-            id: 1456,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/tSbv7I3bjGSWqtrO'
-          },
-          {
-            id: 1455,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/a7g1J3CP4dTKB8Pe'
-          },
-          {
-            id: 1454,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rDs17NbaPj58YYTy'
-          }
-        ],
-        id: 3958
-      }
-    ]
-  },
-  {
     name: 'Spindelmannen',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'legs'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -12119,6 +8713,7 @@ export default [
   },
   {
     name: 'Spindelmannen på raka armar',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -12212,187 +8807,8 @@ export default [
     ]
   },
   {
-    name: 'Spindelmannenstretch höger',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ta utfallskliv fram och placera händer i underlaget i linje med främre foten, på insidan. Tyngdpunkten i främre foten, sänk ner höften så djupt du kan. Bakre benet sträckt med foten i underlaget. Det är ok att vila med bakre knäet i underlaget. Sträva efter att höften sjunker ner så mycket som möjligt, tills det sträcker i framsida höft.',
-        resourceUrl: 'https://youtu.be/SqrWo4YLYF0',
-        media: [
-          {
-            id: 1591,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/iXv3Hv2svLywYwCN'
-          },
-          {
-            id: 1590,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/pBYdpXiNO3RUd3Xu'
-          },
-          {
-            id: 1589,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/078_supermannenstretch_150521.mp4'
-          }
-        ],
-        id: 3965
-      }
-    ]
-  },
-  {
-    name: 'Spindelmannenstretch med rotation höger',
-    muscleGroups: ['legs', 'glutes', 'back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ta utfallskliv fram och placera händer i underlaget i linje med främre foten. Tyngdpunkten i främre foten, sänk ner höften så djupt du kan. Bakre benet sträckt med foten i underlaget. Det är ok att vila med bakre knäet i underlaget. Sträva efter att höften sjunker ner så mycket som möjligt tills det sträcker i framsida höft. Sträck armen som är närmast främre foten upp mot taket och följ med blicken. Eftersträva en rak linje från handen i underlaget till handen som sträcks upp.',
-        resourceUrl: 'https://youtu.be/9FvDTV_DZho',
-        media: [
-          {
-            id: 1598,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/079_supermannenstretch_med_rotation_150521.mp4'
-          },
-          {
-            id: 1597,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/789DLZb3YRsNl8vm'
-          },
-          {
-            id: 1596,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/N5fy6mwEcMrrpBza'
-          },
-          {
-            id: 1595,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1jUoCKQNME8Aqb4b'
-          },
-          {
-            id: 1594,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Nsnibw6oZf5nz96l'
-          }
-        ],
-        id: 3966
-      }
-    ]
-  },
-  {
-    name: 'Spindelmannenstretch med rotation vänster',
-    muscleGroups: ['arms', 'back', 'legs', 'glutes', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ta utfallskliv fram och placera händer i underlaget i linje med främre foten. Tyngdpunkten i främre foten, sänk ner höften så djupt du kan. Bakre benet sträckt med foten i underlaget. Det är ok att vila med bakre knäet i underlaget. Sträva efter att höften sjunker ner så mycket som möjligt tills det sträcker i framsida höft. Sträck armen som är närmast främre foten upp mot taket och följ med blicken. Eftersträva en rak linje från handen i underlaget till handen som sträcks upp.',
-        resourceUrl: 'https://youtu.be/9FvDTV_DZho',
-        media: [
-          {
-            id: 2047,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/v2Z2e1b6BeU3y7Pa'
-          },
-          {
-            id: 2046,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/XLLF6kfEggxoBtoe'
-          },
-          {
-            id: 2045,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fvRzByMVhIqU4Xqf'
-          },
-          {
-            id: 2044,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/6UIJNhV2ASvWyr96'
-          },
-          {
-            id: 2043,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/079_supermannenstretch_med_rotation_150521.mp4'
-          }
-        ],
-        id: 3967
-      }
-    ]
-  },
-  {
-    name: 'Spindelmannenstretch vänster',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ta utfallskliv fram och placera händer i underlaget i linje med främre foten, på insidan. Tyngdpunkten i främre foten, sänk ner höften så djupt du kan. Bakre benet sträckt med foten i underlaget. Det är ok att vila med bakre knäet i underlaget. Sträva efter att höften sjunker ner så mycket som möjligt tills det sträcker i framsida höft.',
-        resourceUrl: 'https://youtu.be/SqrWo4YLYF0',
-        media: [
-          {
-            id: 2050,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/peW15Oc0Q43OGUvu'
-          },
-          {
-            id: 2049,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/V9SULYYzNcmNOd6G'
-          },
-          {
-            id: 2048,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/078_supermannenstretch_150521.mp4'
-          }
-        ],
-        id: 3968
-      }
-    ]
-  },
-  {
     name: 'Statisk knäböj med tåhävning',
-    muscleGroups: ['legs'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör ytlig knäböj men håll statiskt i nedre läget och gör tåhävningar. Stabil och stark i bålen, knä i fotens riktning. Kom så högt du kan i tåhävningen och kontrollera rörelsen tillbaka.',
-        resourceUrl: 'https://www.youtube.com/watch?v=xy9B4rjnfMs',
-        media: [
-          {
-            id: 2489,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/z6MPHTvaemZplrWX'
-          },
-          {
-            id: 2490,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/H4fUw0jl3zamZIpU'
-          },
-          {
-            id: 2491,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0k7rJOwQOuct0pSG'
-          },
-          {
-            id: 2488,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/111 statisk knaboj med tahavning level1 608x1080.mp4'
-          }
-        ],
-        id: 4107
-      }
-    ]
-  },
-  {
-    name: 'Statisk knäböj med tåhävning',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -12486,696 +8902,8 @@ export default [
     ]
   },
   {
-    name: 'Stillastående utfall',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ta ut ett stort steg, men behåll höftbrett mellan fötterna. Bakre fotens tår i underlaget, händer på höften. Gå ner i utfall med lodrät rörelse där främre knä håller sig rakt över den sidans fotled och pekar i fotens riktning. Vänd halvvägs ner. Stark rumpa och mage med längd i bålen. Tryck hela främre foten mot underlaget då du går upp och aktivera på så vis den sidans säte.',
-        resourceUrl: 'https://youtu.be/euoywdAhLDA',
-        media: [
-          {
-            id: 1538,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/qSlPY99isQpbqa2x'
-          },
-          {
-            id: 1537,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/h5MZJtKGwYoS2utm'
-          },
-          {
-            id: 1536,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/UdmWvgbXYoinXoPZ'
-          },
-          {
-            id: 1533,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/141_stillastaende_utfall_level1_150521.mp4'
-          }
-        ],
-        id: 3972
-      },
-      {
-        difficulty: 1,
-        description:
-          'Ta ut ett stort steg, men behåll höftbrett mellan fötterna. Bakre fotens tår i underlaget. Gå ner i utfall med lodrät rörelse där främre knäet håller sig rakt över den sidans fotled och pekar i fotens riktning. Bakre knäet riktas rakt ner. Gå hela vägen och vänd strax innan knäet nuddar underlaget. I detta läge eftersträvas 90 graders vinkel i både höft och knä. Stark rumpa och mage med längd i bålen. Tryck hela främre foten mot underlaget då du går upp och aktivera på så vis den sidans säte.',
-        resourceUrl: 'https://youtu.be/wOTMnHVFRPM',
-        media: [
-          {
-            id: 1541,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OiaUTL6QyXZtJ6HT'
-          },
-          {
-            id: 1540,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/gZr37l8SSP1dD3pa'
-          },
-          {
-            id: 1539,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/388VDxs7gwTyypDC'
-          },
-          {
-            id: 1534,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/142_stillastaende_utfall_level2_150521.mp4'
-          }
-        ],
-        id: 3973
-      },
-      {
-        difficulty: 2,
-        description:
-          'Ta ut ett stort steg, men behåll höftbrett mellan fötterna. Främre foten på förhöjning, bakre fotens tår i underlaget. Gå ner i utfall med lodrät rörelse där främre knäet håller sig rakt över den sidans fotled och pekar i fotens riktning. Gå så djupt du kan där bakre knä riktas rakt ner och främre knä är rakt ovan främre foten. Stark rumpa och mage med längd i bålen. Tryck hela främre foten mot underlaget då du går upp och aktivera på så vis den sidans säte. En förhöjning kan t ex vara ett trappsteg, några böcker, brädor, stepbräda, en stubbe eller en sten. Höjden kan vara allt från 5 cm upp till ca 30 cm. \n\nAlternativ till förhöjning: Ta ut steget ännu längre, men fortfarande med tyngden i främre foten. På så vis får du aktivt jobba i en längre rörelse och utmana rörligheten i höft och lår.',
-        resourceUrl: 'https://youtu.be/flNwH6_SbhQ',
-        media: [
-          {
-            id: 1544,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/3kgVGJS0eXPLpSV8'
-          },
-          {
-            id: 1543,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/9CF4KX4cJ2Gi4gwC'
-          },
-          {
-            id: 1542,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/DjV1qCEYyZpEzuhC'
-          },
-          {
-            id: 1535,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/143_stillastaende_utfall_level3_150521.mp4'
-          }
-        ],
-        id: 3974
-      }
-    ]
-  },
-  {
-    name: 'Stillastående utfall med rotation',
-    muscleGroups: ['legs', 'glutes', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör stillastående utfall men vrid bålen i nedre läget med sträckta armar mot främre benets sida: Ta ut ett stort steg, men behåll höftbrett mellan fötterna. Bakre fotens tår i underlaget, händer på höften. Gå ner i utfall med lodrät rörelse där främre knäet håller sig rakt över den sidans fotled och pekar i fotens riktning. Armar sträckta framåt, vrids mot främre benets sida då du går halvvägs ner. Följ gärna rörelsen med blicken. Stark rumpa och mage med längd i bålen. Tryck hela främre foten mot underlaget då du går upp och aktivera på så vis den sidans säte.',
-        resourceUrl: 'https://youtu.be/xzQVJQu4NYk',
-        media: [
-          {
-            id: 1551,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/cUXMQqrzRE5zMDoh'
-          },
-          {
-            id: 1550,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/9ixzKQxGYUYHihLw'
-          },
-          {
-            id: 1549,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/SmU7qUdTPMjB3tNi'
-          },
-          {
-            id: 1548,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/iZWwqPPsL8ynyqEb'
-          },
-          {
-            id: 1545,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/147_stillastaende_utfall_med_rotation_level1_150521.mp4'
-          }
-        ],
-        id: 3975
-      },
-      {
-        difficulty: 1,
-        description:
-          'Gör stillastående utfall men vrid bålen i nedre läget med sträckta armar mot främre benets sida: Ta ut ett stort steg, men behåll höftbrett mellan fötterna. Bakre fotens tår i underlaget. Gå ner i utfall med lodrät rörelse där främre knäet håller sig rakt över den sidans fotled och pekar i fotens riktning. Bakre knäet riktas rakt ner. Sträck samtidigt armar framåt och vrid mot främre benet så du vrider bålen. Följ gärna rörelsen med blicken. Gå hela vägen och vänd strax innan knäet nuddar underlaget. I detta läge eftersträvas 90 graders vinkel i både höft och knän. Stark rumpa och mage med längd i bålen. Tryck hela främre foten mot underlaget då du går upp och aktivera på så vis den sidans säte.',
-        resourceUrl: 'https://youtu.be/kKY8Sv07YLY',
-        media: [
-          {
-            id: 1555,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/blOZINYWOBsl5U1s'
-          },
-          {
-            id: 1554,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7GCd7mH6ivc0MFIH'
-          },
-          {
-            id: 1553,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/JXagaMROOQQJGT7T'
-          },
-          {
-            id: 1552,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/TxYYDXfCFh8bWAAT'
-          },
-          {
-            id: 1546,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/148_stillastaende_utfall_med_rotation_level2_150521.mp4'
-          }
-        ],
-        id: 3976
-      },
-      {
-        difficulty: 2,
-        description:
-          'Gör stillastående utfall med främre foten på förhöjning, men vrid bålen i nedre läget med sträckta armar mot främre benets sida: Ta ut ett stort steg, men behåll höftbrett mellan fötterna. Främre foten på förhöjning, bakre fotens tår i underlaget. Gå ner i utfall med lodrät rörelse där främre knäet håller sig rakt över den sidans fotled och pekar i fotens riktning. Gå så djupt du kan där bakre knä riktas rakt ner och främre knä är rakt ovan främre foten. Sträck samtidigt armar rakt fram och vrid överkroppen mot främre lårets sida. Följ gärna med blicken. Stark rumpa och mage med längd i bålen. Tryck hela främre foten mot underlaget då du går upp och aktivera på så vis den sidans säte. En förhöjning kan t ex vara ett trappsteg, några böcker, brädor, stepbräda, en stubbe eller en sten. Höjden kan vara allt från 5 cm upp till ca 30 cm. \n\nAlternativ till förhöjning: Ta ut steget ännu längre, men fortfarande med tyngden i främre foten. På så vis får du aktivt jobba i en längre rörelse och utmana rörligheten i höft och lår.',
-        resourceUrl: 'https://youtu.be/-R-kZ1B6AbE',
-        media: [
-          {
-            id: 1559,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/h7GRVFJLu8Lrh69Q'
-          },
-          {
-            id: 1558,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Ob7uCKYIAm3O7yN5'
-          },
-          {
-            id: 1557,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/AJCnB3umYg7MZz9z'
-          },
-          {
-            id: 1556,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/TC9Ii34WY6JQwHLm'
-          },
-          {
-            id: 1547,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/149_stillastaende_utfall_med_rotation_level3_150521.mp4'
-          }
-        ],
-        id: 3977
-      }
-    ]
-  },
-  {
-    name: 'Stående crawlsim',
-    muscleGroups: ['arms', 'back', 'chest', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå höftbrett, stabilisera höft och bål. Eventuellt lätt framåtfällning i höften och böjda knän. Imitera crawlsim med växelvisa simtag framåt. För huvudet åt växelvis höger och vänster under armen som om du skulle "hämta luft".',
-        resourceUrl: 'https://youtu.be/nhaYVUA2FQ0',
-        media: [
-          {
-            id: 1492,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/tQDsJvOJ84N1OAgW'
-          },
-          {
-            id: 1491,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/MLB5aEangvYAjGU7'
-          },
-          {
-            id: 1490,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/jX9NdL2hwvP2pvmJ'
-          },
-          {
-            id: 1489,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/014_staende_crawlsim_150521.mp4'
-          }
-        ],
-        id: 3978
-      }
-    ]
-  },
-  {
-    name: 'Stående crawlsim',
-    muscleGroups: ['arms', 'back', 'chest', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå höftbrett, stabilisera höft och bål. Eventuellt lätt framåtfällning i höften och böjda knän. Imitera crawlsim med växelvisa simtag framåt. För huvudet åt växelvis höger och vänster under armen som om du skulle "hämta luft".',
-        resourceUrl: 'https://www.youtube.com/watch?v=UEaqiEvfVJk',
-        media: [
-          {
-            id: 2467,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/sQi8ffTSSe131npl'
-          },
-          {
-            id: 2468,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/k14VBENWkqupPTJ6'
-          },
-          {
-            id: 2469,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1bSMBoJdxYkFGSAE'
-          },
-          {
-            id: 2471,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0aQ90yZzSKZs3G1X'
-          },
-          {
-            id: 2472,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/aieRRfu5DKpBSC4p'
-          },
-          {
-            id: 2466,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/14_staende_crawlsim 608x1080.mp4'
-          }
-        ],
-        id: 4108
-      }
-    ]
-  },
-  {
-    name: 'Stående fjärilssim',
-    muscleGroups: ['back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Stå höftbrett, stabilisera höft och bål. Imitera fjärilssim med simtag av båda armarna framåt.',
-        resourceUrl: 'https://youtu.be/w2hWTiD9qNo',
-        media: [
-          {
-            id: 1496,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/013_staende_fjarilssim_150521.mp4'
-          },
-          {
-            id: 1495,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/pFp7C32pWCQwbkyJ'
-          },
-          {
-            id: 1494,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/UZyXlxfRlNUWUS4d'
-          },
-          {
-            id: 1493,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rbsDoLxR2Up5Jn2X'
-          }
-        ],
-        id: 3979
-      }
-    ]
-  },
-  {
-    name: 'Stående framsida lår höger',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå på ett ben, eventuellt med balansstöd. Dra fot mot rumpa och håll knäna nära varandra. Här ligger framgångsfaktorn i att föra fram höften ordentligt genom att spänna rumpan och hålla emot med stark mage.',
-        resourceUrl: 'https://youtu.be/kgGO6HXnX8c',
-        media: [
-          {
-            id: 2145,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/092_stande_framsida_lar_150521.mp4'
-          },
-          {
-            id: 1501,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/KUDR6EYOKL614woh'
-          }
-        ],
-        id: 3980
-      }
-    ]
-  },
-  {
-    name: 'Stående framsida lår vänster',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå på ett ben, eventuellt med balansstöd. Dra fot mot rumpa och håll knäna nära varandra. Här ligger framgångsfaktorn i att föra fram höften ordentligt genom att spänna rumpan och hålla emot med stark mage.',
-        resourceUrl: 'https://youtu.be/kgGO6HXnX8c',
-        media: [
-          {
-            id: 2145,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/092_stande_framsida_lar_150521.mp4'
-          },
-          {
-            id: 2054,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lQpePJEaer8iM6T3'
-          }
-        ],
-        id: 3981
-      }
-    ]
-  },
-  {
-    name: 'Stående framåt/bakåtböjning',
-    muscleGroups: ['back', 'legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Rulla ner kota för kota, i framåtböjning av rygg nära kroppen. Tänk dig som ett "dyk i stuprör". In med hakan. Rulla sedan upp motsvarande. Knäna raka. Sätt händerna på rumpan och böj ryggen bak samtidigt som du pressar fram höften. Spänn magen lätt som stöd för ryggen, blicken upp. Det är okej att lätta på hälarna om du vill.',
-        resourceUrl: 'https://www.youtube.com/watch?v=vpoMh7lKnec',
-        media: [
-          {
-            id: 2442,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mPglrqdONMx2XuZM'
-          },
-          {
-            id: 2443,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/yZ7YCgujdWjE5k7w'
-          },
-          {
-            id: 2444,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/JeLDTnrJeEAGPp18'
-          },
-          {
-            id: 2445,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7jqIWUPHuAD3509l'
-          },
-          {
-            id: 2441,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/4 Staende framat bakatbojning  608x1080.mp4'
-          }
-        ],
-        id: 4109
-      }
-    ]
-  },
-  {
-    name: 'Stående framåt/bakåtböjning',
-    muscleGroups: ['back', 'legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Rulla ner kota för kota, i framåtböjning av rygg nära kroppen. Tänk dig som ett "dyk i stuprör". In med hakan. Rulla sedan upp motsvarande. Knäna raka. Sätt händerna på rumpan och böj ryggen bak samtidigt som du pressar fram höften. Spänn magen lätt som stöd för ryggen, blicken upp. Det är okej att lätta på hälarna om du vill.',
-        resourceUrl: 'https://youtu.be/MFRfy4l4Vjs',
-        media: [
-          {
-            id: 1500,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/h5DGh8rhpe7y88OD'
-          },
-          {
-            id: 1499,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/AiDFCvVSazwoGeJO'
-          },
-          {
-            id: 1498,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/TUHHxCwPCRjQaUGV'
-          },
-          {
-            id: 1497,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/004_staende_framat_bakatbojning_150521.mp4'
-          }
-        ],
-        id: 3982
-      }
-    ]
-  },
-  {
-    name: 'Stående paddling',
-    muscleGroups: ['back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå höftbrett, stabilisera höft och bål. Imitera överhandsfattning på paddel och växelvisa paddeltag utanför höften.',
-        resourceUrl: 'https://youtu.be/jEmIlGG4QmQ',
-        media: [
-          {
-            id: 1506,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vZgiTNYY2Poh6xzA'
-          },
-          {
-            id: 1505,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/kDXtMTU81KbLbP4Z'
-          },
-          {
-            id: 1504,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Db2KXqcFi2rRZDw8'
-          },
-          {
-            id: 1503,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/015_staende_paddling_150521.mp4'
-          }
-        ],
-        id: 3983
-      }
-    ]
-  },
-  {
-    name: 'Stående rotation',
-    muscleGroups: ['arms', 'back', 'legs', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå höftbrett med armar hängande längs sidorna. Rotera rygg och höft från sida till sida så långt du kan, låt knän och fötter vridas med samt armar pendla i rörelsen. Följ gärna med blicken.',
-        resourceUrl: 'https://www.youtube.com/watch?v=fqxjkNdCDvI',
-        media: [
-          {
-            id: 2452,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/M5Xxq3JdbIAMBasV'
-          },
-          {
-            id: 2453,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/9kzFYgp3G3yrA3u2'
-          },
-          {
-            id: 2454,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/o0SGMnGz3Klj39MH'
-          },
-          {
-            id: 2455,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/g74K4tIib0JQg3Xt'
-          },
-          {
-            id: 2451,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/6 Staende Rrotation 608x1080.mp4'
-          }
-        ],
-        id: 4110
-      }
-    ]
-  },
-  {
-    name: 'Stående rotation',
-    muscleGroups: ['arms', 'back', 'legs', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå höftbrett med armar hängande längs sidorna. Rotera rygg och höft från sida till sida så långt du kan, låt knän och fötter vridas med samt armar pendla i rörelsen. Följ gärna med blicken.',
-        resourceUrl: 'https://youtu.be/0_59y4svgz0',
-        media: [
-          {
-            id: 1510,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/006_staende_rotation_150521.mp4'
-          },
-          {
-            id: 1509,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1QbSMfIaY8FdeiSn'
-          },
-          {
-            id: 1508,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/YRffV8GVu8OSkGop'
-          },
-          {
-            id: 1507,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/kZ81ojuCQgD3o1r5'
-          }
-        ],
-        id: 3984
-      }
-    ]
-  },
-  {
-    name: 'Stående ryggsim',
-    muscleGroups: ['back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Stå höftbrett, stabilisera höft och bål. Imitera ryggsim med växelvisa simtag bakåt.',
-        resourceUrl: 'https://youtu.be/7zOJOEKaCRo',
-        media: [
-          {
-            id: 1514,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/hcEacl7Ts8eWAbzo'
-          },
-          {
-            id: 1513,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/T00oAmndMkCqhH7P'
-          },
-          {
-            id: 1512,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/9Z5zO3MbbByUx66G'
-          },
-          {
-            id: 1511,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/012_staende_ryggsim_150521.mp4'
-          }
-        ],
-        id: 3985
-      }
-    ]
-  },
-  {
-    name: 'Stående ryggsim',
-    muscleGroups: ['back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description: 'Stå höftbrett, stabilisera höft och bål. Imitera ryggsim med växelvisa simtag bakåt.',
-        resourceUrl: 'https://www.youtube.com/watch?v=ZiiAHjlcNVg',
-        media: [
-          {
-            id: 2462,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/iL63EHygMuaeyCx1'
-          },
-          {
-            id: 2463,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0nAIx39KW3ERl6H9'
-          },
-          {
-            id: 2464,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/l60TPga55SORKO8v'
-          },
-          {
-            id: 2465,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/l1Mx0maOuighgPob'
-          },
-          {
-            id: 2460,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/12_staende_ryggsim 608x1080.mp4'
-          }
-        ],
-        id: 4111
-      }
-    ]
-  },
-  {
-    name: 'Stående sidostrech höger',
-    muscleGroups: ['legs', 'glutes', 'back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå upp med stretchsidans ben korsad bakom dig, sträck samtidigt upp motsvarande arm och böj kroppen mot den sidan. Tänk att du trycker ut dig som en båge mot stretchssidan. Förstärk gärna böjningen och därmed stretchen genom att trycka med andra handen på motsatt höft. Tryck dig rakt i sidled, undvik att tippa framåt.',
-        resourceUrl: 'https://youtu.be/-eHKas4xjlE',
-        media: [
-          {
-            id: 1517,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/088_staende_sidostrech_150521.mp4'
-          },
-          {
-            id: 1516,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ywFoi8LRKi4TYffV'
-          }
-        ],
-        id: 3986
-      }
-    ]
-  },
-  {
-    name: 'Stående sidostretch vänster',
-    muscleGroups: ['arms', 'back', 'legs', 'glutes', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå upp med stretchsidans ben korsad bakom dig, sträck samtidigt upp motsvarande arm och böj kroppen mot den sidan. Tänk att du trycker ut dig som en båge mot stretchssidan. Förstärk gärna böjningen och därmed stretchen genom att trycka med andra handen på motsatt höft. Tryck dig rakt i sidled, undvik att tippa framåt.',
-        resourceUrl: 'https://youtu.be/-eHKas4xjlE',
-        media: [
-          {
-            id: 2052,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/TUmINMvtPqLmUOfh'
-          },
-          {
-            id: 2051,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/088_staende_sidostrech_150521.mp4'
-          }
-        ],
-        id: 3987
-      }
-    ]
-  },
-  {
     name: 'Stålmannen',
+    mainMuscleGroup: 'back',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -13207,6 +8935,7 @@ export default [
   },
   {
     name: 'Sumohopp',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -13243,6 +8972,7 @@ export default [
   },
   {
     name: 'Sumoknäböj',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -13336,74 +9066,8 @@ export default [
     ]
   },
   {
-    name: 'Sumorotation',
-    muscleGroups: ['legs', 'back', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gå ner i djup sumoknäböjsposition med fötter brett isär, fötter och knän riktade snett utåt. Håll ryggen upprätt och sätt ena handen i underlaget samtidigt som den andra handen sträcks rakt upp och följs med blicken. Växla sida.',
-        resourceUrl: 'https://youtu.be/OVQK0luJJaU',
-        media: [
-          {
-            id: 1582,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Uu7GjzBt7kD6GZCd'
-          },
-          {
-            id: 1581,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/YvaMwJGpKEwgGMgZ'
-          },
-          {
-            id: 1580,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/BGuw2HpZXzfW6q7Z'
-          },
-          {
-            id: 1579,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/NUH83a86QRzSxVo2'
-          },
-          {
-            id: 1578,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/457_sumorotation_150521.mp4'
-          }
-        ],
-        id: 3993
-      }
-    ]
-  },
-  {
-    name: 'Sumostretch',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå bredbent med fötter riktade snett ut åt sidorna. Gå ner i sumoknäböj med rumpan så djupt du kan, armbågar placerade på insidan av knän. Pressa ut knän i riktning över fötterna. Håll bålen upprätt. Förflytta gärna tyngden lite från sida till sida.',
-        resourceUrl: 'https://youtu.be/SFyTv3BkH_o',
-        media: [
-          {
-            id: 1584,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/091_sumostretch_150521.mp4'
-          },
-          {
-            id: 1583,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rVXYjWcpBBXVIceZ'
-          }
-        ],
-        id: 3994
-      }
-    ]
-  },
-  {
     name: 'Sumo till grodhopp',
+    mainMuscleGroup: 'body',
     muscleGroups: ['legs'],
     trainingTypes: ['cardio', 'strength', 'agility'],
     variations: [
@@ -13439,116 +9103,8 @@ export default [
     ]
   },
   {
-    name: 'Surfarknäböj',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgångsläge bredare än sumoknäböj. För tyngdpunkten mot en sida i taget, växelvis. Sträck armar rakt ut åt sidorna, med handflator ner. Vänd strax ovan knähöjd. Knäet går i samma riktning som foten pekar.',
-        resourceUrl: 'https://youtu.be/nm9Nb7N9m9U',
-        media: [
-          {
-            id: 1605,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/VBwWHXzuD4n4loAX'
-          },
-          {
-            id: 1604,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/WmtZizvG9x4eCgPd'
-          },
-          {
-            id: 1603,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/3PmLKrcWvbpoyLAE'
-          },
-          {
-            id: 1602,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ZfCKEhc9obZ3qI1I'
-          },
-          {
-            id: 2408,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/117_surfarknaboj_level1_160609.mp4'
-          }
-        ],
-        id: 4049
-      },
-      {
-        difficulty: 1,
-        description:
-          'Utgångsläge bredare än sumoknäböj. För tyngdpunkten mot en sida i taget, växelvis. Sträck armar rakt ut åt sidorna, med handflator ner. Vänd vid knähöjd. Knäet går i samma riktning som foten pekar.',
-        resourceUrl: 'https://youtu.be/zG1pJIPZhxU',
-        media: [
-          {
-            id: 1609,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/LBnMsemi2NYlxoId'
-          },
-          {
-            id: 1608,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/V6jyxCFdjfFBZy6A'
-          },
-          {
-            id: 1607,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/VrFSVi9SHKocY6yo'
-          },
-          {
-            id: 1606,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/tu7ossaEHt2X1o3P'
-          },
-          {
-            id: 2409,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/118_surfarknaboj_level2_160609.mp4'
-          }
-        ],
-        id: 4050
-      },
-      {
-        difficulty: 2,
-        description:
-          'Utgångsläge bredare än sumoknäböj. För tyngdpunkten mot en sida i taget, växelvis. Sträck armar rakt ut åt sidorna, med handflator ner. Vänd strax under knähöjd. Knäet går i samma riktning som foten pekar.',
-        resourceUrl: 'https://youtu.be/Ta1fCRCUQaQ',
-        media: [
-          {
-            id: 1613,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/pM7Ax2afjLqUwuJb'
-          },
-          {
-            id: 1612,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/q2JfajqUPFsiF7I4'
-          },
-          {
-            id: 1611,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/M5yo7iyf6Pe74G6g'
-          },
-          {
-            id: 1610,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/csBJldf8kbno6RX6'
-          },
-          {
-            id: 2410,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/119_surfarknaboj_level3_160609.mp4'
-          }
-        ],
-        id: 4051
-      }
-    ]
-  },
-  {
     name: 'Symaskinstramp',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -13647,43 +9203,8 @@ export default [
     ]
   },
   {
-    name: 'Symaskinstramp',
-    muscleGroups: ['abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ligg på rygg med lyft knä i navelhöjd, underben parallellt med underlaget. Pressa händer mot knän med magstöd och sträck ut ben halvvägs ut i luften.',
-        resourceUrl: 'https://www.youtube.com/watch?v=_32DfVkZftQ',
-        media: [
-          {
-            id: 2544,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/85R0ARa1LEI838SG'
-          },
-          {
-            id: 2545,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7NXXvMdhNVVGZPqP'
-          },
-          {
-            id: 2546,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/YcfCuVf5owg6WsWg'
-          },
-          {
-            id: 2543,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/424_symaskinstramp_level1 608x1080.mp4'
-          }
-        ],
-        id: 4112
-      }
-    ]
-  },
-  {
     name: 'Sågen',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -13777,48 +9298,8 @@ export default [
     ]
   },
   {
-    name: 'Tennsoldaten',
-    muscleGroups: ['legs', 'arms', 'shoulders', 'abs', 'back'],
-    trainingTypes: ['cardio'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Snabba benlyft fram med raka knän och diagonal armsträckning. Sträva efter att nå hand mot motsatt ben.',
-        resourceUrl: 'https://youtu.be/ELPHc-BboWk',
-        media: [
-          {
-            id: 1640,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/035_tennsoldaten_150521.mp4'
-          },
-          {
-            id: 1639,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/VzhcLgVrlVEDgOq2'
-          },
-          {
-            id: 1638,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mWZuXzWceaGaqag3'
-          },
-          {
-            id: 1637,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/HjFLUtBk7cYAv6fB'
-          },
-          {
-            id: 1636,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lPTkkewJm7MgClXv'
-          }
-        ],
-        id: 4005
-      }
-    ]
-  },
-  {
     name: 'Tricepsarmhävning',
+    mainMuscleGroup: 'arms',
     muscleGroups: ['arms', 'shoulders', 'chest', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -13912,423 +9393,8 @@ export default [
     ]
   },
   {
-    name: 'Tricepstöj höger',
-    muscleGroups: ['arms'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå höftbrett. Lägg stretcharmens handflata mot baksida skuldra och axel. Fatta tag runt stretchsidans armbåge och för den bakåt och nedåt. Sträva efter att överarmen är i linje med örat och att det sträcker i baksida överarm och triceps.',
-        resourceUrl: 'https://youtu.be/7bZT_hraVII',
-        media: [
-          {
-            id: 1668,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/089_tricepstoj_150521.mp4'
-          },
-          {
-            id: 1667,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/X5Q4CzzTS5x2jasN'
-          }
-        ],
-        id: 4009
-      }
-    ]
-  },
-  {
-    name: 'Tricepstöj vänster',
-    muscleGroups: ['arms'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå höftbrett. Lägg stretcharmens handflata mot baksida skuldra och axel. Fatta tag runt stretchsidans armbåge och för den bakåt och nedåt. Sträva efter att överarmen är i linje med örat och att det sträcker i baksida överarm och triceps.',
-        resourceUrl: 'https://youtu.be/7bZT_hraVII',
-        media: [
-          {
-            id: 2042,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/dzGWZ2ItsUj1te0t'
-          },
-          {
-            id: 2041,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/089_tricepstoj_150521.mp4'
-          }
-        ],
-        id: 4010
-      }
-    ]
-  },
-  {
-    name: 'Trädknäböj',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör ytlig enbensknäböj där knä pekar i fotens riktning och gör tåhävning i övre läget. Samtidig armpendling från nedre läget upp till sträckta armar ovan huvudet i övre läget. Eftersträva kraft från rumpan och driv höften framåt med stark mage och rumpa i övre läget. \n\nJobba med ett ben i taget, i antalet repetitioner som anges i övningsbeskrivningen. Byt sedan ben.',
-        resourceUrl: 'https://youtu.be/ZXloAZlzIV4',
-        media: [
-          {
-            id: 434,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/135_enbensknaboj_upp_pa_ta_level1_150521.mp4'
-          },
-          {
-            id: 423,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/XZfZJFvYy7K71AMr'
-          },
-          {
-            id: 422,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/iREmDrrDDFEwLitv'
-          },
-          {
-            id: 421,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/UGf5VyiAgAKtolay'
-          },
-          {
-            id: 420,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lyS585MvU0mmHjFc'
-          }
-        ],
-        id: 4011
-      },
-      {
-        difficulty: 1,
-        description:
-          'Gör enbensknäböj men med tåhävning i övre läget. Samtidig armpendling från nedre läget upp till sträckta armar ovan huvudet i övre läget. Eftersträva kraft från rumpan och driv höften framåt med stark mage och rumpa i övre läget.\n\nJobba med ett ben i taget, i antalet repetitioner som anges i övningsbeskrivningen. Byt sedan ben.',
-        resourceUrl: 'https://youtu.be/LOzAGYvxgLM',
-        media: [
-          {
-            id: 433,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/136_enbensknaboj_upp_pa_ta_level2_150521.mp4'
-          },
-          {
-            id: 427,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/16PrAmlE1IcLJqip'
-          },
-          {
-            id: 426,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/SAVHL3AwZTE0vGm1'
-          },
-          {
-            id: 425,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/dZdbfaSHXejYqDMX'
-          },
-          {
-            id: 424,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/wXF3kSm7VD1oZoVm'
-          }
-        ],
-        id: 4012
-      },
-      {
-        difficulty: 2,
-        description:
-          'Gör djup enbensknäböj med rumpan så långt ner du kan och sedan vidare till tåhävning i övre läget. Samtidig armpendling från nedre läget upp till sträckta armar ovan huvudet i övre läget. Eftersträva kraft från rumpan och driv höften framåt med stark mage och rumpa i övre läget.',
-        resourceUrl: 'https://youtu.be/SOSMYjM3ac8',
-        media: [
-          {
-            id: 432,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/137_enbensknaboj_upp_pa_ta_level3_150521.mp4'
-          },
-          {
-            id: 431,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/po58gAwTxEg6yGyP'
-          },
-          {
-            id: 430,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ivEd7c5GiOyRkvnc'
-          },
-          {
-            id: 429,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ayze2KRqVWGYU8aI'
-          },
-          {
-            id: 428,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1fazvzi38wTzQeOH'
-          }
-        ],
-        id: 4013
-      }
-    ]
-  },
-  {
-    name: 'Trädplanka',
-    muscleGroups: ['abs', 'back', 'shoulders', 'glutes', 'legs'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Planka på raka armar med fötter strax intill ett vertikalt stöd, t ex ett träd eller en vägg. Sätt upp ena foten mot det vertikala stödet med sträckt knä och tryck dig till en rak linje genom kroppen. Växla fot.',
-        resourceUrl: 'https://youtu.be/dtQrloc6oVU',
-        media: [
-          {
-            id: 1646,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/MLgbBtXfTZZWRwJS'
-          },
-          {
-            id: 1645,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/aw5Z0dVdhaimTVGp'
-          },
-          {
-            id: 1644,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/nsRwJBn4bYwnWCUh'
-          },
-          {
-            id: 1641,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/334_tradplanka_level1_150521.mp4'
-          }
-        ],
-        id: 4014
-      },
-      {
-        difficulty: 1,
-        description:
-          'Planka på raka armar med fötter tryckta mot ett vertikalt stöd, tex träd eller vägg. Rak linje genom kroppen. Sänk ner en fot mot underlaget växelvis. ',
-        resourceUrl: 'https://youtu.be/4_YVTJgUYjw',
-        media: [
-          {
-            id: 1650,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0aNGiuG3BaXrzRsa'
-          },
-          {
-            id: 1649,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1X9ducUSrpVfvUvo'
-          },
-          {
-            id: 1647,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/YZlunFJOzkmqaTeF'
-          },
-          {
-            id: 1642,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/335_tradplanka_level2_150521.mp4'
-          }
-        ],
-        id: 4015
-      },
-      {
-        difficulty: 2,
-        description:
-          'Planka på raka armar och fötter så högt upp du kan mot ett vertikalt stöd, t ex ett träd eller en vägg. Rak, stark linje genom kroppen. Sänk ner en fot mot underlaget, växelvis, utmed sidan.',
-        resourceUrl: 'https://youtu.be/aEx2KwVeQY4',
-        media: [
-          {
-            id: 1653,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/09moDQwHD0xC9ArW'
-          },
-          {
-            id: 1652,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/bxwMk2YiMRdOwEya'
-          },
-          {
-            id: 1651,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/PDvbuAoYovYWWIms'
-          },
-          {
-            id: 1643,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/336_tradplanka_level3_150521.mp4'
-          }
-        ],
-        id: 4016
-      }
-    ]
-  },
-  {
-    name: 'Twisthopp',
-    muscleGroups: ['legs', 'abs', 'back'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Jämfotahopp med vridning av knän och fötter växelvis. Armarna pendlar med. Landa med knä i fotens riktning.',
-        resourceUrl: 'https://youtu.be/YFLRjvtv31Y',
-        media: [
-          {
-            id: 1672,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rA8XjOFHgptSmPYG'
-          },
-          {
-            id: 1671,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/zzJ5uXlwDwFuUMnU'
-          },
-          {
-            id: 1670,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/KBwgbw40PZ8h2I80'
-          },
-          {
-            id: 1669,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/268_twisthopp_150521.mp4'
-          }
-        ],
-        id: 4017
-      }
-    ]
-  },
-  {
-    name: 'Tåhävning rakt knä',
-    muscleGroups: ['legs'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör tåhävning på båda fötterna på marken. Eventuellt med lätt balansstöd med händerna. Tänk på att hålla emot på nervägen.',
-        resourceUrl: 'https://youtu.be/IAmfMvsP1r4',
-        media: [
-          {
-            id: 2316,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FsPb7NMbmAR8AZFu'
-          },
-          {
-            id: 2317,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/1EsB7cqBt6RW1Vu5'
-          },
-          {
-            id: 2318,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/zy4XtmLQnWIuKnQL'
-          },
-          {
-            id: 2303,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/031_tahavning_niva_1.mp4'
-          }
-        ],
-        id: 4018
-      },
-      {
-        difficulty: 1,
-        description:
-          'Gör tåhävning på båda fötterna på förhöjning. Eventeuellt med lätt balansstöd med händerna. Gå så högt du kan med raka knän. Håll emot på vägen ner. \n\nAlternativ till förhöjning: Gör tåhävning med båda fötterna på marken utan balansstöd. Fokus på att komma så högt upp du kan med raka knän, fram med höften med stark mage och rumpa. Rak och stabil i bålen. Håll emot på tillbakavägen.',
-        resourceUrl: 'https://youtu.be/MSLShepbA5A',
-        media: [
-          {
-            id: 2313,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/XZCrtTtZIUDxodRo'
-          },
-          {
-            id: 2314,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/K6r8lKfMuU7mTXkE'
-          },
-          {
-            id: 2315,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2u3NY4zupXgSXzdL'
-          },
-          {
-            id: 2302,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/032_tahavning_niva_2.mp4'
-          }
-        ],
-        id: 4019
-      },
-      {
-        difficulty: 2,
-        description:
-          'Gör tåhävning på ett ben på förhöjning. Eventuellt med lätt balansstöd med händerna. Tryck dig upp så högt du kan. Tänk på att hålla emot på nervägen.\n\nAlternativ till förhöjning: Gör tåhävning med en fot i taget på marken utan balansstöd. Fokus på att komma så högt upp du kan med raka knän, fram med höften med stark mage och rumpa. Rak och stabil i bålen. Håll emot på tillbakavägen.',
-        resourceUrl: 'https://youtu.be/jTzWvZ6u_4A',
-        media: [
-          {
-            id: 2310,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/RVqpAaFvd7eOuKql'
-          },
-          {
-            id: 2311,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/XbgDqBEzASyyGy0C'
-          },
-          {
-            id: 2312,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/sOBbTX31wV12jNwn'
-          },
-          {
-            id: 2301,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/033_tahavning_niva_3.mp4'
-          }
-        ],
-        id: 4020
-      }
-    ]
-  },
-  {
-    name: 'Upphopp',
-    muscleGroups: ['legs'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Jämfotahopp upp på förhöjning med armpendling. Eftersträva höftsträckning i övre läget, landa med knä i linje med foten.\n\nAlternativ till förhöjning: Gör ett kraftfullt upphopp och dra upp knäna. Landa med knä i fotens riktning. Armar och mage jobbar aktivt med i rörelsen.',
-        resourceUrl: 'https://youtu.be/Hq30PcZzpp4',
-        media: [
-          {
-            id: 1675,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/wZ4MVXYDOB7lL4Lu'
-          },
-          {
-            id: 1674,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/N2RELeVtr1WIo1EX'
-          },
-          {
-            id: 1673,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/032_upphopp_150521.mp4'
-          }
-        ],
-        id: 4021
-      }
-    ]
-  },
-  {
     name: 'Utfall bak',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -14433,6 +9499,7 @@ export default [
   },
   {
     name: 'Utfall bak med armsträckning',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -14542,6 +9609,7 @@ export default [
   },
   {
     name: 'Utfall bak med benlyft bak',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -14636,6 +9704,7 @@ export default [
   },
   {
     name: 'Utfall bak med benlyft fram',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -14745,6 +9814,7 @@ export default [
   },
   {
     name: 'Utfall bak med crunch',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -14859,6 +9929,7 @@ export default [
   },
   {
     name: 'Utfall bak med rotation',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -14958,6 +10029,7 @@ export default [
   },
   {
     name: 'Utfall bak med sidocrunch',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -15067,6 +10139,7 @@ export default [
   },
   {
     name: 'Utfall bak med tåhävning',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -15171,6 +10244,7 @@ export default [
   },
   {
     name: 'Utfall fram',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -15265,6 +10339,7 @@ export default [
   },
   {
     name: 'Utfall fram med rotation',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -15389,6 +10464,7 @@ export default [
   },
   {
     name: 'Utfall fram med sträckta armar',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -15493,6 +10569,7 @@ export default [
   },
   {
     name: 'Utfall fram och bak',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes', 'abs', 'back'],
     trainingTypes: ['strength'],
     variations: [
@@ -15616,329 +10693,8 @@ export default [
     ]
   },
   {
-    name: 'Utfall i sidled',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från höftbrett. Ta ett stort utfallssteg i sidled, tänk att du kliver ut längs en bräda. Gör ytlig knäböj mot utfallsbenet genom att sitta bak med rumpan och böja utfallsknäet i riktning med tårna. Andra benet sträckt och hela fotbladet kvar mot underlaget. Behåll ryggen lång och stark, lätt framåtfälld i utfallsläget och händer på höften.',
-        resourceUrl: 'https://youtu.be/7chBZQDpMqY',
-        media: [
-          {
-            id: 1849,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/3atGKJTkVaQNJWAV'
-          },
-          {
-            id: 1848,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Mtt6VK3mLYPAern3'
-          },
-          {
-            id: 1847,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/AcNA6h7TfFlzQqBM'
-          },
-          {
-            id: 1846,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ZLDWPe17d8NnMOLR'
-          },
-          {
-            id: 1843,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/159_utfall_i_sidled_level1_150521.mp4'
-          }
-        ],
-        id: 3898
-      },
-      {
-        difficulty: 1,
-        description:
-          'Utgå från höftbrett. Ta ett stort utfallssteg i sidled, tänk att du kliver ut längs en bräda. Gör knäböj mot utfallsbenet genom att sitta bak med rumpan och böja utfallsknäet i riktning med tårna. Andra benet sträckt och hela fotbladet kvar mot underlaget. Behåll ryggen lång och stark, lätt framåtfälld i utfallsläget. Sträck händer ner mot utfallsbenet när du går ner och rakt upp när du går upp.',
-        resourceUrl: 'https://youtu.be/vjjnEot0xlo',
-        media: [
-          {
-            id: 1853,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/X2L2d7An3N04ajIh'
-          },
-          {
-            id: 1852,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/HNB3unGZSZvZXvRS'
-          },
-          {
-            id: 1851,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/I5K125SV0qAQ2uCl'
-          },
-          {
-            id: 1850,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/6VE9dSJWBW0D5uD6'
-          },
-          {
-            id: 1844,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/160_utfall_i_sidled_level2_150521.mp4'
-          }
-        ],
-        id: 3899
-      },
-      {
-        difficulty: 2,
-        description:
-          'Utgå från enbensstående med utfallsbenet lyft. Ta ett stort utfallssteg i sidled, tänk att du kliver ut längs en bräda. Gör knäböj mot utfallsbenet genom att sitta bak med rumpan och böja utfallsknäet i riktning med tårna. Andra benet sträckt och hela fotbladet kvar mot underlaget. Behåll ryggen lång och stark, lätt framåtfälld i utfallsläget. Sträck händer ner mot utfallsbenet när du går ner och rakt upp när du går tillbaka till enbensstående.',
-        resourceUrl: 'https://youtu.be/WlZoPtt52bY',
-        media: [
-          {
-            id: 1857,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/5yqEElBsoBALN9gH'
-          },
-          {
-            id: 1856,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/8sXvFG6rWypHdLvm'
-          },
-          {
-            id: 1855,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0U6OaLXSWmyLRk8d'
-          },
-          {
-            id: 1854,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/af6TpDIbm0eVnyp6'
-          },
-          {
-            id: 1845,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/161_utfall_i_sidled_level3_150521.mp4'
-          }
-        ],
-        id: 3900
-      }
-    ]
-  },
-  {
-    name: 'Utfall i sidled med touch',
-    muscleGroups: ['legs', 'glutes', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör ytligt utfall i sidled men där motsatt hand vidrör insidan av knäböjsbenets knä. Knä går i fotens riktning. Sträva efter att sitta ner rakt bak mot knäböjsbenet, behåll ryggen rak och stark med en lätt framåtfällning. Det andra benet är sträckt i nedre läget. Tänk böjning i knä framför fällning i rygg.',
-        resourceUrl: 'https://youtu.be/OCw-Y95wWq8',
-        media: [
-          {
-            id: 2170,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/168_utfall_i_sidled_med_touch_level1_150521.mp4'
-          },
-          {
-            id: 1864,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/tEcna14tEbqoklUb'
-          },
-          {
-            id: 1863,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/hKVteRDhZWMDyANC'
-          },
-          {
-            id: 1862,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ty3MuEavirJW8BTt'
-          },
-          {
-            id: 1861,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/d3GJldNc5Yn1hWnG'
-          }
-        ],
-        id: 3895
-      },
-      {
-        difficulty: 1,
-        description:
-          'Gör utfall i sidled men där motsatt hand vidrör utsidan av knäböjsbenets underben. Knä går i fotens riktning. Sträva efter att sitta ner rakt bak mot knäböjsbenet tills rumpan är i knähöjd, behåll ryggen rak och stark med lätt framåtfällning. Det andra benet är sträckt i nedre läget. Tänk böjning i knä framför fällning i rygg.',
-        resourceUrl: 'https://youtu.be/BM8S8foDYE4',
-        media: [
-          {
-            id: 2171,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/169_utfall_i_sidled_med_touch_level2_150521.mp4'
-          },
-          {
-            id: 1868,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/dvP2eScwfybEb4uY'
-          },
-          {
-            id: 1867,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/cw0NqzpgjpPqKShY'
-          },
-          {
-            id: 1866,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/4hTC0hvwyi9WG6Jh'
-          },
-          {
-            id: 1865,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vdCq6jPB0WlcOlKq'
-          }
-        ],
-        id: 3896
-      },
-      {
-        difficulty: 2,
-        description:
-          'Gör utfall i sidled men där motsatt hand vidrör utisidan av knäböjsbenets vrist. Knä går i fotens riktning. Sträva efter att sitta ner rakt bak mot knäböjsbenet tills rumpan är strax under knähöjd, behåll ryggen rak och stark med lätt framåtfällning. Det andra benet är sträckt i nedre läget. Tänk böjning i knä framför fällning i rygg.',
-        resourceUrl: 'https://youtu.be/nwFNedDqSvE',
-        media: [
-          {
-            id: 2172,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/170_utfall_i_sidled_med_touch_level3_150521.mp4'
-          },
-          {
-            id: 1874,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rUPMOi65RAeL9gkZ'
-          },
-          {
-            id: 1873,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/2YtCMaHa3wqvhYx9'
-          },
-          {
-            id: 1871,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/waZJ2K23m8z2zbeb'
-          },
-          {
-            id: 1870,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/aQ2PW3NM9e1uHOHJ'
-          },
-          {
-            id: 1869,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/nAfHFrAECVpasBLO'
-          }
-        ],
-        id: 3897
-      }
-    ]
-  },
-  {
-    name: 'Utfallsgång fram',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör utfallssteg fram, halvvägs ner, med armar framsträckta i nedre läget. Tyngdpunkt och knä rakt över fot. Båda fötter i kontakt med underlaget mellan stegen.',
-        resourceUrl: 'https://youtu.be/CaObO4dVAOc',
-        media: [
-          {
-            id: 1881,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/ybOM8Da8NAuRNsyF'
-          },
-          {
-            id: 1880,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/XTBh2lPp6gD3AfWL'
-          },
-          {
-            id: 1879,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/bwMCFeE0O6BbI9In'
-          },
-          {
-            id: 1878,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CEJxMxG9z5V65gr5'
-          },
-          {
-            id: 1875,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/255_utfallsgang_fram_level1_150521.mp4'
-          }
-        ],
-        id: 3892
-      },
-      {
-        difficulty: 1,
-        description:
-          'Gör utfallssteg fram med armsträckning framåt i nedre läget. Gå hela vägen ner, vänd strax innan underlaget. Enbensstående mellan stegen.',
-        resourceUrl: 'https://youtu.be/WIgH9EF3_PY',
-        media: [
-          {
-            id: 1884,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/uIvWbgZ8ev8K4dIX'
-          },
-          {
-            id: 1883,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fBd1DsCPCTA1sfKX'
-          },
-          {
-            id: 1882,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/dTy3CthzlYaH8iI5'
-          },
-          {
-            id: 1876,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/256_utfallsgang_fram_level2_150521.mp4'
-          }
-        ],
-        id: 3893
-      },
-      {
-        difficulty: 2,
-        description:
-          'Gör utfallssteg fram med fullt djup. Tyngdpunkt och knä rakt över fot. Armarna sträcks rakt upp när du går ner. Enbensstående mellan stegen.',
-        resourceUrl: 'https://youtu.be/x1xYxz-Gc5w',
-        media: [
-          {
-            id: 1887,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Ns0AvYNtcQNWjJsj'
-          },
-          {
-            id: 1886,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/6mQmIjWApxfrGEIQ'
-          },
-          {
-            id: 1885,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/jXmGHkX2qtqVXHfD'
-          },
-          {
-            id: 1877,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/257_utfallsgang_fram_level3_150521.mp4'
-          }
-        ],
-        id: 3894
-      }
-    ]
-  },
-  {
     name: 'Utfallshopp',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['cardio', 'strength'],
     variations: [
@@ -15974,131 +10730,8 @@ export default [
     ]
   },
   {
-    name: 'Utfall sidled med benlyft',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Utgå från höftbrett. Ta ett stort utfallssteg i sidled, tänk att du kliver ut längs en bräda. Gör ytlig knäböj mot utfallsbenet genom att sitta bak med rumpan och böja utfallsknäet i riktning med tårna. Andra benet sträckt och hela fotbladet kvar mot underlaget. Behåll ryggen lång och stark, lätt framåtfälld i utfallsläget och armar sträckta fram eller mot höft. När du trycker dig upp till utgångsläget så lyfter du knäböjsbenet rakt upp i sidled med sträckt knä där tårna pekar fram. Armar sträcks ner längs sidorna. Behåll längden och styrkan i bålen.',
-        resourceUrl: 'https://youtu.be/QZDLTCVHsX4',
-        media: [
-          {
-            id: 1899,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/z5zG9N6lOi1j1ipc'
-          },
-          {
-            id: 1898,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CQJxmboXQj5dkOwH'
-          },
-          {
-            id: 1897,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Z724sPcK6W8EZQlz'
-          },
-          {
-            id: 1896,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/22G1ElA99oddHbd3'
-          },
-          {
-            id: 1895,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7zFG5BaYjpHHCotd'
-          },
-          {
-            id: 1892,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/162_utfall_sidled_med_benlyft_level1_150521.mp4'
-          }
-        ],
-        id: 3888
-      },
-      {
-        difficulty: 1,
-        description:
-          'Utgå från höftbrett. Ta ett stort utfallssteg i sidled, tänk att du kliver ut längs en bräda. Gör knäböj mot utfallsbenet genom att sitta bak med rumpan och böja utfallsknäet i riktning med tårna. Andra benet sträckt och hela fotbladet kvar mot underlaget. Behåll ryggen lång och stark, lätt framåtfälld i utfallsläget och armar sträckta fram eller mot höft. När du trycker dig upp till utgångsläget så lyfter du knäböjsbenet rakt upp i sidled med sträckt knä där tårna pekar fram. Armar sträckta ner, längs sidorna. Behåll längden och styrkan i bålen.',
-        resourceUrl: 'https://youtu.be/Pf3KCrPFl5M',
-        media: [
-          {
-            id: 1904,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/GwuCAeEdYdpqBPmu'
-          },
-          {
-            id: 1903,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rbnoz3AAs4V20V4v'
-          },
-          {
-            id: 1902,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/zmvczcLEMl0Pbl1u'
-          },
-          {
-            id: 1901,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/xLte7cJ0Vdw7suwp'
-          },
-          {
-            id: 1900,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/0d5TXstOumFKuaTF'
-          },
-          {
-            id: 1893,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/163_utfall_sidled_med_benlyft_level2_150521.mp4'
-          }
-        ],
-        id: 3889
-      },
-      {
-        difficulty: 2,
-        description:
-          'Utgå från höftbrett. Ta ett stort utfallssteg i sidled, tänk att du kliver ut längs en bräda. Gör djup knäböj mot utfallsbenet genom att sitta bak med rumpan och böja utfallsknäet i riktning med tårna. Andra benet sträckt och hela fotbladet kvar mot underlaget. Behåll ryggen lång och stark, lätt framåtfälld i utfallsläget och armar sträckta fram eller mot höft. När du trycker dig upp till utgångsläget så lyfter du knäböjsbenet rakt upp i sidled med sträckt knä där tårna pekar fram. Armar sträcks upp. Behåll längden och styrkan i bålen.',
-        resourceUrl: 'https://youtu.be/sBx-NIUmSK0',
-        media: [
-          {
-            id: 1910,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Ru0k6VW2U8S4pVC0'
-          },
-          {
-            id: 1909,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7Kf8b2ECuebLwyXI'
-          },
-          {
-            id: 1908,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FOmc4qsHHaWiFQIP'
-          },
-          {
-            id: 1906,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/bcYpBUsP2pauGVos'
-          },
-          {
-            id: 1905,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/6p42aa2Mop9HLS2f'
-          },
-          {
-            id: 1894,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/164_utfall_sidled_med_benlyft_level3_150521.mp4'
-          }
-        ],
-        id: 3890
-      }
-    ]
-  },
-  {
     name: 'Utfallsklocka',
+    mainMuscleGroup: 'legs',
     muscleGroups: ['legs', 'glutes'],
     trainingTypes: ['strength'],
     variations: [
@@ -16154,368 +10787,8 @@ export default [
     ]
   },
   {
-    name: 'Utfallspulsar',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Gör ytliga stillastående utfall men med tre pulsar i nedre läget innan uppresning. Ta först ut ett stort steg, men behåll höftbrett mellan fötterna. Bakre fotens tår i underlaget, händer på höft. Gå ner i utfall med lodrät rörelse där främre knä håller sig rakt över den sidans fotled och pekar i fotens riktning. Stanna halvvägs ner och gör tre små knäböj där innan du går upp. Stark rumpa och mage med längd i bålen. Tryck hela främre foten mot underlaget då du går upp och aktivera på så vis den sidans säte.',
-        resourceUrl: 'https://youtu.be/OfuEmsajDtA',
-        media: [
-          {
-            id: 1956,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/rhlRTTnPDVzSmNsT'
-          },
-          {
-            id: 1955,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Km8YP4L7YWr9XKHQ'
-          },
-          {
-            id: 1924,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/GAbtgwZ3eYA4WqjP'
-          },
-          {
-            id: 1923,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/x35uJ88nPWnH2wAU'
-          },
-          {
-            id: 1922,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/WIGFbJqL46V46eB2'
-          },
-          {
-            id: 1919,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/144_utfallspulsar_level1_150521.mp4'
-          }
-        ],
-        id: 3884
-      },
-      {
-        difficulty: 1,
-        description:
-          'Gör stillastående utfall med tre pulsar i nedre läget innan uppresning. Ta först ut ett stort steg, men behåll höftbrett mellan fötterna. Bakre fotens tår i underlaget. Gå ner i utfall med lodrät rörelse där främre knä håller sig rakt över den sidans fotled och pekar i fotens riktning. Bakre knä riktas rakt ner. Gå hela vägen och strax innan knäet nuddar underlaget gör du tre små knäböjningar i det nedre läget innan du trycker dig upp. Stark rumpa och mage med längd i bålen. Tryck hela främre foten mot underlaget då du går upp och aktivera på så vis den sidans säte.',
-        resourceUrl: 'https://youtu.be/5VjiywKV-Rg',
-        media: [
-          {
-            id: 1961,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/NIupPucgoaAtpCxq'
-          },
-          {
-            id: 1960,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lC83K9hMNglBayrV'
-          },
-          {
-            id: 1959,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/LUCYqDUAWvH6QViD'
-          },
-          {
-            id: 1958,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/5YcUHnYVJftRvvmY'
-          },
-          {
-            id: 1957,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/lSJCck7Uts9Y9bZv'
-          },
-          {
-            id: 1920,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/145_utfallspulsar_level2_150521.mp4'
-          }
-        ],
-        id: 3885
-      },
-      {
-        difficulty: 2,
-        description:
-          'Gör stillastående utfall med främre foten på förhöjning och tre pulsar i nedre läget innan uppresning. Ta först ut ett stort steg, men behåll höftbrett mellan fötterna. Främre foten på förhöjning. Förhöjningen bör vara mellan 5-30 cm, t ex en bräda, ett trappsteg eller en stock. Bakre fotens tår i underlaget. Gå ner i utfall med lodrät rörelse där främre knä håller sig rakt över den sidans fotled och pekar i fotens riktning. Gå så djupt du kan där bakre knä riktas rakt ner och främre knä är rakt ovan främre fot. Stanna i nedre läget och gör tre små knäböj innan du trycker dig upp. Stark rumpa och mage med längd i bålen. \n\nAlternativ utan förhöjning: Ta ut steget ännu längre, men fortfarande med tyngden i främre foten. På så vis får du aktivt jobba i en längre rörelse och utmana rörligheten i höft och lår.',
-        resourceUrl: 'https://youtu.be/uI0jsKkXKGg',
-        media: [
-          {
-            id: 1966,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/AnarS9PjlrILgkNc'
-          },
-          {
-            id: 1965,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/zwWp2gSsVYVKNpIx'
-          },
-          {
-            id: 1964,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fryD9C3kpl3NV27o'
-          },
-          {
-            id: 1963,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FjLH1Q5D7wkWOGR7'
-          },
-          {
-            id: 1962,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/YBxSPzEbD3mKe08B'
-          },
-          {
-            id: 1921,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/146_utfallspulsar_level3_150521.mp4'
-          }
-        ],
-        id: 3886
-      }
-    ]
-  },
-  {
-    name: 'Utfallsrörlighet höger',
-    muscleGroups: ['legs', 'glutes', 'abs', 'back'],
-    trainingTypes: ['agility', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå i ett stort utfallssteg. Gå hela vägen ner med tyngdpunkt rakt över främre foten, knä pekar i fotens riktning. Vänd strax innan underlaget. Samtidigt som du går ner roteras överkroppen mot främre benets sida och armar vrids mot utsidan av höften. Rör dig upp och ner i det stillastående utfallssteget med samtidig rotationsrörelse. Ett ben i taget. ',
-        resourceUrl: 'https://youtu.be/OUvyKVsyq5Q',
-        media: [
-          {
-            id: 1970,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mxz3oUg2PY8GqxHW'
-          },
-          {
-            id: 1969,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/OOKBC3tvzVpK2MMC'
-          },
-          {
-            id: 1968,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/7ei3rl3M1a041rF2'
-          },
-          {
-            id: 1967,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/258_utfallsrorlighet_150521.mp4'
-          }
-        ],
-        id: 3883
-      }
-    ]
-  },
-  {
-    name: 'Utfallsrörlighet vänster',
-    muscleGroups: ['legs', 'glutes'],
-    trainingTypes: ['strength', 'agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå i ett stort utfallssteg. Gå hela vägen ner med tyngdpunkt rakt över främre foten, knä pekar i fotens riktning. Vänd strax innan underlaget. Samtidigt som du går ner roteras överkroppen mot främre benets sida och armar vrids mot utsidan av höften. Rör dig upp och ner i det stillastående utfallssteget med samtidig rotationsrörelse. Ett ben i taget. ',
-        resourceUrl: 'https://youtu.be/OUvyKVsyq5Q',
-        media: [],
-        id: 3882
-      }
-    ]
-  },
-  {
-    name: 'Utsida lår lutad mot vägg höger',
-    muscleGroups: ['legs', 'back'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå på knä i friarställning en armlängds avstånd från ett vertikalt stöd, t ex ett träd eller en vägg. Bakre knä i underlaget närmast det vertikala stödet och främre fot i underlaget snett framför. Hand mot det vertikala stödet med sträckt arm, yttre hand mot höft. För fram höften med spänd rumpa och mage. Tryck sedan höften rakt mot stödet. Känn sträckning längs utsida höft och lår. Vill du få en ökad sträckning så kan du vrida höften lite i riktning bort från stödet.',
-        resourceUrl: 'https://youtu.be/x3qmEnfJCu0',
-        media: [
-          {
-            id: 2102,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/MXt7hE2FAngBSgvt'
-          },
-          {
-            id: 2101,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fFWjcZSd91MGEGQe'
-          },
-          {
-            id: 2100,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/071_utsida_lar_lutad_mot_vagg_trad_150521.mp4'
-          }
-        ],
-        id: 3881
-      }
-    ]
-  },
-  {
-    name: 'Utsida lår lutad mot vägg vänster',
-    muscleGroups: ['back', 'legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå på knä i friarställning en armlängds avstånd från ett vertikalt stöd, t ex ett träd eller en vägg. Bakre knä i underlaget närmast det vertikala stödet och främre fot i underlaget snett framför. Hand mot det vertikala stödet med sträckt arm, yttre hand mot höft. För fram höften med spänd rumpa och mage. Tryck sedan höften rakt mot stödet. Känn sträckning längs utsida höft och lår. Vill du få en ökad sträckning så kan du vrida höften lite i riktning bort från stödet.',
-        resourceUrl: 'https://youtu.be/x3qmEnfJCu0',
-        media: [
-          {
-            id: 2102,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/MXt7hE2FAngBSgvt'
-          },
-          {
-            id: 2101,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/fFWjcZSd91MGEGQe'
-          },
-          {
-            id: 2100,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/071_utsida_lar_lutad_mot_vagg_trad_150521.mp4'
-          }
-        ],
-        id: 3880
-      }
-    ]
-  },
-  {
-    name: 'Vadstretch kort höger',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå med främre delen av foten på förhöjning och sänk ner hälen med böjt knä tills det sträcker i hälsena, vad och fotled. \n\nAlternativ utan förhöjning: Sitt på huk med stretchsidans fotsula mot underlaget. Lägg tyngden mot den sidan, se till att hälen är i underlaget hela tiden. Luta överkropp fram över knä tills det sträcker i hälsena, vad och fotled.',
-        resourceUrl: 'https://youtu.be/pfGzlkdD8UQ',
-        media: [
-          {
-            id: 2035,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FDp90gqyRufqxIFv'
-          },
-          {
-            id: 2034,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/4PzX1N4mLHdBdSI4'
-          },
-          {
-            id: 2032,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/086_vadstretch_kort_150521.mp4'
-          }
-        ],
-        id: 3879
-      }
-    ]
-  },
-  {
-    name: 'Vadstretch kort vänster',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå med främre delen av foten på förhöjning och sänk ner hälen med böjt knä tills det sträcker i hälsena, vad och fotled. \n\nAlternativ utan förhöjning: Sitt på huk med stretchsidans fotsula mot underlaget. Lägg tyngden mot den sidan, se till att hälen är i underlaget hela tiden. Luta överkropp fram över knä tills det sträcker i hälsena, vad och fotled.',
-        resourceUrl: 'https://youtu.be/pfGzlkdD8UQ',
-        media: [
-          {
-            id: 2035,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FDp90gqyRufqxIFv'
-          },
-          {
-            id: 2034,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/4PzX1N4mLHdBdSI4'
-          },
-          {
-            id: 2032,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/086_vadstretch_kort_150521.mp4'
-          }
-        ],
-        id: 3878
-      }
-    ]
-  },
-  {
-    name: 'Vadstretch lång höger',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå med främre delen av foten på förhöjning och sänk ner hälen med rakt knä tills det sträcker i vaden. Håll överkroppen upprätt och för fram höften med lätt spänning i rumpan. \n\nAlternativ utan förhöjning: Ta ut ett stort steg bak med bakre knä sträckt. Tyngdpunkt mot främre benet som är lätt böjt, lägg händerna som stöd mot knä eller mot en vägg eller ett träd. Tryck ned bakre fots häl mot marken och sträva samtidigt fram med trycket mot främre benet tills det sträcker i vaden. Se till att du trycker fram höften ordentligt.',
-        resourceUrl: 'https://youtu.be/JNYsmfyNmpk',
-        media: [
-          {
-            id: 2040,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/raWn6cdKAruztow1'
-          },
-          {
-            id: 2039,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/oSLYyIFVM55pIQZO'
-          },
-          {
-            id: 2038,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/085_vadstretch_lang_150521.mp4'
-          }
-        ],
-        id: 3877
-      }
-    ]
-  },
-  {
-    name: 'Vadstretch lång vänster',
-    muscleGroups: ['legs'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå med främre delen av foten på förhöjning och sänk ner hälen med rakt knä tills det sträcker i vaden. Håll överkroppen upprätt och för fram höften med lätt spänning i rumpan.\n\nAlternativ utan förhöjning: Ta ut ett stort steg bak med bakre knä sträckt. Tyngdpunkt mot främre benet som är lätt böjt, lägg händerna som stöd mot knä eller mot en vägg eller ett träd. Tryck ned bakre fots häl mot marken och sträva samtidigt fram med trycket mot främre benet tills det sträcker i vaden. Se till att du trycker fram höften ordentligt.',
-        resourceUrl: 'https://youtu.be/JNYsmfyNmpk',
-        media: [
-          {
-            id: 2040,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/raWn6cdKAruztow1'
-          },
-          {
-            id: 2039,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/oSLYyIFVM55pIQZO'
-          },
-          {
-            id: 2038,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/085_vadstretch_lang_150521.mp4'
-          }
-        ],
-        id: 3876
-      }
-    ]
-  },
-  {
     name: 'Vindrutetorkaren',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back'],
     trainingTypes: ['strength', 'agility'],
     variations: [
@@ -16620,6 +10893,7 @@ export default [
   },
   {
     name: 'Vriden planka',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders', 'glutes', 'legs'],
     trainingTypes: ['strength'],
     variations: [
@@ -16713,48 +10987,8 @@ export default [
     ]
   },
   {
-    name: 'Väderkvarnen',
-    muscleGroups: ['legs', 'abs', 'back', 'arms', 'shoulders'],
-    trainingTypes: ['cardio', 'strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Ett hoppsasteg i sidled med låg tyngdpunkt och böjning i knä och höft, framåtfällning i bålen och armar sträckta rakt ut i sidled. Mot respektive vänster och höger sida så roteras överkropp och armar mot det yttre benet. ',
-        resourceUrl: 'https://youtu.be/O6AhGOTTGBE',
-        media: [
-          {
-            id: 1975,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/4wAhX793pmM3DeS8'
-          },
-          {
-            id: 1974,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/Y3uvHozd2lPvVygC'
-          },
-          {
-            id: 1973,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/e89VlQOmx7sekReO'
-          },
-          {
-            id: 1972,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/IUqJep2sgxqH6el2'
-          },
-          {
-            id: 1971,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/052_vaderkvarnen_150521.mp4'
-          }
-        ],
-        id: 3869
-      }
-    ]
-  },
-  {
     name: 'Växelplankan',
+    mainMuscleGroup: 'core',
     muscleGroups: ['abs', 'back', 'shoulders'],
     trainingTypes: ['strength'],
     variations: [
@@ -16845,134 +11079,4 @@ export default [
       }
     ]
   },
-  {
-    name: 'Åsnespark',
-    muscleGroups: ['legs', 'glutes', 'abs', 'back'],
-    trainingTypes: ['strength'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Stå med lätt böjning i höft och knän med lätt framåtfälld rygg, händer på höften. Lyft ett ben sträckt bak och låt tårna nudda underlaget. Spänn magen så bålen hålls stilla och stabil. Spänn rumpan vid benlyftet. \n\nJobba med ett ben i taget, i antalet repetitioner som anges i övningsbeskrivningen. Byt sedan ben.',
-        resourceUrl: 'https://youtu.be/8jH-2qXIllg',
-        media: [
-          {
-            id: 89,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/CfuihagZJoDnkcrZ'
-          },
-          {
-            id: 88,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/mth0dPFvzXeyVY0U'
-          },
-          {
-            id: 87,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/R91sAVLB4zn1wlk2'
-          },
-          {
-            id: 84,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/240_åsnespark_level1_150521.mp4'
-          }
-        ],
-        id: 3860
-      },
-      {
-        difficulty: 1,
-        description:
-          'Stå med lätt böjning i höft och knän med lätt framåtfälld rygg, händer på höften. Lyft ett ben sträckt bak i linje med kroppen ovan underlaget. \n\nJobba med ett ben i taget, i antalet repetitioner som anges i övningsbeskrivningen. Byt sedan ben.',
-        resourceUrl: 'https://youtu.be/i_9teiLUHac',
-        media: [
-          {
-            id: 92,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/70qsRSDtu4Gft1sd'
-          },
-          {
-            id: 91,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/uGBqOmKK8y3XT4Vq'
-          },
-          {
-            id: 90,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/FAV8lvVuzXXaON3e'
-          },
-          {
-            id: 85,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/241_åsnespark_level2_150521.mp4'
-          }
-        ],
-        id: 3861
-      },
-      {
-        difficulty: 2,
-        description:
-          'Stå med lätt böjning i höft och knän med lätt framåtfälld rygg. Lyft ett ben sträckt bak i linje med kroppen ovan underlaget samtidigt som du sträcker armar fram i linje med kroppen.\n\nJobba med ett ben i taget, i antalet repetitioner som anges i övningsbeskrivningen. Byt sedan ben.',
-        resourceUrl: 'https://youtu.be/hppDuwsBwqs',
-        media: [
-          {
-            id: 95,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/czbCkLjpoJozh9Vh'
-          },
-          {
-            id: 94,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/vmlXSTyr8IbkXW1B'
-          },
-          {
-            id: 93,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/eqprqHCW46lcEBJR'
-          },
-          {
-            id: 86,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/242_åsnespark_level3_150521.mp4'
-          }
-        ],
-        id: 3862
-      }
-    ]
-  },
-  {
-    name: 'Överkroppslöpning',
-    muscleGroups: ['back', 'arms', 'shoulders'],
-    trainingTypes: ['agility'],
-    variations: [
-      {
-        difficulty: 0,
-        description:
-          'Imitera en högfrekvent löpning med bara överkroppen, där du är stilla från höften och nedåt. Sänkta axlar med armpendling, böjda armbågar. Stabilisera med stark mage. ',
-        resourceUrl: 'https://youtu.be/3B7lzWrvZDk',
-        media: [
-          {
-            id: 903,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/U7rzD040kGmXk827'
-          },
-          {
-            id: 902,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/NTGJ9VekCwjZXMWq'
-          },
-          {
-            id: 901,
-            type: 'image',
-            url: 'https://res.cloudinary.com/fmtk-prod/image/upload/RDd4VRlaMm9QSHg2'
-          },
-          {
-            id: 900,
-            type: 'video',
-            url: 'https://d2s4xjxujirtd.cloudfront.net/010_överkroppslopning_150521.mp4'
-          }
-        ],
-        id: 3856
-      }
-    ]
-  }
 ];

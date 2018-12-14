@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 
-import Accordion from '../Accordion';
+import Accordion from './Accordion';
 import translations from '../../assets/translations';
 
-const ExcersiseWrapper = styled.div`
+const Wrapper = styled.div`
   background-color: ${props => props.theme.overlayColor};
   border-bottom: solid 1px ${props => props.theme.borderColor};
 
@@ -32,7 +32,7 @@ class Excersise extends Component {
 
     return (
       <Fragment>
-        <ExcersiseWrapper>
+        <Wrapper>
           <Accordion
             label={excersise.name}
             top={this.getTrainingTypes(excersise.trainingTypes)}
@@ -40,7 +40,7 @@ class Excersise extends Component {
           >
             <Accordion.Content content={this.getDescription(excersise.variations)} />
           </Accordion>
-        </ExcersiseWrapper>
+        </Wrapper>
       </Fragment>
     );
   }

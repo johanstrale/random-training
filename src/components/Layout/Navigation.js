@@ -5,7 +5,7 @@ import { faCogs, faClipboardList, faDumbbell } from '@fortawesome/free-solid-svg
 import translations from '../../assets/translations';
 import Menu from '../Menu';
 
-const NavigationWrapper = styled.nav`
+const Wrapper = styled.nav`
   background-color: ${props => props.theme.navigationColor};
   border-top: solid 1px ${props => props.theme.borderColor};
   position: fixed;
@@ -14,13 +14,13 @@ const NavigationWrapper = styled.nav`
 `;
 
 const Navigation = props => (
-  <NavigationWrapper>
+  <Wrapper>
     <Menu>
       <Menu.MenuItem to="/excersises" icon={faClipboardList} value={translations['/excersises']} />
       <Menu.MenuItem to="/random" icon={faDumbbell} value={translations['/random']} />
       <Menu.MenuItem to="/settings" icon={faCogs} value={translations['/settings']} />
     </Menu>
-  </NavigationWrapper>
+  </Wrapper>
 );
 
 export default Navigation;

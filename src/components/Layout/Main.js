@@ -10,7 +10,7 @@ import Settings from '../Settings';
 import Random from '../Random';
 import Excersises from '../Excersises';
 
-const MainWrapper = styled.main`
+const Wrapper = styled.main`
   display: flex;
   justify-content: center;
   overflow-y: auto;
@@ -27,14 +27,14 @@ class Main extends Component {
 
   render() {
     return (
-      <MainWrapper>
+      <Wrapper>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/settings" component={Settings} />
           <Route path="/random" component={Random} />
           <Route path="/excersises" component={Excersises} />
         </Switch>
-      </MainWrapper>
+      </Wrapper>
     );
   }
 }

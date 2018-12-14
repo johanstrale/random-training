@@ -8,7 +8,7 @@ import RandomSection from './RandomSection';
 import RoundButton from '../Buttons/RoundButton';
 import setCurrentWorkout from '../../actions/training';
 
-const RandomWrapper = styled.div`
+const Wrapper = styled.div`
   width: inherit;
 `;
 
@@ -18,7 +18,7 @@ const ButtonsWrapper = styled.div`
   margin: 25px;
 `;
 
-const RandomSectionsWrapper = styled.div`
+const SectionsWrapper = styled.div`
   margin: 10px;
 `;
 
@@ -30,21 +30,35 @@ class Random extends Component {
 
   getRandomExcersises() {
     const { excersises } = this.props;
-    const excersiseList = [];
-    while (excersiseList.length < 2) {
-      excersiseList.push(excersises[Math.floor(Math.random() * excersises.length)]);
+    const excersiseList = [excersises[Math.floor(Math.random() * excersises.length)]];
+
+    while (excersiseList.length < 8) {
+      const randomExcersise = excersises[Math.floor(Math.random() * excersises.length)];
+      const lastExcersise = excersiseList.length - 1;
+
+      if (
+        excersiseList[lastExcersise] &&
+        excersiseList[lastExcersise] !== randomExcersise &&
+        excersiseList[lastExcersise].mainMuscleGroup !== randomExcersise.mainMuscleGroup &&
+        !excersiseList.includes(randomExcersise)
+      ) {
+        excersiseList.push(randomExcersise);
+      }
     }
     return excersiseList;
   }
 
   generateTraining() {
     const workout = [];
+    const excersises = this.getRandomExcersises();
+    let index = 0;
 
-    while (workout.length < 4) {
+    while (index < excersises.length) {
       workout.push({
         block: workout.length + 1,
-        excersises: this.getRandomExcersises()
+        excersises: excersises.slice(index, index + 2)
       });
+      index = index + 2;
     }
     this.props.setCurrentWorkout(workout);
   }
@@ -55,19 +69,19 @@ class Random extends Component {
     } = this.props;
 
     return (
-      <RandomWrapper>
+      <Wrapper>
         <ButtonsWrapper>
           <RoundButton icon={faRandom} handleClick={() => this.generateTraining()} />
           <RoundButton icon={faPlay} handleClick={() => this.startTraining()} disabled={!isGenerated} />
         </ButtonsWrapper>
         {isGenerated && (
-          <RandomSectionsWrapper>
+          <SectionsWrapper>
             {currentWorkout.map((section, i) => (
               <RandomSection key={i} section={section} />
             ))}
-          </RandomSectionsWrapper>
+          </SectionsWrapper>
         )}
-      </RandomWrapper>
+      </Wrapper>
     );
   }
 }

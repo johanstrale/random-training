@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
 import Excersise from '../Excersise';
 
-const ExcersisesWrapper = styled.div`
+const Wrapper = styled.div`
   width: 100%;
 `;
 
@@ -13,15 +13,11 @@ class Excersises extends Component {
     const { excersises } = this.props;
 
     return (
-      <ExcersisesWrapper>
-        {excersises.map((excersise, i) => {
-          return (
-            <Fragment key={i}>
-              <Excersise excersise={excersise} border={i === excersises.length - 1 ? false : true} />
-            </Fragment>
-          );
-        })}
-      </ExcersisesWrapper>
+      <Wrapper>
+        {excersises.map((excersise, i) => (
+          <Excersise key={i} excersise={excersise} />
+        ))}
+      </Wrapper>
     );
   }
 }

@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
-const HomeWrapper = styled.div`
+const Wrapper = styled.div`
   margin: auto;
 `;
 
 const Home = props => (
-  <HomeWrapper>
+  <Wrapper>
     <FontAwesomeIcon icon={faDumbbell} color="white" size="4x" />
-  </HomeWrapper>
+  </Wrapper>
 );
 
 export default Home;

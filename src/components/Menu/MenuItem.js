@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { withTheme } from 'styled-components';
 
-const MenuItemWrapper = styled.div`
+const Wrapper = styled.div`
   margin: auto;
   a {
     color: ${props => props.theme.textColor};
@@ -12,24 +12,24 @@ const MenuItemWrapper = styled.div`
   }
 `;
 
-const MenuIconWrapper = styled.p`
+const IconWrapper = styled.p`
   margin: 4px 0 4px 0;
 `;
 
-const MenuTextWrapper = styled(MenuIconWrapper)`
+const TextWrapper = styled(IconWrapper)`
   font-size: 0.5rem;
-  font-weigth: 400;
+  font-weight: 400;
 `;
 
 const MenuItem = ({ to, icon, value, theme }) => (
-  <MenuItemWrapper>
+  <Wrapper>
     <Link to={to}>
-      <MenuIconWrapper>
+      <IconWrapper>
         <FontAwesomeIcon icon={icon} color={theme.textColor} size="sm" />
-      </MenuIconWrapper>
-      <MenuTextWrapper>{value}</MenuTextWrapper>
+      </IconWrapper>
+      <TextWrapper>{value}</TextWrapper>
     </Link>
-  </MenuItemWrapper>
+  </Wrapper>
 );
 
 export default withTheme(MenuItem);

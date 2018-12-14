@@ -3,9 +3,8 @@ import styled from 'styled-components';
 
 import MenuItem from './MenuItem';
 
-const MenuWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
-  color: ${props => props.theme.textColor};
   height: 40px;
 `;
 
@@ -13,7 +12,7 @@ class Menu extends Component {
   static MenuItem = MenuItem;
 
   render() {
-    return <MenuWrapper>{this.props.children}</MenuWrapper>;
+    return <Wrapper>{this.props.children}</Wrapper>;
   }
 }
 

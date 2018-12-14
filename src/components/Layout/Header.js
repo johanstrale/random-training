@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 
 import translations from '../../assets/translations';
 
-const HeaderWrapper = styled.header`
+const Wrapper = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
@@ -15,17 +15,17 @@ const HeaderWrapper = styled.header`
   color: ${props => props.theme.textColor};
   background-color: ${props => props.theme.headerColor};
   border-bottom: solid 1px ${props => props.theme.borderColor};
+`;
 
-  & p {
-    font-size: 1.1rem;
-  }
+const P = styled.p`
+  font-size: 1.1rem;
 `;
 
 const Header = ({ location }) => {
   return (
-    <HeaderWrapper>
-      <p>{translations[location.pathname] || 'Välkommen'}</p>
-    </HeaderWrapper>
+    <Wrapper>
+      <P>{translations[location.pathname] || 'Välkommen'}</P>
+    </Wrapper>
   );
 };
 
