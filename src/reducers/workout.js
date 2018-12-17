@@ -3,6 +3,7 @@ import {
   START_WORKOUT,
   PAUSE_WORKOUT,
   STOP_WORKOUT,
+  COMPLETE_WORKOUT,
   TIMER_TICK,
   NEXT_BLOCK,
   START_EXCERSISE,
@@ -13,6 +14,7 @@ const initalState = {
   blocks: [],
   isRunning: false,
   isIntro: true,
+  isComplete: false,
   activeBlock: 0,
   timeRemaining: 0
 };
@@ -39,6 +41,11 @@ export default (state = initalState, action) => {
         ...state,
         isRunning: false,
         activeBlock: 0
+      };
+    case COMPLETE_WORKOUT:
+      return {
+        ...state,
+        isComplete: true
       };
     case TIMER_TICK:
       return {

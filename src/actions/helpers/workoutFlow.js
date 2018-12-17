@@ -1,4 +1,4 @@
-import { NEXT_EXCERSISE, NEXT_BLOCK, START_EXCERSISE } from '../workout';
+import { NEXT_EXCERSISE, NEXT_BLOCK, START_EXCERSISE, COMPLETE_WORKOUT } from '../workout';
 
 const workoutFlow = workout => {
   const block = workout.blocks[workout.activeBlock];
@@ -20,7 +20,9 @@ const workoutFlow = workout => {
       type: NEXT_BLOCK
     };
   } else {
-    // workout complete
+    return {
+      type: COMPLETE_WORKOUT
+    }
   }
 };
 

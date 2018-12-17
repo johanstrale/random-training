@@ -5,6 +5,7 @@ export const GET_WORKOUT = 'GET_WORKOUT';
 export const START_WORKOUT = 'START_WORKOUT';
 export const PAUSE_WORKOUT = 'PAUSE_WORKOUT';
 export const STOP_WORKOUT = 'STOP_WORKOUT';
+export const COMPLETE_WORKOUT = 'COMPLETE_WORKOUT';
 export const TIMER_TICK = 'TIMER_TICK';
 export const NEXT_BLOCK = 'NEXT_BLOCK';
 export const NEXT_EXCERSISE = 'NEXT_EXCERSISE';
@@ -38,8 +39,11 @@ const tick = () => (dispatch, getState) => {
     dispatch({ type: TIMER_TICK });
   } else {
     clearInterval(timer);
-    dispatch(workoutFlow(workout));
-    startWorkout()(dispatch);
+    const action = workoutFlow(workout);
+    dispatch(action);
+    if(action.type !== COMPLETE_WORKOUT) {
+      startWorkout()(dispatch);
+    }
   }
 };
 
