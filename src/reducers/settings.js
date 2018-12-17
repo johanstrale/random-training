@@ -2,9 +2,9 @@ import { UPDATE_SETTINGS } from '../actions/settings';
 
 const initialState = {
   numberOfBlocks: 4,
-  introInterval: 2,
+  introInterval: 1,
   excersiseInterval: 2,
-  restInterval: 15
+  restInterval: 2
 };
 
 export default (state = initialState, action) => {

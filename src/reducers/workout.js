@@ -55,18 +55,19 @@ export default (state = initalState, action) => {
     case NEXT_BLOCK:
       return {
         ...state,
+        timeRemaining: state.blocks[state.activeBlock].time,
         activeBlock: state.activeBlock + 1
       };
     case START_EXCERSISE:
       return {
         ...state,
-        isIntro: action.isIntro,
+        isIntro: false,
         timeRemaining: state.blocks[state.activeBlock].time
       };
     case NEXT_EXCERSISE:
       return {
         ...state,
-        blocks: action.blocks,
+        ...action.workout,
         timeRemaining: state.blocks[state.activeBlock].time
       };
     default:

@@ -6,14 +6,12 @@ const workoutFlow = workout => {
   if (workout.isIntro) {
     return {
       type: START_EXCERSISE,
-      isIntro: false
     };
-  } else if (block.activeExcersise < block.excersises.length) {
-    block.activeExcersise = block.activeExcersise + 1;
-    const updatedBlocks = Object.assign({}, workout.blocks, block);
+  } else if (block.activeExcersise < block.excersises.length - 1) {
+    workout.blocks[workout.activeBlock].activeExcersise = block.activeExcersise + 1;
     return {
       type: NEXT_EXCERSISE,
-      blocks: updatedBlocks
+      workout: workout
     };
   } else if (workout.activeBlock < workout.blocks.length) {
     return {

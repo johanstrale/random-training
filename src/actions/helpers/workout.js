@@ -35,7 +35,8 @@ const generateWorkout = (excersises, settings) => {
       blocks.push({
         number: blocks.length + 1,
         excersises: restBlock,
-        time: settings.restInterval
+        time: settings.restInterval,
+        activeExcersise: 0,
       });
     }
     index = index + 2;
