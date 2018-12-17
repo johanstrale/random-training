@@ -6,7 +6,7 @@ import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import AccordionContent from './AccordionContent';
 
 const AccordionWrapper = styled.div`
-  background-color: ${props => props.theme.overlayColor};
+  background-color: ${props => (props.active ? props.theme.excersiseActiveColor : props.theme.overlayColor)};
   color: ${props => props.theme.textColor};
   padding: 10px;
   display: flex;
@@ -52,19 +52,19 @@ class Accordion extends Component {
 
   render() {
     const {
-      props: { label, top, bottom, children },
+      props: { label, top, bottom, active, children },
       state: { isOpen }
     } = this;
 
     return (
       <Fragment>
-        <AccordionWrapper onClick={() => this.onClick()}>
+        <AccordionWrapper active={active} onClick={() => this.onClick()}>
           <span>
             <p className="top">{top}</p>
             <p className="label">{label}</p>
             <p className="bottom">{bottom}</p>
           </span>
-          <FontAwesomeIcon icon={isOpen ? faMinus : faPlus} size={'xs'} />
+          {children && <FontAwesomeIcon icon={isOpen ? faMinus : faPlus} size={'xs'} />}
         </AccordionWrapper>
         {isOpen && children}
       </Fragment>

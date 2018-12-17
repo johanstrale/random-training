@@ -22,5 +22,7 @@ export const defaultTheme = {
   buttonColor: '#eac67a',
   buttonBorderColor: '#233237',
   buttonDisabledColor: 'grey',
-  buttonDisabledBorderColor: 'lightgrey'
+  buttonDisabledBorderColor: 'lightgrey',
+  progressBarRestColor: '#984B43',
+  excersiseActiveColor: '#599858'
 };

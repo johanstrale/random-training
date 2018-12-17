@@ -5,17 +5,17 @@ import Header from './Layout/Header';
 import Main from './Layout/Main';
 import Navigation from './Layout/Navigation';
 
-const AppWrapper = styled.div`
+const Wrapper = styled.div`
   background-color: ${props => props.theme.baseColor};
 `;
 
 const App = () => {
   return (
-    <AppWrapper>
+    <Wrapper>
       <Header />
       <Main />
       <Navigation />
-    </AppWrapper>
+    </Wrapper>
   );
 };
 

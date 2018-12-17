@@ -16,19 +16,23 @@ const Wrapper = styled.div`
 
 class Excersise extends Component {
   getTrainingTypes(trainingTypes) {
-    return trainingTypes.map(type => translations[type]).join(' / ');
+    return trainingTypes && trainingTypes.map(type => translations[type]).join(' / ');
   }
 
   getMuscleGroups(muscleGroups) {
-    return muscleGroups.map(group => translations[group]).join(' / ');
+    return muscleGroups && muscleGroups.map(group => translations[group]).join(' / ');
   }
 
   getDescription(variations) {
+    if (!variations) {
+      return;
+    }
     return variations[1] ? variations[1].description : variations[0].description;
   }
 
   render() {
-    const { excersise } = this.props;
+    const { excersise, active } = this.props;
+    const content = this.getDescription(excersise.variations);
 
     return (
       <Fragment>
@@ -37,8 +41,9 @@ class Excersise extends Component {
             label={excersise.name}
             top={this.getTrainingTypes(excersise.trainingTypes)}
             bottom={this.getMuscleGroups(excersise.muscleGroups)}
+            active={active}
           >
-            <Accordion.Content content={this.getDescription(excersise.variations)} />
+            {content && <Accordion.Content content={content} />}
           </Accordion>
         </Wrapper>
       </Fragment>

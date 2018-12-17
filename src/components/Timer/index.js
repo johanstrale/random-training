@@ -1,34 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import styled from 'styled-components';
 
-import Timer from './Timer';
+const TimerWrapper = styled.div`
+  margin: 25px 20px 25px 20px;
+  color: ${props => props.theme.textColor};
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+`;
 
-class TimerContainer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      minutes: this.props.minutes,
-      seconds: this.props.seconds,
-      label: this.props.label
-    };
-  }
+const Timer = ({ seconds }) => (
+  <TimerWrapper>
+    <p>Tid kvar:</p>
+    <p>00:{seconds < 10 ? `0${seconds}` : seconds}</p>
+  </TimerWrapper>
+);
 
-  tick() {
-    this.setState({ seconds: this.state.seconds - 1 });
-  }
-
-  countDown() {
-    setTimeout(() => {
-      this.tick();
-    }, 1000);
-  }
-
-  render() {
-    const { isStarted, isShown } = this.props;
-    isStarted && this.countDown();
-    const { seconds, minutes, label } = this.state;
-
-    return <Timer minutes={minutes} seconds={seconds} label={label} isShown={isShown} />;
-  }
-}
-
-export default TimerContainer;
+export default Timer;

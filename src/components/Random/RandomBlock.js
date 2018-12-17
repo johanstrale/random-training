@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
 const HeadlineWrapper = styled.div`
   border-radius: 3px 3px 0 0;
-  padding: 8px 10px 8px 10px;
+  padding: 8px 10px 5px 10px;
   color: ${props => props.theme.textColor}
   background-color: ${props => props.theme.overlayBrightColor};
   font-weight: 400;
@@ -18,16 +18,16 @@ const HeadlineWrapper = styled.div`
   justify-content: space-between;
 `;
 
-const RandomSection = ({ section }) => (
+const RandomBlock = ({ block }) => (
   <Wrapper>
     <HeadlineWrapper>
-      <span>Block {section.block}</span>
-      <span>3 x 30 sekunder</span>
+      <span>Block {block.number}</span>
+      <span>{block.time} sekunder</span>
     </HeadlineWrapper>
-    {section.excersises.map((excersise, i) => (
+    {block.excersises.map((excersise, i) => (
       <Excersise key={i} excersise={excersise} />
     ))}
   </Wrapper>
 );
 
-export default RandomSection;
+export default RandomBlock;

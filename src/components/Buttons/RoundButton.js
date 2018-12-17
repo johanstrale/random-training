@@ -6,9 +6,9 @@ const ButtonWrapper = styled.button`
   text-decoration: none;
   background: ${props => props.theme.buttonColor};
   color: ${props => props.theme.overlayColor};
-  width: 45px;
-  height: 45px;
-  line-height: 40px;
+  width: ${props => props.size}px;
+  height: ${props => props.size}px;
+  line-height: ${props => props.size - 5}px;
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
@@ -29,9 +29,9 @@ const ButtonWrapper = styled.button`
   }
 `;
 
-const RoundButton = ({ icon, disabled, handleClick }) => (
-  <ButtonWrapper disabled={disabled} onClick={handleClick}>
-    <FontAwesomeIcon icon={icon} size="lg" />
+const RoundButton = ({ icon, disabled, handleClick, size = 45 }) => (
+  <ButtonWrapper disabled={disabled} onClick={handleClick} size={size}>
+    <FontAwesomeIcon icon={icon} size={'lg'} />
   </ButtonWrapper>
 );
 
