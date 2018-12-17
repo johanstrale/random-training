@@ -10,7 +10,16 @@ const Wrapper = styled.div`
 
 class Excersises extends Component {
   render() {
-    const { excersises } = this.props;
+    const { excersises, loading, error } = this.props;
+    console.log(excersises);
+
+    if (loading) {
+      return <div>Loading...</div>;
+    }
+
+    if (error) {
+      return <div>Error {error}</div>;
+    }
 
     return (
       <Wrapper>
@@ -23,7 +32,7 @@ class Excersises extends Component {
 }
 
 const mapStateToProps = state => ({
-  excersises: state.excersises
+  excersises: state.excersises.items
 });
 
 export default connect(mapStateToProps)(Excersises);
