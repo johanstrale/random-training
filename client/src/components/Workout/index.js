@@ -12,9 +12,9 @@ import {
   startWorkout,
   completeWorkout,
   updateWorkout,
-  finishWorkout
+  finishWorkout,
+  tickWorkout
 } from '../../actions/workout';
-import { tickTimer } from '../../actions/timer';
 
 const Wrapper = styled.div`
   padding: 10px 0 10px 0;
@@ -58,7 +58,7 @@ class WorkoutContainer extends Component {
         this.props.completeWorkout();
       }
     } else {
-      this.props.tickTimer();
+      this.props.tickWorkout();
     }
   }
 
@@ -96,7 +96,7 @@ class WorkoutContainer extends Component {
 const mapDispatchToProps = {
   fetchWorkout,
   initWorkout,
-  tickTimer,
+  tickWorkout,
   startWorkout,
   stopWorkout,
   completeWorkout,

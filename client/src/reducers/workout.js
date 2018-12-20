@@ -5,9 +5,9 @@ import {
   STOP_WORKOUT,
   COMPLETE_WORKOUT,
   UPDATE_WORKOUT,
-  FINISH_WORKOUT
+  FINISH_WORKOUT,
+  TICK_WORKOUT
 } from '../actions/workout';
-import { TICK_TIMER } from '../actions/timer';
 
 const initalState = {
   entries: [],
@@ -54,7 +54,7 @@ export default (state = initalState, action) => {
       return {
         ...initalState
       };
-    case TICK_TIMER:
+    case TICK_WORKOUT:
       return {
         ...state,
         timeLeft: state.timeLeft - 1

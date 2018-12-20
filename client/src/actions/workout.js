@@ -7,6 +7,7 @@ export const STOP_WORKOUT = 'STOP_WORKOUT';
 export const COMPLETE_WORKOUT = 'COMPLETE_WORKOUT';
 export const UPDATE_WORKOUT = 'UPDATE_WORKOUT';
 export const FINISH_WORKOUT = 'FINISH_WORKOUT';
+export const TICK_WORKOUT = 'TICK_WORKOUT';
 
 const receiveWorkout = (entries, introInterval) => ({
   type: GET_WORKOUT,
@@ -38,9 +39,22 @@ const finishWorkout = () => ({
   type: FINISH_WORKOUT
 });
 
+const tickWorkout = () => ({
+  type: TICK_WORKOUT
+});
+
 const fetchWorkout = (excersises, settings) => dispatch => {
   const entries = generateWorkoutExcersises(excersises, settings);
   dispatch(receiveWorkout(entries, settings.introInterval));
 };
 
-export { fetchWorkout, initWorkout, startWorkout, stopWorkout, completeWorkout, updateWorkout, finishWorkout };
+export {
+  fetchWorkout,
+  initWorkout,
+  startWorkout,
+  stopWorkout,
+  completeWorkout,
+  updateWorkout,
+  finishWorkout,
+  tickWorkout
+};
