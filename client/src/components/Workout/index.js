@@ -17,7 +17,7 @@ import {
 import { tickTimer } from '../../actions/timer';
 
 const Wrapper = styled.div`
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0 10px 0;
   background-color: ${props => props.theme.baseColor};
   min-height: 100vh;
 `;

@@ -16,13 +16,24 @@ const HeadlineWrapper = styled.div`
   font-size: 0.6rem;
 `;
 
+const ExcersiseWrapper = styled.div`
+  border-bottom: solid 1px ${props => props.theme.borderColor};
+
+  :last-child {
+    border-bottom: none;
+    border-radius: 0 0 3px 3px;
+  }
+`;
+
 const RandomBlock = ({ block }) => (
   <Wrapper>
     <HeadlineWrapper>
       <span>Block {block.number}</span>
     </HeadlineWrapper>
     {block.excersises.map((excersise, i) => (
-      <Excersise key={i} excersise={excersise} />
+      <ExcersiseWrapper key={i}>
+        <Excersise excersise={excersise} />
+      </ExcersiseWrapper>
     ))}
   </Wrapper>
 );

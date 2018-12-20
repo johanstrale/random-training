@@ -8,10 +8,16 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
+const ExcersiseWrapper = styled.div`
+  border-bottom: solid 1px ${props => props.theme.borderColor};
+
+  :last-child {
+    border-bottom: none;
+  }
+`;
 class Excersises extends Component {
   render() {
     const { excersises, loading, error } = this.props;
-    console.log(excersises);
 
     if (loading) {
       return <div>Loading...</div>;
@@ -24,7 +30,9 @@ class Excersises extends Component {
     return (
       <Wrapper>
         {excersises.map((excersise, i) => (
-          <Excersise key={i} excersise={excersise} />
+          <ExcersiseWrapper key={i}>
+            <Excersise excersise={excersise} />
+          </ExcersiseWrapper>
         ))}
       </Wrapper>
     );

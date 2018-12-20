@@ -1,10 +1,10 @@
 import { UPDATE_SETTINGS } from '../actions/settings';
 
 const initialState = {
-  numberOfExcersises: 6,
-  introInterval: 3,
-  excersiseInterval: 2,
-  restInterval: 2
+  numberOfExcersises: 12,
+  introInterval: 15,
+  excersiseInterval: 10,
+  restInterval: 5
 };
 
 export default (state = initialState, action) => {

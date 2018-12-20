@@ -6,12 +6,7 @@ import translations from '../../assets/translations';
 
 const Wrapper = styled.div`
   background-color: ${props => props.theme.overlayColor};
-  border-bottom: solid 1px ${props => props.theme.borderColor};
-
-  :last-child {
-    border-bottom: none;
-    border-radius: 0 0 3px 3px;
-  }
+  border-radius: inherit;
 `;
 
 class Excersise extends Component {
@@ -31,7 +26,7 @@ class Excersise extends Component {
   }
 
   render() {
-    const { excersise, active } = this.props;
+    const { excersise, active, slim } = this.props;
     const content = this.getDescription(excersise.variations);
 
     return (
@@ -39,8 +34,8 @@ class Excersise extends Component {
         <Wrapper>
           <Accordion
             label={excersise.name}
-            top={this.getTrainingTypes(excersise.trainingTypes)}
-            bottom={this.getMuscleGroups(excersise.muscleGroups)}
+            top={!slim && this.getTrainingTypes(excersise.trainingTypes)}
+            bottom={!slim && this.getMuscleGroups(excersise.muscleGroups)}
             active={active}
           >
             {content && <Accordion.Content content={content} />}

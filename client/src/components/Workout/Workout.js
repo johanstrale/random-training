@@ -11,6 +11,8 @@ const Wrapper = styled.div``;
 
 const ExcersiseWrapper = styled.div`
   border-bottom: solid 1px ${props => props.theme.borderColor};
+  border-top: solid 1px ${props => props.theme.borderColor};
+  margin-bottom: 15px;
 
   :nth-child(2) {
     border: none;
@@ -35,7 +37,7 @@ const Workout = ({ workout, onStart, onStop, onFinish }) => {
       <Timer time={workout.timeLeft} />
       {workout.entries.map((entry, i) => (
         <ExcersiseWrapper key={i}>
-          <Excersise excersise={entry.excersise} active={i === 0} />
+          <Excersise excersise={entry.excersise} active={i === 0} slim />
         </ExcersiseWrapper>
       ))}
       <ButtonWrapper>

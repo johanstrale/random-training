@@ -10,7 +10,7 @@ const generateWorkoutEntries = (excersises, settings) => {
       j + 1 < 3 && entries.push({ time: settings.restInterval, excersise: { name: 'Vila' } });
       j = j + 1;
     }
-    i + 2 < excersises.length && entries.push({ time: settings.restInterval, excersise: { name: 'Längre Vila' } });
+    i + 2 < excersises.length && entries.push({ time: settings.restInterval * 2, excersise: { name: 'Längre Vila' } });
   }
   return entries;
 };
