@@ -1,8 +1,8 @@
 import { UPDATE_SETTINGS } from '../actions/settings';
 
 const initialState = {
-  numberOfBlocks: 4,
-  introInterval: 1,
+  numberOfExcersises: 6,
+  introInterval: 3,
   excersiseInterval: 2,
   restInterval: 2
 };

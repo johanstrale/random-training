@@ -14,15 +14,12 @@ const HeadlineWrapper = styled.div`
   background-color: ${props => props.theme.overlayBrightColor};
   font-weight: 400;
   font-size: 0.6rem;
-  display: flex;
-  justify-content: space-between;
 `;
 
 const RandomBlock = ({ block }) => (
   <Wrapper>
     <HeadlineWrapper>
       <span>Block {block.number}</span>
-      <span>{block.time} sekunder</span>
     </HeadlineWrapper>
     {block.excersises.map((excersise, i) => (
       <Excersise key={i} excersise={excersise} />

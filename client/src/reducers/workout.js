@@ -1,22 +1,19 @@
 import {
   GET_WORKOUT,
+  INIT_WORKOUT,
   START_WORKOUT,
-  PAUSE_WORKOUT,
   STOP_WORKOUT,
   COMPLETE_WORKOUT,
-  TIMER_TICK,
-  NEXT_BLOCK,
-  START_EXCERSISE,
-  NEXT_EXCERSISE
+  UPDATE_WORKOUT,
+  FINISH_WORKOUT
 } from '../actions/workout';
+import { TICK_TIMER } from '../actions/timer';
 
 const initalState = {
-  blocks: [],
-  isRunning: false,
-  isIntro: true,
+  entries: [],
+  isStarted: false,
   isComplete: false,
-  activeBlock: 0,
-  timeRemaining: 0
+  timeLeft: 0
 };
 
 export default (state = initalState, action) => {
@@ -24,51 +21,43 @@ export default (state = initalState, action) => {
     case GET_WORKOUT:
       return {
         ...state,
-        ...action.workout
+        entries: [...action.payload.entries]
+      };
+    case INIT_WORKOUT:
+      return {
+        ...state,
+        timeLeft: state.entries[0].time,
+        isStarted: true
       };
     case START_WORKOUT:
       return {
         ...state,
-        isRunning: true
-      };
-    case PAUSE_WORKOUT:
-      return {
-        ...state,
-        isRunning: false
+        isStarted: true
       };
     case STOP_WORKOUT:
       return {
         ...state,
-        isRunning: false,
-        activeBlock: 0
+        isStarted: false
+      };
+    case UPDATE_WORKOUT:
+      return {
+        ...state,
+        entries: [...action.payload.entries],
+        timeLeft: action.payload.timeLeft
       };
     case COMPLETE_WORKOUT:
       return {
         ...state,
         isComplete: true
       };
-    case TIMER_TICK:
+    case FINISH_WORKOUT:
       return {
-        ...state,
-        timeRemaining: state.timeRemaining - 1
+        ...initalState
       };
-    case NEXT_BLOCK:
+    case TICK_TIMER:
       return {
         ...state,
-        timeRemaining: state.blocks[state.activeBlock].time,
-        activeBlock: state.activeBlock + 1
-      };
-    case START_EXCERSISE:
-      return {
-        ...state,
-        isIntro: false,
-        timeRemaining: state.blocks[state.activeBlock].time
-      };
-    case NEXT_EXCERSISE:
-      return {
-        ...state,
-        ...action.workout,
-        timeRemaining: state.blocks[state.activeBlock].time
+        timeLeft: state.timeLeft - 1
       };
     default:
       return state;

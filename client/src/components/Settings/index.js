@@ -9,7 +9,7 @@ const SettingsWrapper = styled.div`
 
 const Settings = () => (
   <SettingsWrapper>
-    <p>Number of groups</p>
+    <p>Number of excersises</p>
     <p>Initial countdown</p>
     <p>Excersise interval</p>
     <p>Rest interval</p>

@@ -6,7 +6,7 @@ import { faPlay, faRandom } from '@fortawesome/free-solid-svg-icons';
 
 import RandomBlock from './RandomBlock';
 import RoundButton from '../Buttons/RoundButton';
-import { getWorkout } from '../../actions/workout';
+import { fetchRandomExcersises } from '../../actions/excersises';
 
 const Wrapper = styled.div`
   width: inherit;
@@ -18,7 +18,7 @@ const ButtonsWrapper = styled.div`
   margin: 25px;
 `;
 
-const SectionsWrapper = styled.div`
+const BlocksWrapper = styled.div`
   margin: 10px;
 `;
 
@@ -28,26 +28,40 @@ class Random extends Component {
     history.push('/workout');
   }
 
-  generateTraining() {
-    const { getWorkout, excersises, settings } = this.props;
-    getWorkout(excersises, settings);
+  generateRandomExcersises() {
+    const { fetchRandomExcersises, excersises, settings } = this.props;
+    fetchRandomExcersises(excersises, settings.numberOfExcersises);
+  }
+
+  prepareWorkoutBlocks(excersises) {
+    const blocks = [];
+    let index = 0;
+
+    while (index < excersises.length) {
+      blocks.push({
+        number: blocks.length + 1,
+        excersises: excersises.slice(index, index + 2)
+      });
+      index = index + 2;
+    }
+    return blocks;
   }
 
   render() {
-    const { workout } = this.props;
+    const blocks = this.prepareWorkoutBlocks(this.props.randomExcersises);
 
     return (
       <Wrapper>
         <ButtonsWrapper>
-          <RoundButton icon={faRandom} handleClick={() => this.generateTraining()} />
-          <RoundButton icon={faPlay} handleClick={() => this.startTraining()} disabled={!workout.blocks.length > 0} />
+          <RoundButton icon={faRandom} handleClick={() => this.generateRandomExcersises()} />
+          <RoundButton icon={faPlay} handleClick={() => this.startTraining()} disabled={!blocks.length} />
         </ButtonsWrapper>
         {
-          <SectionsWrapper>
-            {workout.blocks.map((section, i) => (
+          <BlocksWrapper>
+            {blocks.map((section, i) => (
               <RandomBlock key={i} block={section} />
             ))}
-          </SectionsWrapper>
+          </BlocksWrapper>
         }
       </Wrapper>
     );
@@ -55,12 +69,12 @@ class Random extends Component {
 }
 
 const mapDispatchToProps = {
-  getWorkout
+  fetchRandomExcersises
 };
 
 const mapStateToProps = state => ({
-  excersises: state.excersises,
-  workout: state.workout,
+  excersises: state.excersises.items,
+  randomExcersises: state.excersises.randomItems,
   settings: state.settings
 });
 

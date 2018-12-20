@@ -1,9 +1,15 @@
-import { FETCH_EXCERSISES_BEGIN, FETCH_EXCERSISES_FAILURE, FETCH_EXCERSISES_SUCCESS } from '../actions/excersises';
+import {
+  FETCH_EXCERSISES_BEGIN,
+  FETCH_EXCERSISES_FAILURE,
+  FETCH_EXCERSISES_SUCCESS,
+  FETCH_RANDOM_EXCERSISES_SUCCESS
+} from '../actions/excersises';
 
 const initialState = {
   items: [],
   loading: false,
-  error: null
+  error: null,
+  randomItems: []
 };
 
 export default (state = initialState, action) => {
@@ -26,6 +32,11 @@ export default (state = initialState, action) => {
         items: [],
         loading: false,
         error: action.payload.error
+      };
+    case FETCH_RANDOM_EXCERSISES_SUCCESS:
+      return {
+        ...state,
+        randomItems: action.payload.items
       };
     default:
       return state;

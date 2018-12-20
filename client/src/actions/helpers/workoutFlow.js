@@ -5,7 +5,7 @@ const workoutFlow = workout => {
 
   if (workout.isIntro) {
     return {
-      type: START_EXCERSISE,
+      type: START_EXCERSISE
     };
   } else if (block.activeExcersise < block.excersises.length - 1) {
     workout.blocks[workout.activeBlock].activeExcersise = block.activeExcersise + 1;
@@ -13,14 +13,14 @@ const workoutFlow = workout => {
       type: NEXT_EXCERSISE,
       workout: workout
     };
-  } else if (workout.activeBlock < workout.blocks.length) {
+  } else if (workout.activeBlock < workout.blocks.length - 1) {
     return {
       type: NEXT_BLOCK
     };
   } else {
     return {
       type: COMPLETE_WORKOUT
-    }
+    };
   }
 };
 

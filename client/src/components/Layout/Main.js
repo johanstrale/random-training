@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
-import fetchExcersises from '../../actions/excersises';
+import { fetchExcersises } from '../../actions/excersises';
 import Home from '../Home';
 import Settings from '../Settings';
 import Random from '../Random';

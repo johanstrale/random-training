@@ -1,50 +1,46 @@
-import generateWorkout from './helpers/workout';
-import workoutFlow from './helpers/workoutFlow';
+import generateWorkoutExcersises from './helpers/generateWorkout';
 
 export const GET_WORKOUT = 'GET_WORKOUT';
+export const INIT_WORKOUT = 'INIT_WORKOUT';
 export const START_WORKOUT = 'START_WORKOUT';
-export const PAUSE_WORKOUT = 'PAUSE_WORKOUT';
 export const STOP_WORKOUT = 'STOP_WORKOUT';
 export const COMPLETE_WORKOUT = 'COMPLETE_WORKOUT';
-export const TIMER_TICK = 'TIMER_TICK';
-export const NEXT_BLOCK = 'NEXT_BLOCK';
-export const NEXT_EXCERSISE = 'NEXT_EXCERSISE';
-export const START_EXCERSISE = 'START_EXCERSISE';
+export const UPDATE_WORKOUT = 'UPDATE_WORKOUT';
+export const FINISH_WORKOUT = 'FINISH_WORKOUT';
 
-let timer = null;
-
-const getWorkout = (excersises, settings) => ({
+const receiveWorkout = (entries, introInterval) => ({
   type: GET_WORKOUT,
-  workout: generateWorkout(excersises, settings)
+  payload: { entries, introInterval }
 });
 
-const startWorkout = () => dispatch => {
-  clearInterval(timer);
-  timer = setInterval(() => dispatch(tick()), 1000);
-  dispatch({ type: START_WORKOUT });
-};
+const initWorkout = () => ({
+  type: INIT_WORKOUT
+});
 
-const pauseWorkout = excersises => {
-  clearInterval(timer);
-  return { type: PAUSE_WORKOUT };
-};
+const startWorkout = () => ({
+  type: START_WORKOUT
+});
 
-const stopWorkout = excersises => ({
+const stopWorkout = () => ({
   type: STOP_WORKOUT
 });
 
-const tick = () => (dispatch, getState) => {
-  const { workout } = getState();
-  if (workout.timeRemaining > 0) {
-    dispatch({ type: TIMER_TICK });
-  } else {
-    clearInterval(timer);
-    const action = workoutFlow(workout);
-    dispatch(action);
-    if(action.type !== COMPLETE_WORKOUT) {
-      startWorkout()(dispatch);
-    }
-  }
+const completeWorkout = () => ({
+  type: COMPLETE_WORKOUT
+});
+
+const updateWorkout = entries => ({
+  type: UPDATE_WORKOUT,
+  payload: { entries, timeLeft: entries[0].time }
+});
+
+const finishWorkout = () => ({
+  type: FINISH_WORKOUT
+});
+
+const fetchWorkout = (excersises, settings) => dispatch => {
+  const entries = generateWorkoutExcersises(excersises, settings);
+  dispatch(receiveWorkout(entries, settings.introInterval));
 };
 
-export { getWorkout, startWorkout, pauseWorkout, stopWorkout };
+export { fetchWorkout, initWorkout, startWorkout, stopWorkout, completeWorkout, updateWorkout, finishWorkout };

@@ -1,6 +1,9 @@
+import getRandomExcersises from './helpers/randomExcersises';
+
 export const FETCH_EXCERSISES_BEGIN = 'FETCH_EXCERSISES_BEGIN';
 export const FETCH_EXCERSISES_SUCCESS = 'FETCH_EXCERSISES_SUCCESS';
 export const FETCH_EXCERSISES_FAILURE = 'FETCH_EXCERSISES_FAILURE';
+export const FETCH_RANDOM_EXCERSISES_SUCCESS = 'FETCH_RANDOM_EXCERSISES_SUCCESS';
 
 const fetchExcersisesBegin = () => ({
   type: FETCH_EXCERSISES_BEGIN
@@ -16,6 +19,11 @@ const fetchExcersisesFailure = error => ({
   payload: { error }
 });
 
+const fetchRandomExcersisesSuccess = items => ({
+  type: FETCH_RANDOM_EXCERSISES_SUCCESS,
+  payload: { items }
+});
+
 const fetchExcersises = () => dispatch => {
   dispatch(fetchExcersisesBegin());
   return fetch('/api/excersises')
@@ -23,4 +31,8 @@ const fetchExcersises = () => dispatch => {
     .then(data => dispatch(fetchExcersisesSuccess(data)));
 };
 
-export default fetchExcersises;
+const fetchRandomExcersises = (excersises, numberOfExcersises) => dispatch => {
+  dispatch(fetchRandomExcersisesSuccess(getRandomExcersises(excersises, numberOfExcersises)));
+};
+
+export { fetchExcersises, fetchRandomExcersises };
