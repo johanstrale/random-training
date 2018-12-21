@@ -27,6 +27,7 @@ class WorkoutContainer extends Component {
     super(props);
     this.timer = null;
   }
+
   componentDidMount() {
     this.props.fetchWorkout(this.props.excersises, this.props.settings);
     this.props.initWorkout();

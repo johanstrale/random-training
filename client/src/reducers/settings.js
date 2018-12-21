@@ -1,8 +1,8 @@
 import { UPDATE_SETTINGS } from '../actions/settings';
 
 const initialState = {
-  numberOfExcersises: 12,
-  introInterval: 15,
+  numberOfExcersises: 8,
+  introInterval: 5,
   excersiseInterval: 10,
   restInterval: 5
 };

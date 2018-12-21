@@ -15,7 +15,6 @@ const ExcersiseWrapper = styled.div`
   margin-bottom: 15px;
 
   :nth-child(2) {
-    border: none;
     margin-bottom: 50px;
   }
 `;

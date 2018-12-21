@@ -38,7 +38,7 @@ class Excersise extends Component {
             bottom={!slim && this.getMuscleGroups(excersise.muscleGroups)}
             active={active}
           >
-            {content && <Accordion.Content content={content} />}
+            {!slim && content && <Accordion.Content content={content} />}
           </Accordion>
         </Wrapper>
       </Fragment>
