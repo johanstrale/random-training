@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import shortBeep from '../../assets/sounds/beep-07.mp3';
@@ -13,27 +13,36 @@ const TimerWrapper = styled.div`
   justify-content: space-between;
 `;
 
-const shortBeepRef = React.createRef();
-const longBeepRef = React.createRef();
-
-const beep = timeLeft => {
-  if (timeLeft === 0) {
-    longBeepRef.current.play();
-  } else if (timeLeft <= 3) {
-    shortBeepRef.current.play();
+class Timer extends Component {
+  constructor(props) {
+    super(props);
+    this.shortBeepRef = React.createRef();
+    this.longBeepRef = React.createRef();
   }
-};
 
-const Timer = ({ time }) => {
-  beep(time);
-  return (
-    <TimerWrapper>
-      <audio ref={shortBeepRef} src={shortBeep} />
-      <audio ref={longBeepRef} src={longBeep} />
-      <p>Tid kvar:</p>
-      <p>00:{time < 10 ? `0${time}` : time}</p>
-    </TimerWrapper>
-  );
-};
+  componentDidUpdate() {
+    this.beep();
+  }
+
+  beep = timeLeft => {
+    if (timeLeft === 0) {
+      this.longBeepRef.current.play();
+    } else if (timeLeft <= 3) {
+      this.shortBeepRef.current.play();
+    }
+  };
+
+  render() {
+    const { time } = this.props;
+    return (
+      <TimerWrapper>
+        <audio ref={this.shortBeepRef} src={shortBeep} />
+        <audio ref={this.longBeepRef} src={longBeep} />
+        <p>Tid kvar:</p>
+        <p>00:{time < 10 ? `0${time}` : time}</p>
+      </TimerWrapper>
+    );
+  }
+}
 
 export default Timer;

@@ -29,8 +29,10 @@ class WorkoutContainer extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchWorkout(this.props.excersises, this.props.settings);
-    this.props.initWorkout();
+    if (!this.props.workout.entries.length > 0) {
+      this.props.fetchWorkout(this.props.excersises, this.props.settings);
+      this.props.initWorkout();
+    }
   }
 
   componentDidUpdate(prevProps) {
